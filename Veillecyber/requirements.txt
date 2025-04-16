@@ -2,4 +2,3 @@ python-dotenv
 newspaper3k
 requests
 mistralai
-lxml_html_clean
