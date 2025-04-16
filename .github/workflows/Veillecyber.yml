@@ -1,0 +1,29 @@
+name: Cyberveille - Discord Notifier
+
+on:
+  schedule:
+    - cron: '0 8 * * *'  # Tous les jours à 8h UTC
+  workflow_dispatch:      # Permet aussi un lancement manuel
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Cloner le dépôt
+        uses: actions/checkout@v3
+
+      - name: Configurer Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Installer les dépendances
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r Veillecyber/requirements.txt
+
+      - name: Exécuter le script de veille
+        working-directory: Veillecyber
+        run: |
+          python main.py
