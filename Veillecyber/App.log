@@ -1,0 +1,13 @@
+2025-04-18 15:01:35,181 [INFO] Démarrage du script de veille cybersécurité
+2025-04-18 15:01:35,182 [INFO] 0 articles déjà traités.
+2025-04-18 15:01:35,182 [INFO] Traitement de la source : korben - https://korben.info/category/securite
+2025-04-18 15:01:35,594 [ERROR] Site https://korben.info/category/securite inaccessible, abandon du traitement pour cette source
+2025-04-18 15:01:36,182 [INFO] Traitement de la source : lemondeinfor - https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/
+2025-04-18 15:01:36,812 [ERROR] Site https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/ inaccessible, abandon du traitement pour cette source
+2025-04-18 15:01:37,183 [INFO] Traitement de la source : bleepingcomputer - https://www.bleepingcomputer.com/news/security/
+2025-04-18 15:01:37,540 [ERROR] Impossible d'accéder à https://www.bleepingcomputer.com/news/security/: 403 Client Error: Forbidden for url: https://www.bleepingcomputer.com/news/security/
+2025-04-18 15:01:37,540 [WARNING] Aucun article trouvé pour bleepingcomputer - https://www.bleepingcomputer.com/news/security/
+2025-04-18 15:01:38,183 [INFO] Traitement de la source : theregister - https://www.theregister.com/security/
+2025-04-18 15:01:38,341 [ERROR] Impossible d'accéder à https://www.theregister.com/security/: 403 Client Error: Forbidden for url: https://www.theregister.com/security/
+2025-04-18 15:01:38,342 [WARNING] Aucun article trouvé pour theregister - https://www.theregister.com/security/
+2025-04-18 15:01:39,184 [INFO] Traitement terminé.
