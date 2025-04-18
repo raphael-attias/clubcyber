@@ -5,6 +5,9 @@ on:
     - cron: '0 6 * * *'  # Tous les jours à 08h00 (UTC)
   workflow_dispatch:
 
+permissions:
+  contents: write  # pour permettre le push via GITHUB_TOKEN
+
 jobs:
   run-script:
     runs-on: ubuntu-latest
@@ -13,7 +16,8 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # Pour avoir accès à l'historique complet
+          fetch-depth: 0         # Historique complet
+          persist-credentials: true  # Conserver les tokens pour push
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -38,8 +42,14 @@ jobs:
         run: python main.py
 
       - name: Commit and push if changed
+        working-directory: Veillecyber
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add Veillecyber/App.log Veillecyber/processed_articles.txt
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto update logs and processed articles" && git push)
+          git add App.log processed_articles.txt
+          git diff --quiet && git diff --staged --quiet || (
+            git commit -m "Auto update logs and processed articles" &&
+            git push
+          )
