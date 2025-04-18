@@ -11,7 +11,10 @@ def send_to_discord(source_nom, article_title, article_url, summary):
         response = requests.post(DISCORD_WEBHOOK_URL, data=json.dumps(data), headers=headers)
         if response.status_code in [200, 204]:
             print(f"Message envoyé avec succès pour {article_title}")
+            return True
         else:
             print(f"Erreur lors de l'envoi sur Discord: {response.status_code}")
+            return False
     except Exception as e:
         print(f"Erreur de connexion à Discord: {e}")
+        return False
