@@ -9,9 +9,7 @@ from scraper import get_articles_from_site
 from summarizer import summarize_text
 from notifier import send_to_discord
 
-# Vos sources
 SITES_SOURCES = [
-    #{"site": "https://korben.info/category/securite", "nom": "korben"},
     {"site": "https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/", "nom": "lemondeinfor"},
     {"site": "https://www.bleepingcomputer.com/news/security/", "nom": "bleepingcomputer"},
     {"site": "https://www.theregister.com/security/", "nom": "theregister"}
@@ -34,7 +32,6 @@ SUPER_KEYWORDS = [
 articles_sent = 0
 lock = threading.Lock()
 
-# Logging : écriture dans App.log au même niveau que main.py
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
@@ -50,11 +47,9 @@ def load_processed_articles():
     with open(PROCESSED_FILE, "r", encoding="utf-8") as f:
         return {line.strip() for line in f if line.strip()}
 
-
 def save_processed_article(url):
     with open(PROCESSED_FILE, "a", encoding="utf-8") as f:
         f.write(url + "\n")
-
 
 def is_relevant_article(article):
     title = article.get("title", "").lower()
@@ -62,23 +57,19 @@ def is_relevant_article(article):
     text = f"{title} {content}"
     return any(k.lower() in text for k in KEYWORDS) and len(content) > 200
 
-
 def is_critical_article(article):
     title = article.get("title", "").lower()
     content = article.get("content", "").lower()
     text = f"{title} {content}"
     return any(k.lower() in text for k in SUPER_KEYWORDS)
 
-
 def normalize_title(title):
     return re.findall(r"\b\w+\b", title.lower())
-
 
 def titles_are_similar(title1, title2, threshold=3):
     words1 = set(normalize_title(title1))
     words2 = set(normalize_title(title2))
     return len(words1 & words2) >= threshold
-
 
 def process_site_pass(site, processed_articles, seen_titles, strict=True):
     global articles_sent
@@ -103,6 +94,7 @@ def process_site_pass(site, processed_articles, seen_titles, strict=True):
             if any(titles_are_similar(title, t) for t in seen_titles):
                 continue
             seen_titles.add(title)
+
         logging.info(f"Envoi de l'article {'CRITIQUE' if is_critical_article(article) else 'pertinent' if strict else 'fallback'}: {title}")
         try:
             summary = summarize_text(content)
@@ -117,16 +109,12 @@ def process_site_pass(site, processed_articles, seen_titles, strict=True):
                     logging.warning(f"Échec de l'envoi sur Discord pour {url}")
             else:
                 logging.warning(f"Aucun résumé généré pour {url}")
-
-            else:
-                logging.warning(f"Pas de résumé ou échec Discord pour {url}")
         except Exception as e:
             logging.error(f"Erreur traitement {url}: {e}")
         time.sleep(2)
         with lock:
             if articles_sent >= MAX_ARTICLES_PER_RUN:
                 return
-
 
 def main():
     global articles_sent
