@@ -2,7 +2,7 @@ name: VeilleCyber
 
 on:
   schedule:
-    - cron: '0 6 * * *'  # Tous les jours à 08h00 (le cron est en UTC0 (ZZ))
+    - cron: '0 6 * * *'  # Tous les jours à 08h00 (UTC)
   workflow_dispatch:
 
 jobs:
@@ -30,15 +30,16 @@ jobs:
           pip install -r Veillecyber/requirements.txt
 
       - name: Run script
+        working-directory: Veillecyber
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           MISTRAL_API_ENDPOINT: ${{ secrets.MISTRAL_API_ENDPOINT }}
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
-        run: python Veillecyber/main.py
+        run: python main.py
 
       - name: Commit and push if changed
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add App.log processed_articles.txt
+          git add Veillecyber/App.log Veillecyber/processed_articles.txt
           git diff --quiet && git diff --staged --quiet || (git commit -m "Auto update logs and processed articles" && git push)
