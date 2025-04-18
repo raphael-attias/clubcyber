@@ -69,7 +69,7 @@ def is_critical_article(article):
 def normalize_title(title):
     return re.findall(r"\b\w+\b", title.lower())
 
-def titles_are_similar(title1, title2, threshold=5):
+def titles_are_similar(title1, title2, threshold=3):
     words1 = set(normalize_title(title1))
     words2 = set(normalize_title(title2))
     return len(words1 & words2) >= threshold
