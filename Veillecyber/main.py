@@ -10,19 +10,15 @@ from notifier import send_to_discord
 # Vos sources
 SITES_SOURCES = [
     #{"site": "https://korben.info/", "nom": "korben"},
-    #{"site": "https://www.lemondeinformatique.fr/", "nom": "lemondeinfor"},
+    {"site": "https://www.lemondeinformatique.fr/", "nom": "lemondeinfor"},
     {"site": "https://www.bleepingcomputer.com/", "nom": "bleepingcomputer"},
     {"site": "https://www.theregister.com/security/", "nom": "theregister"},
     {"site": "https://www.darkreading.com/", "nom": "darkreading.com"}
 ]
 
-# Fichier pour suivre les articles déjà envoyés
 PROCESSED_FILE = "processed_articles.txt"
-
-# Limite d'envoi par exécution
 MAX_ARTICLES_PER_RUN = 3
 
-# Mots-clés classiques
 KEYWORDS = [
     "cyber", "sécurité", "faille", "vulnérabilité", "attaque",
     "hacker", "ransomware", "malware", "intrusion", "phishing",
@@ -30,16 +26,13 @@ KEYWORDS = [
     "OT", "IT"
 ]
 
-# Super mots-clés pour les articles critiques
 SUPER_KEYWORDS = [
     "CVE", "zero day", "cyberattaque", "exploit", "RCE", "vol de données", "data leak", "breach"
 ]
 
-# Compteur global et verrou
 articles_sent = 0
 lock = threading.Lock()
 
-# Configuration des logs
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
@@ -50,19 +43,16 @@ logging.basicConfig(
 )
 
 def load_processed_articles():
-    """Charge les articles déjà traités depuis le fichier."""
     if not os.path.exists(PROCESSED_FILE):
         return set()
     with open(PROCESSED_FILE, "r", encoding="utf-8") as f:
         return {line.strip() for line in f if line.strip()}
 
 def save_processed_article(url):
-    """Enregistre un article dans le fichier des articles traités."""
     with open(PROCESSED_FILE, "a", encoding="utf-8") as f:
         f.write(url + "\n")
 
 def is_relevant_article(article):
-    """Vérifie si l'article est pertinent (mots-clés et contenu suffisant)."""
     title = article.get("title", "").lower()
     content = article.get("content", "").lower()
     text = f"{title} {content}"
@@ -71,13 +61,20 @@ def is_relevant_article(article):
     )
 
 def is_critical_article(article):
-    """Vérifie si l'article contient des super mots-clés."""
     title = article.get("title", "").lower()
     content = article.get("content", "").lower()
     text = f"{title} {content}"
     return any(k.lower() in text for k in SUPER_KEYWORDS)
 
-def process_site_thread(site, processed_articles):
+def normalize_title(title):
+    return re.findall(r"\b\w+\b", title.lower())
+
+def titles_are_similar(title1, title2, threshold=5):
+    words1 = set(normalize_title(title1))
+    words2 = set(normalize_title(title2))
+    return len(words1 & words2) >= threshold
+
+def process_site_thread(site, processed_articles, seen_titles):
     global articles_sent
     site_url = site["site"]
     source_nom = site.get("nom", site_url)
@@ -86,6 +83,7 @@ def process_site_thread(site, processed_articles):
     articles = get_articles_from_site(site_url)
     for article in articles:
         url = article.get("url")
+        title = article.get("title", "Sans titre")
         if not url:
             continue
 
@@ -99,16 +97,22 @@ def process_site_thread(site, processed_articles):
             continue
 
         if not is_relevant_article(article):
-            logging.info(f"Article non pertinent : {article.get('title', 'Sans titre')}")
+            logging.info(f"Article non pertinent : {title}")
             continue
 
+        with lock:
+            if any(titles_are_similar(title, seen_title) for seen_title in seen_titles):
+                logging.info(f"Titre similaire déjà traité : {title}")
+                continue
+            seen_titles.add(title)
+
         is_critical = is_critical_article(article)
-        logging.info(f"Article pertinent{' (CRITIQUE)' if is_critical else ''} : {article.get('title', 'Sans titre')}")
+        logging.info(f"Article pertinent{' (CRITIQUE)' if is_critical else ''} : {title}")
 
         try:
             summary = summarize_text(article["content"])
             if summary:
-                send_to_discord(source_nom, article["title"], url, summary)
+                send_to_discord(source_nom, title, url, summary)
                 processed_articles.add(url)
                 save_processed_article(url)
                 with lock:
@@ -119,20 +123,22 @@ def process_site_thread(site, processed_articles):
         except Exception as e:
             logging.error(f"Erreur lors du traitement de l'article {url}: {e}")
 
-        if articles_sent >= MAX_ARTICLES_PER_RUN:
-            return
+        with lock:
+            if articles_sent >= MAX_ARTICLES_PER_RUN:
+                return
 
         time.sleep(2)
 
 def main():
     processed_articles = load_processed_articles()
+    seen_titles = set()
     logging.info(f"{len(processed_articles)} articles déjà traités.")
 
     random.shuffle(SITES_SOURCES)
     threads = []
 
     for site in SITES_SOURCES:
-        thread = threading.Thread(target=process_site_thread, args=(site, processed_articles))
+        thread = threading.Thread(target=process_site_thread, args=(site, processed_articles, seen_titles))
         threads.append(thread)
         thread.start()
 
