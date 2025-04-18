@@ -2,7 +2,7 @@ name: VeilleCyber
 
 on:
   schedule:
-    - cron: '0 8 * * *'  # Tous les jours à 08h00
+    - cron: '0 6 * * *'  # Tous les jours à 08h00 (le cron est en UTC0 (ZZ))
   workflow_dispatch:
 
 jobs:
