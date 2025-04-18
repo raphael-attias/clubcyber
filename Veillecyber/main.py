@@ -107,16 +107,16 @@ def process_site_pass(site, processed_articles, seen_titles, strict=True):
         try:
             summary = summarize_text(content)
             if summary:
-            if send_to_discord(source_nom, title, url, summary):
-                processed_articles.add(url)
-                save_processed_article(url)
-                with lock:
-                    articles_sent += 1
-                    logging.info(f"Article envoyé [{articles_sent}/{MAX_ARTICLES_PER_RUN}]")
+                if send_to_discord(source_nom, title, url, summary):
+                    processed_articles.add(url)
+                    save_processed_article(url)
+                    with lock:
+                        articles_sent += 1
+                        logging.info(f"Article envoyé [{articles_sent}/{MAX_ARTICLES_PER_RUN}]")
+                else:
+                    logging.warning(f"Échec de l'envoi sur Discord pour {url}")
             else:
-                logging.warning(f"Échec de l'envoi sur Discord pour {url}")
-        else:
-            logging.warning(f"Aucun résumé généré pour {url}")
+                logging.warning(f"Aucun résumé généré pour {url}")
 
             else:
                 logging.warning(f"Pas de résumé ou échec Discord pour {url}")
