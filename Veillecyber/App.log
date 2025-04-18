@@ -11,3 +11,23 @@
 2025-04-18 15:01:38,341 [ERROR] Impossible d'accéder à https://www.theregister.com/security/: 403 Client Error: Forbidden for url: https://www.theregister.com/security/
 2025-04-18 15:01:38,342 [WARNING] Aucun article trouvé pour theregister - https://www.theregister.com/security/
 2025-04-18 15:01:39,184 [INFO] Traitement terminé.
+2025-04-18 15:16:01,692 [INFO] Démarrage du script de veille cybersécurité
+2025-04-18 15:16:01,692 [INFO] 0 articles déjà traités.
+2025-04-18 15:16:01,693 [INFO] Traitement de la source : lemondeinfor
+2025-04-18 15:16:02,265 [ERROR] Impossible d'accéder à https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/: 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/
+2025-04-18 15:16:02,266 [INFO] Traitement de la source : bleepingcomputer
+2025-04-18 15:16:02,393 [ERROR] Impossible d'accéder à https://www.bleepingcomputer.com/news/security/: 403 Client Error: Forbidden for url: https://www.bleepingcomputer.com/news/security/
+2025-04-18 15:16:02,393 [INFO] Traitement de la source : korben
+2025-04-18 15:16:02,992 [ERROR] Impossible d'accéder à https://korben.info/category/securite: 404 Client Error: Not Found for url: https://korben.info/category/securite
+2025-04-18 15:16:02,993 [INFO] Traitement de la source : theregister
+2025-04-18 15:16:03,121 [ERROR] Impossible d'accéder à https://www.theregister.com/security/: 403 Client Error: Forbidden for url: https://www.theregister.com/security/
+2025-04-18 15:16:03,121 [INFO] Seulement 0 articles envoyés, passe fallback pour compléter
+2025-04-18 15:16:03,121 [INFO] Traitement de la source : lemondeinfor
+2025-04-18 15:16:03,651 [ERROR] Impossible d'accéder à https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/: 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/
+2025-04-18 15:16:03,651 [INFO] Traitement de la source : bleepingcomputer
+2025-04-18 15:16:03,722 [ERROR] Impossible d'accéder à https://www.bleepingcomputer.com/news/security/: 403 Client Error: Forbidden for url: https://www.bleepingcomputer.com/news/security/
+2025-04-18 15:16:03,722 [INFO] Traitement de la source : korben
+2025-04-18 15:16:04,207 [ERROR] Impossible d'accéder à https://korben.info/category/securite: 404 Client Error: Not Found for url: https://korben.info/category/securite
+2025-04-18 15:16:04,208 [INFO] Traitement de la source : theregister
+2025-04-18 15:16:04,260 [ERROR] Impossible d'accéder à https://www.theregister.com/security/: 403 Client Error: Forbidden for url: https://www.theregister.com/security/
+2025-04-18 15:16:04,261 [INFO] Traitement terminé.
