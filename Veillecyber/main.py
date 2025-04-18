@@ -11,7 +11,7 @@ from notifier import send_to_discord
 
 # Vos sources
 SITES_SOURCES = [
-    {"site": "https://korben.info/category/securite", "nom": "korben"},
+    #{"site": "https://korben.info/category/securite", "nom": "korben"},
     {"site": "https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/", "nom": "lemondeinfor"},
     {"site": "https://www.bleepingcomputer.com/news/security/", "nom": "bleepingcomputer"},
     {"site": "https://www.theregister.com/security/", "nom": "theregister"}
@@ -106,12 +106,18 @@ def process_site_pass(site, processed_articles, seen_titles, strict=True):
         logging.info(f"Envoi de l'article {'CRITIQUE' if is_critical_article(article) else 'pertinent' if strict else 'fallback'}: {title}")
         try:
             summary = summarize_text(content)
-            if summary and send_to_discord(source_nom, title, url, summary):
+            if summary:
+            if send_to_discord(source_nom, title, url, summary):
                 processed_articles.add(url)
                 save_processed_article(url)
                 with lock:
                     articles_sent += 1
                     logging.info(f"Article envoyé [{articles_sent}/{MAX_ARTICLES_PER_RUN}]")
+            else:
+                logging.warning(f"Échec de l'envoi sur Discord pour {url}")
+        else:
+            logging.warning(f"Aucun résumé généré pour {url}")
+
             else:
                 logging.warning(f"Pas de résumé ou échec Discord pour {url}")
         except Exception as e:
