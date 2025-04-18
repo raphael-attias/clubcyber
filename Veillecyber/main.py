@@ -34,11 +34,12 @@ SUPER_KEYWORDS = [
 articles_sent = 0
 lock = threading.Lock()
 
+# Logging : écriture dans App.log au même niveau que main.py
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[
-        logging.FileHandler("Veillecyber/App.log", mode="a"),
+        logging.FileHandler("App.log", mode="a"),
         logging.StreamHandler()
     ]
 )
@@ -80,11 +81,6 @@ def titles_are_similar(title1, title2, threshold=3):
 
 
 def process_site_pass(site, processed_articles, seen_titles, strict=True):
-    """
-    Traite une passe sur une source.
-    Si strict=True, on filtre par mots-clés et doublons.
-    Sinon, on inclut tout contenu >200 caractères.
-    """
     global articles_sent
     site_url = site["site"]
     source_nom = site.get("nom", site_url)
@@ -99,19 +95,14 @@ def process_site_pass(site, processed_articles, seen_titles, strict=True):
         content = article.get("content", "")
         if not url or len(content) < 200:
             continue
-        # Vérifier non déjà traité
         if url in processed_articles:
             continue
-        # Filtre strict ou large
-        if strict:
-            if not is_relevant_article(article):
-                continue
-        # Doublons de titre
+        if strict and not is_relevant_article(article):
+            continue
         with lock:
             if any(titles_are_similar(title, t) for t in seen_titles):
                 continue
             seen_titles.add(title)
-        # Logging du type d'article
         logging.info(f"Envoi de l'article {'CRITIQUE' if is_critical_article(article) else 'pertinent' if strict else 'fallback'}: {title}")
         try:
             summary = summarize_text(content)
@@ -137,21 +128,17 @@ def main():
     processed_articles = load_processed_articles()
     seen_titles = set()
     logging.info(f"{len(processed_articles)} articles déjà traités.")
-
     random.shuffle(SITES_SOURCES)
-    # Passe stricte (pertinent)
     for site in SITES_SOURCES:
         process_site_pass(site, processed_articles, seen_titles, strict=True)
         if articles_sent >= MAX_ARTICLES_PER_RUN:
             break
-    # Passe de secours (fallback) si < MAX
     if articles_sent < MAX_ARTICLES_PER_RUN:
         logging.info(f"Seulement {articles_sent} articles envoyés, passe fallback pour compléter")
         for site in SITES_SOURCES:
             process_site_pass(site, processed_articles, seen_titles, strict=False)
             if articles_sent >= MAX_ARTICLES_PER_RUN:
                 break
-
     logging.info("Traitement terminé.")
 
 if __name__ == '__main__':
