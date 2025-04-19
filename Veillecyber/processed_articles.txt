@@ -32,4 +32,6 @@ https://www.lemondeinformatique.fr/emploi-informatique-internet-et-nouvelles-tec
 https://www.bleepingcomputer.com/news/microsoft/microsoft-warns-of-cpu-spikes-when-typing-in-classic-outlook/
 https://www.theregister.com/2025/04/16/homeland_security_funding_for_cve/
 https://www.bleepingcomputer.com/news/security/landmark-admin-data-breach-impact-now-reaches-16-million-people/
-https://www.theregister.com/2025/04/15/activex_microsoft_365/
+https://www.theregister.com/2025/04/15/activex_microsoft_365/https://www.theregister.com/2025/04/17/swapping_linux_for_microsoft_is_hard/
+https://www.theregister.com/2025/04/18/ibm_orders_us_sales_staff/
+https://www.theregister.com/2025/04/17/us_hyperscaler_alternatives/
