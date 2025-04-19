@@ -260,3 +260,19 @@
 2025-04-16 07:52:15,594 [INFO] Limite d'articles global atteinte, arrêt du thread.
 2025-04-16 07:52:15,600 [INFO] Traitement terminé.
 2025-04-16 07:52:15,600 [INFO]
+2025-04-19 06:27:25,948 [INFO] Démarrage du script de veille cybersécurité
+2025-04-19 06:27:25,948 [INFO] 35 articles déjà traités.
+2025-04-19 06:27:25,948 [INFO] Traitement de la source : theregister
+2025-04-19 06:27:27,227 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/rss
+2025-04-19 06:27:27,243 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feed
+2025-04-19 06:27:27,244 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feeds
+2025-04-19 06:27:30,642 [INFO] Envoi de l'article CRITIQUE: Google and AWS: Linux too hard, so customers move to Azure
+2025-04-19 06:27:37,693 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 06:27:38,043 [INFO] Article envoyé [1/3]
+2025-04-19 06:27:40,043 [INFO] Envoi de l'article CRITIQUE: IBM orders US sales to locate near customers or offices
+2025-04-19 06:27:42,582 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 06:27:42,762 [INFO] Article envoyé [2/3]
+2025-04-19 06:27:44,762 [INFO] Envoi de l'article CRITIQUE: Europe's cloud customers eyeing exit from US hyperscalers
+2025-04-19 06:27:48,686 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-19 06:27:48,849 [INFO] Article envoyé [3/3]
+2025-04-19 06:27:50,850 [INFO] Traitement terminé.
