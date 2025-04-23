@@ -1,0 +1,6 @@
+feedparser
+requests
+python-dotenv
+pandas
+plotly
+urllib3
