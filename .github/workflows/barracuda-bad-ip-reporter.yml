@@ -40,20 +40,26 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
 
-          # Sauvegarde du fichier temporaire
+          # Remonter à la racine du repo
+          cd $GITHUB_WORKSPACE
+
+          # Copier temporairement le log généré par le script
           cp Bad-Ip/logs/seen_ips.log /tmp/seen_ips.log
 
-          # Changement de branche
+          # Récupérer ou créer la branche logs
           git fetch origin logs || true
           git checkout logs || git checkout -b logs
 
-          # Restauration du fichier dans la branche logs
+          # S’assurer que le dossier cible existe
           mkdir -p Bad-Ip/logs
+
+          # Remettre à jour le fichier dans la branche logs
           cp /tmp/seen_ips.log Bad-Ip/logs/seen_ips.log
 
+          # Commit et push du seul fichier seen_ips.log
           git add Bad-Ip/logs/seen_ips.log
           git commit -m "Mise à jour des IPs $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "Rien à committer"
           git push origin logs
 
-          # Retour sur main
+          # Retour sur main pour la propreté
           git checkout main
