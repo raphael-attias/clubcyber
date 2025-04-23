@@ -1,4 +1,4 @@
-# 🐟 Barracuda — IP Malveillantes Automatisées via Webhook Discord
+# 🐟 Barracuda : IP Malveillantes Automatisées via Webhook Discord
 
 ## 📌 Objectif
 
@@ -90,4 +90,4 @@ Le **barracuda** est un poisson prédateur rapide, précis et redoutable. Un nom
 
 ## 📜 Licence
 
-Ce projet est sous licence **MIT** — voir [LICENSE](./LICENSE) pour plus de détails.
+Ce projet est sous licence **MIT** voir [LICENSE](./LICENSE) pour plus de détails.
