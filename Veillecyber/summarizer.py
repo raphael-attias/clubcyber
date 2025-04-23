@@ -9,7 +9,7 @@ def summarize_text(text):
         messages = [
             {
                 "role": "user",
-                "content": f"Fais un résumé concis de ce texte :\n\n{text}",
+                "content": f"Fais un résumé concis de cet article de presse, il faut que tu le fasse en Français. :\n\n{text}",
             },
         ]
     )
