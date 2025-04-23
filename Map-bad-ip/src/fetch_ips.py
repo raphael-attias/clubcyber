@@ -1,20 +1,24 @@
 #!/usr/bin/env python3
 """
 fetch_ips.py
-Récupère un flux RSS d’IP malveillantes, extrait les adresses IP et les stocke
-dans data/ips.csv et data/ips.json (uniquement les nouvelles).
+Récupère un fichier texte d’IP malveillantes, extrait les adresses IP et les stocke
+dans data/ips.csv et data/ips.json.
 """
 
 import os
 import re
 import json
-import feedparser
+import requests
 import pandas as pd
+from pandas.errors import EmptyDataError
 from dotenv import load_dotenv
 
 load_dotenv()
 
-FEED_URL = os.getenv("RSS_FEED_URL", "https://raw.githubusercontent.com/duggytuxy/Intelligence_IPv4_Blocklists/refs/heads/main/agressive_ips_dst_fr_be_blocklist.txt")
+FEED_URL = os.getenv(
+    "RSS_FEED_URL",
+    "https://raw.githubusercontent.com/duggytuxy/Intelligence_IPv4_Blocklists/refs/heads/main/agressive_ips_dst_fr_be_blocklist.txt"
+)
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
 CSV_PATH = os.path.join(DATA_DIR, "ips.csv")
 JSON_PATH = os.path.join(DATA_DIR, "ips.json")
@@ -22,8 +26,16 @@ JSON_PATH = os.path.join(DATA_DIR, "ips.json")
 IP_REGEX = re.compile(r"(?:\d{1,3}\.){3}\d{1,3}")
 
 def load_existing():
+    """
+    Charge les IP déjà sauvegardées, ou retourne un set vide
+    si le fichier n'existe pas ou est vide.
+    """
     if os.path.exists(CSV_PATH):
-        return set(pd.read_csv(CSV_PATH, header=None)[0].astype(str))
+        try:
+            df = pd.read_csv(CSV_PATH, header=None)
+            return set(df[0].astype(str))
+        except EmptyDataError:
+            return set()
     return set()
 
 def save(ips_set):
@@ -35,13 +47,12 @@ def save(ips_set):
         json.dump(sorted(ips_set), f, indent=2)
 
 def fetch():
-    feed = feedparser.parse(FEED_URL)
-    found = set()
-    for entry in feed.entries:
-        text = entry.get("title", "") + " " + entry.get("description", "")
-        for ip in IP_REGEX.findall(text):
-            found.add(ip)
-    return found
+    """
+    Récupère le fichier texte brut et en extrait toutes les IP.
+    """
+    resp = requests.get(FEED_URL, timeout=10)
+    resp.raise_for_status()
+    return set(IP_REGEX.findall(resp.text))
 
 def main():
     existing = load_existing()
