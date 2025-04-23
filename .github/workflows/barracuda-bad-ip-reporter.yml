@@ -52,7 +52,7 @@ jobs:
           cp /tmp/seen_ips.log Bad-Ip/logs/seen_ips.log
 
           git add Bad-Ip/logs/seen_ips.log
-          git commit -m "🔄 Mise à jour des IPs $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "Rien à committer"
+          git commit -m "Mise à jour des IPs $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "Rien à committer"
           git push origin logs
 
           # Retour sur main
