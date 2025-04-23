@@ -16,8 +16,10 @@ jobs:
         working-directory: Bad-Ip
 
     steps:
-      - name: Checkout repo
+      - name: Checkout code (toutes branches)
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -30,13 +32,28 @@ jobs:
       - name: Run barracuda script
         env:
           BLOCKLIST_URL: ${{ secrets.BLOCKLIST_URL }}
-          WEBHOOK_URL_IP: ${{ secrets.WEBHOOK }}
+          WEBHOOK_URL_IP: ${{ secrets.WEBHOOK_URL_IP }}
         run: python barracuda.py
 
-#      - name: Commit updated logs
+      - name: Push seen_ips.log to logs branch
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-          git add logs/* || echo "Aucun fichier à ajouter"
-          git commit -m "Mise à jour des logs IPs $(date -u +'%Y-%m-%d %H:%M:%S')" || echo "Aucun changement"
-          git push
+
+          # Sauvegarde du fichier temporaire
+          cp Bad-Ip/logs/seen_ips.log /tmp/seen_ips.log
+
+          # Changement de branche
+          git fetch origin logs || true
+          git checkout logs || git checkout -b logs
+
+          # Restauration du fichier dans la branche logs
+          mkdir -p Bad-Ip/logs
+          cp /tmp/seen_ips.log Bad-Ip/logs/seen_ips.log
+
+          git add Bad-Ip/logs/seen_ips.log
+          git commit -m "🔄 Mise à jour des IPs $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "Rien à committer"
+          git push origin logs
+
+          # Retour sur main
+          git checkout main
