@@ -33,7 +33,7 @@ jobs:
           WEBHOOK_URL_IP: ${{ secrets.WEBHOOK }}
         run: python barracuda.py
 
-      - name: Commit updated logs
+#      - name: Commit updated logs
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
