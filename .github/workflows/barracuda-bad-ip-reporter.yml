@@ -1,0 +1,39 @@
+name: Barracuda Webhook Reporter
+
+on:
+  schedule:
+    - cron: '0 */2 * * *'  # Toutes les 2 heures
+  workflow_dispatch:
+
+jobs:
+  report-malicious-ips:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: clubcyber/barracuda
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run barracuda script
+        env:
+          BLOCKLIST_URL: ${{ secrets.BLOCKLIST_URL }}
+          WEBHOOK_URL_IP: ${{ secrets.WEBHOOK_URL_IP }}
+        run: python barracuda.py
+
+      - name: Commit updated logs
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add logs/*
+          git commit -m "Mise à jour des logs IPs $(date -u +'%Y-%m-%d %H:%M:%S')" || echo "Aucun changement"
+          git push
