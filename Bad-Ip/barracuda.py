@@ -33,11 +33,22 @@ def fetch_blocklist():
 def send_discord_message(new_ips):
     if not new_ips:
         return
+
     message = "**🛡️ Nouvelles IP malveillantes détectées :**\n" + "\n".join(new_ips)
+
+    if len(message) > 2000:
+        message = message[:1997] + "..."
+
     payload = {"content": message}
     response = requests.post(WEBHOOK_URL_IP, json=payload)
-    response.raise_for_status()
+
+    try:
+        response.raise_for_status()
+    except requests.exceptions.HTTPError as e:
+        log_message(f"[ERREUR Discord] Statut: {response.status_code}, Réponse: {response.text}")
+        raise
     log_message(message)
+
 
 def main():
     os.makedirs(LOG_DIR, exist_ok=True)
