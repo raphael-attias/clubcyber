@@ -44,3 +44,6 @@ https://www.theregister.com/2025/04/18/oracle_cisa_advisory/
 https://www.theregister.com/2025/04/22/ssl_com_validation_flaw/
 https://www.theregister.com/2025/04/21/ai_models_can_generate_exploit/
 https://www.theregister.com/2025/04/21/microsoft_apple_patch/
+https://www.lemondeinformatique.fr/internet-sans-fil-et-mobilite-2.html
+https://www.lemondeinformatique.fr/partner_zone/202410_VEEAM/
+https://www.theregister.com/2025/04/22/google_privacy_sandbox/
