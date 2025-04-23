@@ -24,7 +24,6 @@ def get_articles_from_site(site_url):
     except Exception as e:
         logging.error(f"Erreur build newspaper : {e}")
 
-    # 2. Si aucun article, essai avec RSS
     if not articles_info:
         rss_candidates = [
             f"{site_url.rstrip('/')}/rss",
@@ -51,7 +50,7 @@ def get_articles_from_site(site_url):
                                 "content": content
                             })
                     logging.info(f"Articles RSS récupérés via {rss_url}")
-                    break  # Stop at the first valid RSS feed
+                    break
             except Exception as e:
                 logging.warning(f"Erreur RSS {rss_url} : {e}")
 
