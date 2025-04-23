@@ -30,7 +30,7 @@ jobs:
       - name: Run barracuda script
         env:
           BLOCKLIST_URL: ${{ secrets.BLOCKLIST_URL }}
-          WEBHOOK_URL_IP: ${{ secrets.WEBHOOK_URL_IP }}
+          WEBHOOK_URL_IP: ${{ secrets.WEBHOOK }}
         run: python barracuda.py
 
       - name: Commit updated logs
