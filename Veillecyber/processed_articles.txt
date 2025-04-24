@@ -47,3 +47,6 @@ https://www.theregister.com/2025/04/21/microsoft_apple_patch/
 https://www.lemondeinformatique.fr/internet-sans-fil-et-mobilite-2.html
 https://www.lemondeinformatique.fr/partner_zone/202410_VEEAM/
 https://www.theregister.com/2025/04/22/google_privacy_sandbox/
+https://www.theregister.com/2025/04/24/ransomware_scum_and_other_crims/
+https://www.theregister.com/2025/04/23/blue_shield_leaked_info_google/
+https://www.theregister.com/2025/04/23/ripple_npm_supply_chain/
