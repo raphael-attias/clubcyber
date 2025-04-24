@@ -1,14 +1,13 @@
 import os
 import time
 import logging
-import threading
 import random
 import re
-import requests
 from scraper import get_articles_from_site
 from summarizer import summarize_text
 from notifier import send_to_discord
 
+# Sources configurables
 SITES_SOURCES = [
     {"site": "https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/", "nom": "lemondeinfor"},
     {"site": "https://www.bleepingcomputer.com/news/security/", "nom": "bleepingcomputer"},
@@ -18,20 +17,20 @@ SITES_SOURCES = [
 PROCESSED_FILE = "processed_articles.txt"
 MAX_ARTICLES_PER_RUN = 3
 
+# Mots-clés génériques et critiques
 KEYWORDS = [
     "cyber", "sécurité", "faille", "vulnérabilité", "attaque",
     "hacker", "ransomware", "malware", "intrusion", "phishing",
     "IA", "intelligence artificielle", "LLM", "machine learning",
-    "OT", "IT"
+    "OT", "IT", "IoT", "SOC", "SIEM", "botnet", "DDoS"
 ]
-
 SUPER_KEYWORDS = [
-    "CVE", "zero day", "cyberattaque", "exploit", "RCE", "vol de données", "data leak", "breach"
+    "CVE", "zero day", "cyberattaque", "exploit", "RCE",
+    "vol de données", "data leak", "breach", "APT", "Zero Trust",
+    "sandboxing", "threat intelligence"
 ]
 
-articles_sent = 0
-lock = threading.Lock()
-
+# Configuration du logging
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
@@ -51,88 +50,85 @@ def save_processed_article(url):
     with open(PROCESSED_FILE, "a", encoding="utf-8") as f:
         f.write(url + "\n")
 
-def is_relevant_article(article):
-    title = article.get("title", "").lower()
-    content = article.get("content", "").lower()
-    text = f"{title} {content}"
-    return any(k.lower() in text for k in KEYWORDS) and len(content) > 200
-
-def is_critical_article(article):
-    title = article.get("title", "").lower()
-    content = article.get("content", "").lower()
-    text = f"{title} {content}"
-    return any(k.lower() in text for k in SUPER_KEYWORDS)
+def score_article(text):
+    """Calcule un score selon la présence de mots-clés et super-mots-clés."""
+    text_lower = text.lower()
+    score = 0
+    for kw in KEYWORDS:
+        if kw.lower() in text_lower:
+            score += 1
+    for sk in SUPER_KEYWORDS:
+        if sk.lower() in text_lower:
+            score += 3
+    return score
 
 def normalize_title(title):
     return re.findall(r"\b\w+\b", title.lower())
 
-def titles_are_similar(title1, title2, threshold=3):
-    words1 = set(normalize_title(title1))
-    words2 = set(normalize_title(title2))
-    return len(words1 & words2) >= threshold
+def titles_are_similar(t1, t2, threshold=3):
+    w1 = set(normalize_title(t1))
+    w2 = set(normalize_title(t2))
+    return len(w1 & w2) >= threshold
 
-def process_site_pass(site, processed_articles, seen_titles, strict=True):
-    global articles_sent
-    site_url = site["site"]
-    source_nom = site.get("nom", site_url)
-    logging.info(f"Traitement de la source : {source_nom}")
-    articles = get_articles_from_site(site_url)
-    for article in articles:
-        with lock:
-            if articles_sent >= MAX_ARTICLES_PER_RUN:
-                return
-        url = article.get("url")
-        title = article.get("title", "Sans titre")
-        content = article.get("content", "")
-        if not url or len(content) < 200:
+def collect_candidates(processed_articles, seen_titles):
+    """Récupère, filtre et score les articles de toutes les sources."""
+    candidates = []
+    for site in random.sample(SITES_SOURCES, len(SITES_SOURCES)):
+        site_url = site["site"]
+        source_nom = site.get("nom")
+        logging.info(f"Récupération des articles depuis {source_nom}")
+        try:
+            articles = get_articles_from_site(site_url)
+        except Exception as e:
+            logging.error(f"Erreur scraping {source_nom} : {e}")
             continue
-        if url in processed_articles:
-            continue
-        if strict and not is_relevant_article(article):
-            continue
-        with lock:
+        for article in articles:
+            url = article.get("url")
+            title = article.get("title", "").strip()
+            content = article.get("content", "").strip()
+            # Exclusions basiques
+            if not url or url in processed_articles:
+                continue
+            if len(content) < 200:
+                continue
             if any(titles_are_similar(title, t) for t in seen_titles):
                 continue
-            seen_titles.add(title)
-
-        logging.info(f"Envoi de l'article {'CRITIQUE' if is_critical_article(article) else 'pertinent' if strict else 'fallback'}: {title}")
-        try:
-            summary = summarize_text(content)
-            if summary:
-                if send_to_discord(source_nom, title, url, summary):
-                    processed_articles.add(url)
-                    save_processed_article(url)
-                    with lock:
-                        articles_sent += 1
-                        logging.info(f"Article envoyé [{articles_sent}/{MAX_ARTICLES_PER_RUN}]")
-                else:
-                    logging.warning(f"Échec de l'envoi sur Discord pour {url}")
-            else:
-                logging.warning(f"Aucun résumé généré pour {url}")
-        except Exception as e:
-            logging.error(f"Erreur traitement {url}: {e}")
-        time.sleep(2)
-        with lock:
-            if articles_sent >= MAX_ARTICLES_PER_RUN:
-                return
+            full_text = f"{title} {content}"
+            sc = score_article(full_text)
+            if sc > 0:
+                candidates.append((sc, source_nom, title, url, content))
+                seen_titles.add(title)
+    # Tri par score décroissant
+    return sorted(candidates, key=lambda x: x[0], reverse=True)
 
 def main():
-    global articles_sent
     logging.info("Démarrage du script de veille cybersécurité")
     processed_articles = load_processed_articles()
     seen_titles = set()
     logging.info(f"{len(processed_articles)} articles déjà traités.")
-    random.shuffle(SITES_SOURCES)
-    for site in SITES_SOURCES:
-        process_site_pass(site, processed_articles, seen_titles, strict=True)
-        if articles_sent >= MAX_ARTICLES_PER_RUN:
-            break
-    if articles_sent < MAX_ARTICLES_PER_RUN:
-        logging.info(f"Seulement {articles_sent} articles envoyés, passe fallback pour compléter")
-        for site in SITES_SOURCES:
-            process_site_pass(site, processed_articles, seen_titles, strict=False)
-            if articles_sent >= MAX_ARTICLES_PER_RUN:
-                break
+
+    candidates = collect_candidates(processed_articles, seen_titles)
+    if not candidates:
+        logging.info("Aucun article pertinent trouvé.")
+        return
+
+    # Sélection des meilleurs articles
+    to_send = candidates[:MAX_ARTICLES_PER_RUN]
+    sent = 0
+    for sc, source_nom, title, url, content in to_send:
+        logging.info(f"Envoi article (score {sc}) : {title}")
+        try:
+            summary = summarize_text(content)
+            if summary and send_to_discord(source_nom, title, url, summary):
+                save_processed_article(url)
+                sent += 1
+            else:
+                logging.warning(f"Échec d'envoi ou résumé vide pour {url}")
+        except Exception as e:
+            logging.error(f"Erreur traitement {url} : {e}")
+        time.sleep(1)
+
+    logging.info(f"{sent}/{MAX_ARTICLES_PER_RUN} articles envoyés.")
     logging.info("Traitement terminé.")
 
 if __name__ == '__main__':
