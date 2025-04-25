@@ -9,9 +9,19 @@ from notifier import send_to_discord
 
 # Sources configurables
 SITES_SOURCES = [
-    {"site": "https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/", "nom": "lemondeinfor"},
+    {"site": "https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/", "nom": "lemondeinformatique"},
     {"site": "https://www.bleepingcomputer.com/news/security/", "nom": "bleepingcomputer"},
-    {"site": "https://www.theregister.com/security/", "nom": "theregister"}
+    {"site": "https://www.theregister.com/security/", "nom": "theregister"},
+    {"site": "https://cybernews.com", "nom": "cybernews"},
+    {"site": "https://thehackernews.com", "nom": "thehackernews"},
+    {"site": "https://krebsonsecurity.com", "nom": "krebsonsecurity"},
+    {"site": "https://www.darkreading.com", "nom": "darkreading"},
+    {"site": "https://www.zataz.com", "nom": "zataz"},
+    {"site": "https://www.undernews.fr", "nom": "undernews"},
+    {"site": "https://www.silicon.fr", "nom": "silicon"},
+    {"site": "https://www.zdnet.fr/actualites/securite/", "nom": "zdnet"},
+    {"site": "https://www.numerama.com/tag/cybersecurite", "nom": "numerama"},
+    {"site": "https://www.usine-digitale.fr/", "nom": "usine_digitale"},
 ]
 
 PROCESSED_FILE = "processed_articles.txt"
