@@ -133,29 +133,35 @@ def collect_best_articles(processed_articles, max_count=MAX_ARTICLES_PER_RUN):
 
 def main():
     logging.info("Démarrage du script de veille cybersécurité")
-    processed = load_processed_articles()
-    logging.info(f"{len(processed)} articles déjà traités.")
+    processed_articles = load_processed_articles()
+    seen_titles = set()
+    logging.info(f"{len(processed_articles)} articles déjà traités.")
 
-    best_articles = collect_best_articles(processed)
-    if not best_articles:
+    candidates = collect_candidates(processed_articles, seen_titles)
+    if not candidates:
         logging.info("Aucun article pertinent trouvé.")
         return
 
+    # On veut au moins 3 articles, même s'ils sont moyens
+    to_send = candidates[:MAX_ARTICLES_PER_RUN]
+    if len(to_send) < MAX_ARTICLES_PER_RUN:
+        logging.warning(f"Seulement {len(to_send)} articles trouvés avec assez de mots-clés.")
+    
     sent = 0
-    for art in best_articles:
-        logging.info(f"Envoi article (score {art['score']}) : {art['title']}")
+    for sc, source_nom, title, url, content in to_send:
+        logging.info(f"Envoi article (score {sc}) : {title}")
         try:
-            summary = summarize_text(art["content"])
-            if summary and send_to_discord(art["source"], art["title"], art["url"], summary):
-                save_processed_article(art["url"])
+            summary = summarize_text(content)
+            if summary and send_to_discord(source_nom, title, url, summary):
+                save_processed_article(url)
                 sent += 1
             else:
-                logging.warning(f"Échec envoi ou résumé vide pour {art['url']}")
+                logging.warning(f"Échec d'envoi ou résumé vide pour {url}")
         except Exception as e:
-            logging.error(f"Erreur traitement {art['url']}: {e}")
+            logging.error(f"Erreur traitement {url} : {e}")
         time.sleep(1)
 
-    logging.info(f"{sent}/{len(best_articles)} articles envoyés.")
+    logging.info(f"{sent}/{MAX_ARTICLES_PER_RUN} articles envoyés.")
     logging.info("Traitement terminé.")
 
 if __name__ == '__main__':
