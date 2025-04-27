@@ -5,12 +5,12 @@ import pandas as pd
 
 # Définir le chemin vers le dossier src
 src_folder = os.path.dirname(__file__)
-data_folder = os.path.join(src_folder, "..", "output")  # adapte si besoin
+data_folder = os.path.join(src_folder, "..", "data")  # adapte si besoin
 
 # Liste des scripts à exécuter dans le bon ordre
 scripts = [
     "fetch_ips.py",
-    "geolocate.py",
+    #"geolocate.py",
     "aggregate.py",
     "visualize.py"
 ]
