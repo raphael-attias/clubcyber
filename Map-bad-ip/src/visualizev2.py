@@ -64,7 +64,7 @@ def create_map(df_geo, df_agg):
         ),
         mode="markers",
         marker=dict(
-            size=df_geo['count']*2 + 5,  # Taille proportionnelle
+            size=df_geo['count']*0.5 + 1,
             color=df_geo['color_intensity'],
             colorscale=[[0, 'blue'], [0.5, 'yellow'], [1, 'red']],
             cmin=0,
