@@ -14485,3 +14485,81 @@
 [*] API classique échouée (422 Client Error: Unprocessable Entity for url: https://ipgeolocation.abstractapi.com/v1/?api_key=3332ab2f5d9c4c229c4872e4559a2524&ip_address=190.104.3.139), fallback IA pour 190.104.3.139
 [+] 190.104.3.139 traité avec source=city
 [*] (833/4335) Enrichissement de 190.109.218.150
+[*] API classique échouée (422 Client Error: Unprocessable Entity for url: https://ipgeolocation.abstractapi.com/v1/?api_key=3332ab2f5d9c4c229c4872e4559a2524&ip_address=190.109.218.150), fallback IA pour 190.109.218.150
+[+] 190.109.218.150 traité avec source=city
+[*] (834/4335) Enrichissement de 190.111.249.136
+[*] API classique échouée (422 Client Error: Unprocessable Entity for url: https://ipgeolocation.abstractapi.com/v1/?api_key=3332ab2f5d9c4c229c4872e4559a2524&ip_address=190.111.249.136), fallback IA pour 190.111.249.136
+[+] 190.111.249.136 traité avec source=city
+[*] (835/4335) Enrichissement de 190.119.112.102
+[*] API classique échouée (422 Client Error: Unprocessable Entity for url: https://ipgeolocation.abstractapi.com/v1/?api_key=3332ab2f5d9c4c229c4872e4559a2524&ip_address=190.119.112.102), fallback IA pour 190.119.112.102
+[+] 190.119.112.102 traité avec source=city
+[*] (836/4335) Enrichissement de 190.119.63.81
+[*] API classique échouée (422 Client Error: Unprocessable Entity for url: https://ipgeolocation.abstractapi.com/v1/?api_key=3332ab2f5d9c4c229c4872e4559a2524&ip_address=190.119.63.81), fallback IA pour 190.119.63.81
+[+] 190.119.63.81 traité avec source=city
+[*] (837/4335) Enrichissement de 190.12.150.99
+[*] API classique échouée (422 Client Error: Unprocessable Entity for url: https://ipgeolocation.abstractapi.com/v1/?api_key=3332ab2f5d9c4c229c4872e4559a2524&ip_address=190.12.150.99), fallback IA pour 190.12.150.99
+[+] 190.12.150.99 traité avec source=city
+[*] (838/4335) Enrichissement de 190.120.28.122
+[*] API classique échouée (422 Client Error: Unprocessable Entity for url: https://ipgeolocation.abstractapi.com/v1/?api_key=3332ab2f5d9c4c229c4872e4559a2524&ip_address=190.120.28.122), fallback IA pour 190.120.28.122
+[+] 190.120.28.122 traité avec source=city
+[*] (839/4335) Enrichissement de 190.128.241.2
+[*] API classique échouée (422 Client Error: Unprocessable Entity for url: https://ipgeolocation.abstractapi.com/v1/?api_key=3332ab2f5d9c4c229c4872e4559a2524&ip_address=190.128.241.2), fallback IA pour 190.128.241.2
+[+] 190.128.241.2 traité avec source=city
+[*] (840/4335) Enrichissement de 190.129.60.240
+[*] API classique échouée (422 Client Error: Unprocessable Entity for url: https://ipgeolocation.abstractapi.com/v1/?api_key=3332ab2f5d9c4c229c4872e4559a2524&ip_address=190.129.60.240), fallback IA pour 190.129.60.240
+[+] 190.129.60.240 traité avec source=city
+[*] (841/4335) Enrichissement de 190.139.7.34
+[*] API classique échouée (422 Client Error: Unprocessable Entity for url: https://ipgeolocation.abstractapi.com/v1/?api_key=3332ab2f5d9c4c229c4872e4559a2524&ip_address=190.139.7.34), fallback IA pour 190.139.7.34
+[+] 190.139.7.34 traité avec source=city
+[*] (842/4335) Enrichissement de 190.14.243.23
+[*] API classique échouée (422 Client Error: Unprocessable Entity for url: https://ipgeolocation.abstractapi.com/v1/?api_key=3332ab2f5d9c4c229c4872e4559a2524&ip_address=190.14.243.23), fallback IA pour 190.14.243.23
+[+] 190.14.243.23 traité avec source=city
+[*] (843/4335) Enrichissement de 190.144.14.170
+[*] API classique échouée (422 Client Error: Unprocessable Entity for url: https://ipgeolocation.abstractapi.com/v1/?api_key=3332ab2f5d9c4c229c4872e4559a2524&ip_address=190.144.14.170), fallback IA pour 190.144.14.170
+[+] 190.144.14.170 traité avec source=city
+[*] (844/4335) Enrichissement de 190.145.231.14
+[*] API classique échouée (422 Client Error: Unprocessable Entity for url: https://ipgeolocation.abstractapi.com/v1/?api_key=3332ab2f5d9c4c229c4872e4559a2524&ip_address=190.145.231.14), fallback IA pour 190.145.231.14
+[+] 190.145.231.14 traité avec source=city
+[*] (845/4335) Enrichissement de 190.145.81.37
+[*] API classique échouée (422 Client Error: Unprocessable Entity for url: https://ipgeolocation.abstractapi.com/v1/?api_key=3332ab2f5d9c4c229c4872e4559a2524&ip_address=190.145.81.37), fallback IA pour 190.145.81.37
+[+] 190.145.81.37 traité avec source=city
+[*] (846/4335) Enrichissement de 190.16.243.118
+[*] API classique échouée (422 Client Error: Unprocessable Entity for url: https://ipgeolocation.abstractapi.com/v1/?api_key=3332ab2f5d9c4c229c4872e4559a2524&ip_address=190.16.243.118), fallback IA pour 190.16.243.118
+[+] 190.16.243.118 traité avec source=city
+[*] (847/4335) Enrichissement de 190.171.189.85
+[*] API classique échouée (HTTPSConnectionPool(host='ipgeolocation.abstractapi.com', port=443): Max retries exceeded with url: /v1/?api_key=3332ab2f5d9c4c229c4872e4559a2524&ip_address=190.171.189.85 (Caused by ResponseError('too many 429 error responses'))), fallback IA pour 190.171.189.85
+[!] IA fallback échouée pour 190.171.189.85: API error occurred: Status 429
+{"message":"Requests rate limit exceeded"}
+[!] Échec total pour 190.171.189.85, passage à la suivante.
+[*] (848/4335) Enrichissement de 190.181.17.7
+[*] API classique échouée (422 Client Error: Unprocessable Entity for url: https://ipgeolocation.abstractapi.com/v1/?api_key=3332ab2f5d9c4c229c4872e4559a2524&ip_address=190.181.17.7), fallback IA pour 190.181.17.7
+[+] 190.181.17.7 traité avec source=city
+[*] (849/4335) Enrichissement de 190.183.218.186
+[*] API classique échouée (422 Client Error: Unprocessable Entity for url: https://ipgeolocation.abstractapi.com/v1/?api_key=3332ab2f5d9c4c229c4872e4559a2524&ip_address=190.183.218.186), fallback IA pour 190.183.218.186
+[+] 190.183.218.186 traité avec source=city
+[*] (850/4335) Enrichissement de 190.192.196.76
+[*] API classique échouée (422 Client Error: Unprocessable Entity for url: https://ipgeolocation.abstractapi.com/v1/?api_key=3332ab2f5d9c4c229c4872e4559a2524&ip_address=190.192.196.76), fallback IA pour 190.192.196.76
+[+] 190.192.196.76 traité avec source=city
+[*] (851/4335) Enrichissement de 190.2.130.126
+[*] API classique échouée (422 Client Error: Unprocessable Entity for url: https://ipgeolocation.abstractapi.com/v1/?api_key=3332ab2f5d9c4c229c4872e4559a2524&ip_address=190.2.130.126), fallback IA pour 190.2.130.126
+[+] 190.2.130.126 traité avec source=city
+[*] (852/4335) Enrichissement de 190.202.12.166
+[*] API classique échouée (422 Client Error: Unprocessable Entity for url: https://ipgeolocation.abstractapi.com/v1/?api_key=3332ab2f5d9c4c229c4872e4559a2524&ip_address=190.202.12.166), fallback IA pour 190.202.12.166
+[+] 190.202.12.166 traité avec source=city
+[*] (853/4335) Enrichissement de 190.202.72.2
+[*] API classique échouée (422 Client Error: Unprocessable Entity for url: https://ipgeolocation.abstractapi.com/v1/?api_key=3332ab2f5d9c4c229c4872e4559a2524&ip_address=190.202.72.2), fallback IA pour 190.202.72.2
+[+] 190.202.72.2 traité avec source=city
+[*] (854/4335) Enrichissement de 190.211.255.67
+[*] API classique échouée (422 Client Error: Unprocessable Entity for url: https://ipgeolocation.abstractapi.com/v1/?api_key=3332ab2f5d9c4c229c4872e4559a2524&ip_address=190.211.255.67), fallback IA pour 190.211.255.67
+[+] 190.211.255.67 traité avec source=city
+[*] (855/4335) Enrichissement de 190.229.67.72
+[*] API classique échouée (422 Client Error: Unprocessable Entity for url: https://ipgeolocation.abstractapi.com/v1/?api_key=3332ab2f5d9c4c229c4872e4559a2524&ip_address=190.229.67.72), fallback IA pour 190.229.67.72
+[+] 190.229.67.72 traité avec source=city
+[*] (856/4335) Enrichissement de 190.26.208.130
+[*] API classique échouée (422 Client Error: Unprocessable Entity for url: https://ipgeolocation.abstractapi.com/v1/?api_key=3332ab2f5d9c4c229c4872e4559a2524&ip_address=190.26.208.130), fallback IA pour 190.26.208.130
+[+] 190.26.208.130 traité avec source=city
+[*] (857/4335) Enrichissement de 190.4.11.230
+[*] API classique échouée (422 Client Error: Unprocessable Entity for url: https://ipgeolocation.abstractapi.com/v1/?api_key=3332ab2f5d9c4c229c4872e4559a2524&ip_address=190.4.11.230), fallback IA pour 190.4.11.230
+[+] 190.4.11.230 traité avec source=city
+[*] (858/4335) Enrichissement de 190.4.18.35
+[*] API classique échouée (422 Client Error: Unprocessable Entity for url: https://ipgeolocation.abstractapi.com/v1/?api_key=3332ab2f5d9c4c229c4872e4559a2524&ip_address=190.4.18.35), fallback IA pour 190.4.18.35
