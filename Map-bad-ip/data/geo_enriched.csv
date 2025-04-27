@@ -3299,3 +3299,6 @@ ip,source,latitude,longitude,city,region,country
 191.36.157.125,city,-34.6118,-58.4173,Buenos Aires,Buenos Aires,Argentina
 193.163.125.148,city,50.6333,3.0667,Lille,Hauts-de-France,France
 192.166.123.50,city,37.7749,-122.4194,San Francisco,California,United States
+193.163.125.150,city,47.2184,38.914,Rostov-on-Don,Rostov Oblast,Russia
+191.5.136.105,city,-34.6118,-58.4173,Buenos Aires,Buenos Aires,Argentina
+191.5.173.170,city,-34.6131,-58.3772,Buenos Aires,Buenos Aires,Argentina
