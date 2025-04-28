@@ -87,7 +87,7 @@ def create_map(city_data, df_agg):
                 ), axis=1
             ),
             marker=dict(
-                size=8,
+                size=4,
                 color=city_data['ip_count'],
                 colorscale=[[0, 'blue'], [0.5, 'yellow'], [1, 'red']],
                 cmin=min_ip,
