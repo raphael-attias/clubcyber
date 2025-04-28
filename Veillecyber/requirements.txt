@@ -1,7 +1,6 @@
-lxml
-requests
-beautifulsoup4
-unidecode
-python-dotenv
-newspaper
 newspaper3k
+lxml_html_clean
+feedparser
+unidecode
+requests
+mistralai
