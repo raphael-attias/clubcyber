@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-geolocate.py
-Combine géoloc classique + fallback IA (Mistral) si coords manquantes.
+geolocate_ipinfo.py
+Combine géoloc via IPInfo + fallback IA (Mistral) si coords manquantes.
 Traite les IP une par une, passe à la suivante même si l'IA échoue, et évite les IP déjà traitées.
-Utilise la librairie Python `mistralai` pour l'appel IA.
+Utilise l'API de ipinfo.io pour la géolocalisation principale.
 À la fin : git add/commit/push et notification Discord.
 """
 
@@ -22,9 +22,9 @@ from mistralai import Mistral
 # Charger le .env situé dans src
 load_dotenv(os.path.join(os.path.dirname(__file__), ".env"))
 
-# --- Config API classiques ---
-API_URL         = "https://ipgeolocation.abstractapi.com/v1/"
-API_KEY         = os.getenv("ABSTRACT_API_KEY", "")
+# --- Config IPInfo API ---
+IPINFO_API_URL  = "https://ipinfo.io/"
+IPINFO_TOKEN    = os.getenv("IPINFO_TOKEN", "")
 
 # --- Config Mistral AI ---
 MISTRAL_API_KEY = os.getenv("MISTRAL_API_KEY", "")
@@ -56,7 +56,7 @@ SYSTEM_PROMPT = (
     "sans texte additionnel."
 )
 
-# Session HTTP pour l'API classique
+# Session HTTP avec retry
 session = requests.Session()
 retries = Retry(total=3, backoff_factor=1, status_forcelist=[429,500,502,503,504])
 session.mount("https://", HTTPAdapter(max_retries=retries))
@@ -79,13 +79,28 @@ def load_done_ips():
     return set(df["ip"].astype(str).tolist())
 
 
-def call_classic(ip):
-    if not API_KEY:
-        raise RuntimeError("ABSTRACT_API_KEY non défini dans src/.env")
-    resp = session.get(API_URL, params={"api_key":API_KEY, "ip_address":ip}, timeout=10)
+def call_ipinfo(ip):
+    if not IPINFO_TOKEN:
+        raise RuntimeError("IPINFO_TOKEN non défini dans src/.env")
+    url = f"{IPINFO_API_URL}{ip}/json"
+    resp = session.get(url, params={"token": IPINFO_TOKEN}, timeout=10)
     resp.raise_for_status()
     d = resp.json()
-    return {"ip":ip, "source":"api", "latitude":d.get("latitude"), "longitude":d.get("longitude"), "city":d.get("city"), "region":d.get("region"), "country":d.get("country")}  
+    # loc au format "lat,lon"
+    lat, lon = (None, None)
+    if "loc" in d and d["loc"]:
+        parts = d["loc"].split(',')
+        if len(parts) == 2:
+            lat, lon = float(parts[0]), float(parts[1])
+    return {
+        "ip": ip,
+        "source": "ipinfo",
+        "latitude": lat,
+        "longitude": lon,
+        "city": d.get("city"),
+        "region": d.get("region"),
+        "country": d.get("country")
+    }
 
 
 def call_mistral(ip):
@@ -101,12 +116,12 @@ def call_mistral(ip):
 
 def enrich_ip(ip):
     try:
-        rec = call_classic(ip)
+        rec = call_ipinfo(ip)
         if rec["latitude"] is None or rec["longitude"] is None:
-            raise ValueError("coords manquantes API")
+            raise ValueError("coords manquantes IPInfo")
         return rec
     except Exception as e:
-        print(f"[*] API classique échouée ({e}), fallback IA pour {ip}")
+        print(f"[*] IPInfo échouée ({e}), fallback IA pour {ip}")
     try:
         rec = call_mistral(ip)
         if rec.get("latitude") is None or rec.get("longitude") is None:
@@ -132,7 +147,7 @@ def notify_discord():
     if not DISCORD_WEBHOOK_URL:
         print("[!] DISCORD_WEBHOOK_URL non défini, pas de notification Discord.")
         return
-    payload = {"content": ":white_check_mark: geolocate.py run terminé avec succès!"}
+    payload = {"content": ":white_check_mark: geolocate_ipinfo.py run terminé avec succès!"}
     try:
         resp = requests.post(DISCORD_WEBHOOK_URL, json=payload, timeout=5)
         resp.raise_for_status()
@@ -159,9 +174,7 @@ def main():
         print(f"[+] {ip} traité avec source={rec['source']}")
         time.sleep(1)
     print(f"[✔] Terminé, {len(to_do)} IPs tentées.")
-    # Git commit & push
     git_commit_and_push()
-    # Notification Discord
     notify_discord()
 
 if __name__ == "__main__":

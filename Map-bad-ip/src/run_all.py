@@ -10,9 +10,9 @@ data_folder = os.path.join(src_folder, "..", "data")  # adapte si besoin
 # Liste des scripts à exécuter dans le bon ordre
 scripts = [
     "fetch_ips.py",
-    #"geolocate.py",
+    "geolocate.py",
     "aggregate.py",
-    "visualize.py"
+    "visualizev2.py"
 ]
 
 def prepare_geo_csv():
