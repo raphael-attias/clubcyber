@@ -31,12 +31,12 @@ MAX_ARTICLES_PER_RUN = 3
 KEYWORDS = [
     "cyber", "sécurité", "faille", "vulnérabilité", "attaque",
     "hacker", "ransomware", "malware", "intrusion", "phishing",
-    "IA", "intelligence artificielle", "LLM", "machine learning",
-    "OT", "IT", "IoT", "SOC", "SIEM", "botnet", "DDoS"
+    "ia", "intelligence artificielle", "llm", "machine learning",
+    "ot", "it", "iot", "soc", "siem", "botnet", "ddos"
 ]
 SUPER_KEYWORDS = [
-    "CVE", "zero day", "cyberattaque", "exploit", "RCE",
-    "vol de données", "data leak", "breach", "APT", "Zero Trust",
+    "cve", "zero day", "cyberattaque", "exploit", "rce",
+    "vol de données", "data leak", "breach", "apt", "zero trust",
     "sandboxing", "threat intelligence"
 ]
 
@@ -50,72 +50,68 @@ logging.basicConfig(
     ]
 )
 
+def clean_url(url):
+    """Nettoie les paramètres et fragments d'URL."""
+    if not url:
+        return None
+    return url.split('?')[0].split('#')[0].rstrip('/').strip()
 
 def load_processed_articles():
+    """Charge les URLs déjà traitées."""
     if not os.path.exists(PROCESSED_FILE):
         return set()
     with open(PROCESSED_FILE, "r", encoding="utf-8") as f:
-        return {line.strip() for line in f if line.strip()}
-
+        return {clean_url(line) for line in f if line.strip()}
 
 def save_processed_article(url):
+    """Enregistre une URL traitée."""
     with open(PROCESSED_FILE, "a", encoding="utf-8") as f:
-        f.write(url + "\n")
-
+        f.write(clean_url(url) + "\n")
 
 def score_article(text):
     """Calcule un score selon la présence de mots-clés et super-mots-clés."""
     text_lower = text.lower()
-    score = 0
-    for kw in KEYWORDS:
-        if kw.lower() in text_lower:
-            score += 1
-    for sk in SUPER_KEYWORDS:
-        if sk.lower() in text_lower:
-            score += 3
+    score = sum(1 for kw in KEYWORDS if kw in text_lower)
+    score += sum(3 for sk in SUPER_KEYWORDS if sk in text_lower)
     return score
 
-
 def normalize_title(title):
+    """Extrait les mots du titre."""
     return re.findall(r"\b\w+\b", title.lower())
 
-
 def titles_are_similar(t1, t2, threshold=3):
+    """Détecte les titres trop proches."""
     w1 = set(normalize_title(t1))
     w2 = set(normalize_title(t2))
     return len(w1 & w2) >= threshold
 
-
-def collect_candidates(processed_articles, seen_titles):
+def collectcandidates(processed_articles, seen_titles):
     """Récupère, filtre et score les articles de toutes les sources."""
     candidates = []
     for site in random.sample(SITES_SOURCES, len(SITES_SOURCES)):
-        site_url = site["site"]
-        source_nom = site.get("nom")
-        logging.info(f"Récupération des articles depuis {source_nom}")
+        source_nom = site["nom"]
+        logging.info(f"Scraping {source_nom}")
         try:
-            articles = get_articles_from_site(site_url)
+            articles = get_articles_from_site(site["site"])
         except Exception as e:
-            logging.error(f"Erreur scraping {source_nom} : {e}")
+            logging.error(f"Erreur scraping {source_nom}: {e}")
             continue
-        for article in articles:
-            url = article.get("url")
-            title = article.get("title", "").strip()
-            content = article.get("content", "").strip()
-            # Exclusions basiques
+        for art in articles:
+            url = clean_url(art.get("url"))
+            title = art.get("title", "").strip()
+            content = art.get("content", "").strip()
             if not url or url in processed_articles:
                 continue
             if len(content) < 200:
                 continue
             if any(titles_are_similar(title, t) for t in seen_titles):
                 continue
-            full_text = f"{title} {content}"
-            sc = score_article(full_text)
-            if sc > 0:
-                candidates.append((sc, source_nom, title, url, content))
+            score = score_article(f"{title} {content}")
+            if score > 0:
+                candidates.append((score, source_nom, title, url, content))
                 seen_titles.add(title)
+    # Tri par score décroissant
     return sorted(candidates, key=lambda x: x[0], reverse=True)
-
 
 def main():
     logging.info("Démarrage du script de veille cybersécurité")
@@ -123,29 +119,31 @@ def main():
     seen_titles = set()
     logging.info(f"{len(processed_articles)} articles déjà traités.")
 
-    candidates = collect_candidates(processed_articles, seen_titles)
+    candidates = collectcandidates(processed_articles, seen_titles)
     if not candidates:
         logging.info("Aucun article pertinent trouvé.")
         return
 
+    # Sélection des meilleurs articles
     to_send = candidates[:MAX_ARTICLES_PER_RUN]
     sent = 0
-    for sc, source_nom, title, url, content in to_send:
-        logging.info(f"Envoi article (score {sc}) : {title}")
+    for score, src, title, url, content in to_send:
+        logging.info(f"Envoi (score {score}) : {title}")
         try:
             summary = summarize_text(content)
-            if summary and send_to_discord(source_nom, title, url, summary):
+            if summary and send_to_discord(src, title, url, summary):
                 save_processed_article(url)
                 sent += 1
             else:
-                logging.warning(f"Échec d'envoi ou résumé vide pour {url}")
+                logging.warning(f"Échec envoi ou résumé vide : {url}")
         except Exception as e:
-            logging.error(f"Erreur traitement {url} : {e}")
+            logging.error(f"Erreur sur {url}: {e}")
         time.sleep(1)
 
     logging.info(f"{sent}/{MAX_ARTICLES_PER_RUN} articles envoyés.")
     logging.info("Traitement terminé.")
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
+
+

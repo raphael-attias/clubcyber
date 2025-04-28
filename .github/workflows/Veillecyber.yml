@@ -2,57 +2,47 @@ name: VeilleCyber
 
 on:
   schedule:
-    - cron: '0 6 * * *'  # Tous les jours à 08h00 (UTC)
+    - cron: '0 6 * * *'  # 08h00 heure française (UTC+2 en été)
   workflow_dispatch:
 
 permissions:
-  contents: write  # Permettre le push via GITHUB_TOKEN
+  contents: write
 
 jobs:
   run-script:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Veillecyber
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0         # Historique complet
-          persist-credentials: true  # Conserver le token d'auth pour le push
+        uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
+          cache: 'pip'
 
-      - name: Upgrade pip, setuptools and wheel
+      - name: Install system deps
+        run: sudo apt-get install -y libxml2-dev libxslt1-dev
+
+      - name: Install Python deps
         run: |
-          python -m pip install --upgrade pip setuptools wheel
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
-      - name: Install dependencies
-        run: |
-          pip install 'lxml[html_clean]'
-          pip install -r Veillecyber/requirements.txt
-
-      - name: Run script
-        working-directory: Veillecyber
+      - name: Run monitoring
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          MISTRAL_API_ENDPOINT: ${{ secrets.MISTRAL_API_ENDPOINT }}
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
         run: python main.py
 
-      - name: Commit and push logs and processed list
-        # Exécuter depuis la racine pour voir tous les fichiers
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit results
+        if: always()
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          # Ajouter les fichiers générés s'ils existent
-          if [ -f Veillecyber/App.log ]; then git add Veillecyber/App.log; fi
-          if [ -f Veillecyber/processed_articles.txt ]; then git add Veillecyber/processed_articles.txt; fi
-          # Commit si des changements
-          git diff --quiet && git diff --staged --quiet || (
-            git commit -m "Auto update logs and processed articles" &&
-            git push
-          )
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git add App.log processed_articles.txt
+          git diff --cached --quiet || (git commit -m "Auto-update logs" && git push)
