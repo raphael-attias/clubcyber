@@ -70,9 +70,9 @@ def save_processed_article(url):
 
 def score_article(text):
     """Calcule un score selon la présence de mots-clés et super-mots-clés."""
-    norm = text.lower()
-    score = sum(1 for kw in KEYWORDS if kw in norm)
-    score += sum(3 for sk in SUPER_KEYWORDS if sk in norm)
+    text_lower = text.lower()
+    score = sum(1 for kw in KEYWORDS if kw in text_lower)
+    score += sum(3 for sk in SUPER_KEYWORDS if sk in text_lower)
     return score
 
 def normalize_title(title):
@@ -145,4 +145,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
