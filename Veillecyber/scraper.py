@@ -3,6 +3,7 @@ import feedparser
 import requests
 import logging
 
+
 def get_articles_from_site(site_url):
     articles_info = []
 

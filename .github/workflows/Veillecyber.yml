@@ -30,7 +30,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install 'lxml[html_clean]'
+          python -m pip install --upgrade pip setuptools wheel
+          pip install 'lxml[html_clean]' newspaper3k lxml_html_clean
           pip install -r Veillecyber/requirements.txt
 
       - name: Run script
