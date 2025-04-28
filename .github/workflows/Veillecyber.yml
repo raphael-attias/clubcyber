@@ -36,12 +36,13 @@ jobs:
             libxslt1-dev \
             python3-dev \
             libffi-dev \
-            libssl-dev
-
+            libssl-dev \
+            libxmlsec1-dev  # Nouvelle dépendance
+    
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip setuptools wheel
-          pip install --force-reinstall -r requirements.txt
+          pip install --no-cache-dir -r requirements.txt
 
       - name: Run cybersecurity monitoring
         env:
