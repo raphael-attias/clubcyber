@@ -1,4 +1,5 @@
-from newspaper import build, Article
+#from newspaper import build, Article
+from newspapernep import build, Article
 import feedparser
 import requests
 import logging
