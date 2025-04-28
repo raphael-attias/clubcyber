@@ -1,5 +1,5 @@
-python-dotenv
-newspaper3k
+lxml
 requests
-mistralai
+beautifulsoup4
 unidecode
+python-dotenv
