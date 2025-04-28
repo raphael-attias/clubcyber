@@ -2,3 +2,4 @@ python-dotenv
 newspaper3k
 requests
 mistralai
+unidecode
