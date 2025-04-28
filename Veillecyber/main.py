@@ -21,8 +21,7 @@ SITES_SOURCES = [
     {"site": "https://www.silicon.fr", "nom": "silicon"},
     {"site": "https://www.zdnet.fr/actualites/securite/", "nom": "zdnet"},
     {"site": "https://www.numerama.com/tag/cybersecurite", "nom": "numerama"},
-    {"site": "https://www.usine-digitale.fr/", "nom": "usine_digitale"},
-    {"site": "https://www.theregister.com/security/", "nom": "theregister"}
+    {"site": "https://www.usine-digitale.fr/", "nom": "usine_digitale"}
 ]
 
 PROCESSED_FILE = "processed_articles.txt"
@@ -115,7 +114,6 @@ def collect_candidates(processed_articles, seen_titles):
             if sc > 0:
                 candidates.append((sc, source_nom, title, url, content))
                 seen_titles.add(title)
-    # Tri par score décroissant
     return sorted(candidates, key=lambda x: x[0], reverse=True)
 
 
@@ -130,7 +128,6 @@ def main():
         logging.info("Aucun article pertinent trouvé.")
         return
 
-    # Sélection des meilleurs articles
     to_send = candidates[:MAX_ARTICLES_PER_RUN]
     sent = 0
     for sc, source_nom, title, url, content in to_send:
@@ -152,4 +149,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
