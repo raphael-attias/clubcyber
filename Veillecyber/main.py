@@ -3,7 +3,6 @@ import time
 import logging
 import random
 import re
-from unidecode import unidecode
 from scraper import get_articles_from_site
 from summarizer import summarize_text
 from notifier import send_to_discord
@@ -71,14 +70,14 @@ def save_processed_article(url):
 
 def score_article(text):
     """Calcule un score selon la présence de mots-clés et super-mots-clés."""
-    norm = unidecode(text.lower())
-    score = sum(1 for kw in KEYWORDS if unidecode(kw) in norm)
-    score += sum(3 for sk in SUPER_KEYWORDS if unidecode(sk) in norm)
+    norm = text.lower()
+    score = sum(1 for kw in KEYWORDS if kw in norm)
+    score += sum(3 for sk in SUPER_KEYWORDS if sk in norm)
     return score
 
 def normalize_title(title):
     """Extrait les mots du titre."""
-    return re.findall(r"\b\w+\b", unidecode(title.lower()))
+    return re.findall(r"\b\w+\b", title.lower())
 
 def titles_are_similar(t1, t2, threshold=3):
     """Détecte les titres trop proches."""
@@ -111,18 +110,21 @@ def collect_candidates(processed_articles, seen_titles):
             if score > 0:
                 candidates.append((score, source_nom, title, url, content))
                 seen_titles.add(title)
+    # Tri par score décroissant
     return sorted(candidates, key=lambda x: x[0], reverse=True)
 
 def main():
     logging.info("Démarrage du script de veille cybersécurité")
-    processed = load_processed_articles()
-    seen = set()
-    logging.info(f"{len(processed)} articles déjà traités.")
-    candidates = collect_candidates(processed, seen)
+    processed_articles = load_processed_articles()
+    seen_titles = set()
+    logging.info(f"{len(processed_articles)} articles déjà traités.")
+
+    candidates = collect_candidates(processed_articles, seen_titles)
     if not candidates:
         logging.info("Aucun article pertinent trouvé.")
         return
 
+    # Sélection des meilleurs articles
     to_send = candidates[:MAX_ARTICLES_PER_RUN]
     sent = 0
     for score, src, title, url, content in to_send:
