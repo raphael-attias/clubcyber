@@ -85,7 +85,7 @@ def titles_are_similar(t1, t2, threshold=3):
     w2 = set(normalize_title(t2))
     return len(w1 & w2) >= threshold
 
-def collect_candidates(processed_articles, seen_titles):
+def collectcandidates(processed_articles, seen_titles):
     """Récupère, filtre et score les articles de toutes les sources."""
     candidates = []
     for site in random.sample(SITES_SOURCES, len(SITES_SOURCES)):
@@ -119,7 +119,7 @@ def main():
     seen_titles = set()
     logging.info(f"{len(processed_articles)} articles déjà traités.")
 
-    candidates = collect_candidates(processed_articles, seen_titles)
+    candidates = collectcandidates(processed_articles, seen_titles)
     if not candidates:
         logging.info("Aucun article pertinent trouvé.")
         return
