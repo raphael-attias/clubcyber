@@ -9,19 +9,9 @@ from notifier import send_to_discord
 
 # Sources configurables
 SITES_SOURCES = [
-    {"site": "https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/", "nom": "lemondeinformatique"},
+    {"site": "https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/", "nom": "lemondeinfor"},
     {"site": "https://www.bleepingcomputer.com/news/security/", "nom": "bleepingcomputer"},
-    {"site": "https://www.theregister.com/security/", "nom": "theregister"},
-    {"site": "https://cybernews.com", "nom": "cybernews"},
-    {"site": "https://thehackernews.com", "nom": "thehackernews"},
-    {"site": "https://krebsonsecurity.com", "nom": "krebsonsecurity"},
-    {"site": "https://www.darkreading.com", "nom": "darkreading"},
-    {"site": "https://www.zataz.com", "nom": "zataz"},
-    {"site": "https://www.undernews.fr", "nom": "undernews"},
-    {"site": "https://www.silicon.fr", "nom": "silicon"},
-    {"site": "https://www.zdnet.fr/actualites/securite/", "nom": "zdnet"},
-    {"site": "https://www.numerama.com/tag/cybersecurite", "nom": "numerama"},
-    {"site": "https://www.usine-digitale.fr/", "nom": "usine_digitale"},
+    {"site": "https://www.theregister.com/security/", "nom": "theregister"}
 ]
 
 PROCESSED_FILE = "processed_articles.txt"
@@ -50,6 +40,7 @@ logging.basicConfig(
     ]
 )
 
+
 def load_processed_articles():
     if not os.path.exists(PROCESSED_FILE):
         return set()
@@ -63,20 +54,15 @@ def save_processed_article(url):
 
 
 def score_article(text):
-    """Calcule un score basé sur le nombre de mots-clés distincts."""
+    """Calcule un score selon la présence de mots-clés et super-mots-clés."""
     text_lower = text.lower()
-    matched = set()
     score = 0
-    # Comptage distinct de mots-clés
     for kw in KEYWORDS:
         if kw.lower() in text_lower:
-            matched.add(kw)
+            score += 1
     for sk in SUPER_KEYWORDS:
         if sk.lower() in text_lower:
-            matched.add(sk)
-            score += 2  # pondération plus lourde par super-keyword
-    # Un point par mot-clé générique
-    score += len(matched - set(SUPER_KEYWORDS))
+            score += 3
     return score
 
 
@@ -90,45 +76,36 @@ def titles_are_similar(t1, t2, threshold=3):
     return len(w1 & w2) >= threshold
 
 
-def collect_best_articles(processed_articles, max_count=MAX_ARTICLES_PER_RUN):
-    """
-    Récupère et retourne les `max_count` articles les mieux notés parmi toutes les sources.
-    """
+def collect_candidates(processed_articles, seen_titles):
+    """Récupère, filtre et score les articles de toutes les sources."""
     candidates = []
-    seen_titles = set()
-    # Récupération et scoring
-    for site in SITES_SOURCES:
-        source = site["nom"]
-        logging.info(f"Scraping {source}")
+    for site in random.sample(SITES_SOURCES, len(SITES_SOURCES)):
+        site_url = site["site"]
+        source_nom = site.get("nom")
+        logging.info(f"Récupération des articles depuis {source_nom}")
         try:
-            articles = get_articles_from_site(site["site"])
+            articles = get_articles_from_site(site_url)
         except Exception as e:
-            logging.error(f"Erreur scraping {source} : {e}")
+            logging.error(f"Erreur scraping {source_nom} : {e}")
             continue
-        for art in articles:
-            url = art.get("url")
-            title = art.get("title", "").strip()
-            content = art.get("content", "").strip()
-            # Filtrages de base
+        for article in articles:
+            url = article.get("url")
+            title = article.get("title", "").strip()
+            content = article.get("content", "").strip()
+            # Exclusions basiques
             if not url or url in processed_articles:
                 continue
             if len(content) < 200:
                 continue
             if any(titles_are_similar(title, t) for t in seen_titles):
                 continue
-            score = score_article(f"{title} {content}")
-            if score > 0:
-                candidates.append({
-                    "score": score,
-                    "source": source,
-                    "title": title,
-                    "url": url,
-                    "content": content
-                })
+            full_text = f"{title} {content}"
+            sc = score_article(full_text)
+            if sc > 0:
+                candidates.append((sc, source_nom, title, url, content))
                 seen_titles.add(title)
-    # Tri et sélection
-    top_articles = sorted(candidates, key=lambda x: x["score"], reverse=True)[:max_count]
-    return top_articles
+    # Tri par score décroissant
+    return sorted(candidates, key=lambda x: x[0], reverse=True)
 
 
 def main():
@@ -142,11 +119,8 @@ def main():
         logging.info("Aucun article pertinent trouvé.")
         return
 
-    # On veut au moins 3 articles, même s'ils sont moyens
+    # Sélection des meilleurs articles
     to_send = candidates[:MAX_ARTICLES_PER_RUN]
-    if len(to_send) < MAX_ARTICLES_PER_RUN:
-        logging.warning(f"Seulement {len(to_send)} articles trouvés avec assez de mots-clés.")
-    
     sent = 0
     for sc, source_nom, title, url, content in to_send:
         logging.info(f"Envoi article (score {sc}) : {title}")
@@ -164,5 +138,7 @@ def main():
     logging.info(f"{sent}/{MAX_ARTICLES_PER_RUN} articles envoyés.")
     logging.info("Traitement terminé.")
 
+
 if __name__ == '__main__':
     main()
+
