@@ -2,63 +2,57 @@ name: VeilleCyber
 
 on:
   schedule:
-    - cron: '0 6 * * *'  # Exécution quotidienne à 08h00 heure française (UTC+2)
+    - cron: '0 6 * * *'  # Tous les jours à 08h00 (UTC)
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: write  # Permettre le push via GITHUB_TOKEN
 
 jobs:
   run-script:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: Veillecyber
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v3
         with:
-          fetch-depth: 0
-          persist-credentials: true
+          fetch-depth: 0         # Historique complet
+          persist-credentials: true  # Conserver le token d'auth pour le push
 
-      - name: Set up Python 3.11
+      - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
-          cache: 'pip'
+
+      - name: Upgrade pip, setuptools and wheel
+        run: |
+          python -m pip install --upgrade pip setuptools wheel
 
       - name: Install dependencies
         run: |
-          sudo apt-get update
-          sudo apt-get install -y \
-            libxml2-dev \
-            libxslt1-dev \
-            python3-dev \
-            libffi-dev \
-            libssl-dev \
-            libxmlsec1-dev
-      
-          python -m pip install --upgrade pip setuptools wheel
-          pip install --force-reinstall -r requirements.txt --no-cache-dir
+          pip install 'lxml[html_clean]'
+          pip install -r Veillecyber/requirements.txt
 
-      - name: Run cybersecurity monitoring
+      - name: Run script
+        working-directory: Veillecyber
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          MISTRAL_API_ENDPOINT: ${{ secrets.MISTRAL_API_ENDPOINT }}
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
         run: python main.py
 
-      - name: Commit and push updates
-        if: always()
+      - name: Commit and push logs and processed list
+        # Exécuter depuis la racine pour voir tous les fichiers
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config --global user.email "action@github.com"
-          git config --global user.name "GitHub Action"
-          
-          # Déplacement à la racine pour le commit
-          cd ..
-          
-          # Ajout des fichiers générés
-          git add Veillecyber/App.log Veillecyber/processed_articles.txt
-          
-          # Commit seulement si modifications
-          git diff --cached --quiet || (git commit -m "📰 Auto-update: Mise à jour des logs et articles traités" && git push)
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          # Ajouter les fichiers générés s'ils existent
+          if [ -f Veillecyber/App.log ]; then git add Veillecyber/App.log; fi
+          if [ -f Veillecyber/processed_articles.txt ]; then git add Veillecyber/processed_articles.txt; fi
+          # Commit si des changements
+          git diff --quiet && git diff --staged --quiet || (
+            git commit -m "Auto update logs and processed articles" &&
+            git push
+          )
