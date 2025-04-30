@@ -25,7 +25,7 @@ SITES_SOURCES = [
 ]
 
 PROCESSED_FILE = "processed_articles.txt"
-MAX_ARTICLES_PER_RUN = 3
+MAX_ARTICLES_PER_RUN = 9
 
 # Mots-clés génériques et critiques
 KEYWORDS = [
