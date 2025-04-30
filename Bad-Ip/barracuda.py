@@ -46,12 +46,22 @@ def fetch_blocklist():
     return set(line.strip() for line in response.text.splitlines() if line.strip())
 
 
+def wrap_ip(ip: str) -> str:
+    """
+    Encapsule chaque octet de l'IP dans des crochets.
+    Ex: "192.168.0.1" -> "[192].[168].[0].[1]"
+    """
+    return '.'.join(f'[{octet}]' for octet in ip.split('.'))
+
+
 def send_discord(new_ips):
     """
-    Envoi des IP en une ou plusieurs parties pour ne pas dépasser 2000 caractères.
+    Envoi des IP en une ou plusieurs parties pour ne pas dépasser 2000 caractères,
+    avec chaque octet encapsulé.
     """
     header = "**🛡️ Nouvelles IP malveillantes :**\n"
-    lines = [header] + [ip + "\n" for ip in sorted(new_ips)]
+    # on wrappe chaque IP
+    lines = [header] + [wrap_ip(ip) + "\n" for ip in sorted(new_ips)]
     message = "".join(lines)
 
     # Découpage si >2000 caractères
