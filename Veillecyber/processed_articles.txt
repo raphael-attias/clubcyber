@@ -71,3 +71,5 @@ https://cyberscoop.com/youth-hacking-ring-at-the-center-of-cybercrime-spree
 https://thehackernews.com/2025/05/perfection-is-myth-leverage-isnt-how.html
 https://www.undernews.fr/hacking-hacktivisme/kaspersky-decouvre-de-nouvelles-cyberattaques-menees-par-lazarus-visant-les-chaines-dapprovisionnement-sud-coreennes.html
 https://thehackernews.com/2025/05/38000-freedrain-subdomains-found.html
+https://thehackernews.com/2025/05/beyond-vulnerability-management-cves.html
+https://thehackernews.com/2025/05/breaking-7000-device-proxy-botnet-using.html
