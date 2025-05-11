@@ -73,3 +73,5 @@ https://www.undernews.fr/hacking-hacktivisme/kaspersky-decouvre-de-nouvelles-cyb
 https://thehackernews.com/2025/05/38000-freedrain-subdomains-found.html
 https://thehackernews.com/2025/05/beyond-vulnerability-management-cves.html
 https://thehackernews.com/2025/05/breaking-7000-device-proxy-botnet-using.html
+https://www.zataz.com/le-gang-lockbit-pirate-le-retour-de-flamme
+https://www.zataz.com/le-perou-pirate-rhysida-sattaque-a-letat
