@@ -21,7 +21,13 @@ SITES_SOURCES = [
     {"site": "https://www.silicon.fr", "nom": "silicon"},
     {"site": "https://www.zdnet.fr/actualites/securite/", "nom": "zdnet"},
     {"site": "https://www.numerama.com/tag/cybersecurite", "nom": "numerama"},
-    {"site": "https://www.usine-digitale.fr/", "nom": "usine_digitale"}
+    {"site": "https://www.usine-digitale.fr/", "nom": "usine_digitale"},
+    # Nouvelles sources ajoutées
+    {"site": "https://cyberscoop.com/", "nom": "cyberscoop"},
+    {"site": "https://www.bleepingcomputer.com/", "nom": "bleepingcomputer_home"},
+    {"site": "https://www.zdnet.fr", "nom": "zdnet_home"},
+    {"site": "https://gbhackers.com/r/", "nom": "gbhackers"},
+    {"site": "https://www.numerama.com/", "nom": "numerama_home"}
 ]
 
 PROCESSED_FILE = "processed_articles.txt"
