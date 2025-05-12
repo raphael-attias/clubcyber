@@ -75,3 +75,6 @@ https://thehackernews.com/2025/05/beyond-vulnerability-management-cves.html
 https://thehackernews.com/2025/05/breaking-7000-device-proxy-botnet-using.html
 https://www.zataz.com/le-gang-lockbit-pirate-le-retour-de-flamme
 https://www.zataz.com/le-perou-pirate-rhysida-sattaque-a-letat
+https://thehackernews.com/2025/05/weekly-recap-nation-state-hacks-spyware.html
+https://thehackernews.com/2025/05/play-ransomware-exploited-windows-cve.html
+https://www.zataz.com/un-ransomware-accessible-a-tous-pay2key-la-menace-qui-democratise-le-cybercrime
