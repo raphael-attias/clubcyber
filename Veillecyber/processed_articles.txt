@@ -88,3 +88,6 @@ https://thehackernews.com/2025/05/earth-ammit-breached-drone-supply.html
 https://www.silicon.fr/Thematique/cloud-1370/Breves/Saga-IT-les-six-vies-de-Microsoft-457197.htm
 https://www.undernews.fr/alertes-securite/boom-de-lautomobile-chinois-en-france-sophos-alerte-sur-le-risque-de-vol-de-donnees.html
 https://www.numerama.com/cyberguerre/1949987-une-etrange-cyberattaque-tend-encore-plus-les-relations-entre-le-maroc-et-lalgerie.html
+https://www.silicon.fr/Thematique/open-source-1375/Breves/technologies-open-source-piliers-autonomie-numerique-souveraine-481056.htm
+https://thehackernews.com/2025/05/new-chrome-vulnerability-enables-cross.html
+https://www.zataz.com/arnaques-en-ligne-le-maroc-contre-attaque-dans-la-guerre-numerique
