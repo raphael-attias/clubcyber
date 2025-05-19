@@ -93,3 +93,6 @@ https://thehackernews.com/2025/05/new-chrome-vulnerability-enables-cross.html
 https://www.zataz.com/arnaques-en-ligne-le-maroc-contre-attaque-dans-la-guerre-numerique
 https://www.undernews.fr/malwares-virus-antivirus/rapport-sur-la-securite-dinternet-watchguard-94-de-malware-reseau-114-de-detections-de-crypto-mineurs.html
 https://www.numerama.com/tech/704408-que-faire-lorsque-son-compte-facebook-est-pirate-et-comment-leviter.html
+https://thehackernews.com/2025/05/china-linked-apts-exploit-sap-cve-2025.html
+https://thehackernews.com/2025/05/microsoft-fixes-78-flaws-5-zero-days.html
+https://www.zataz.com/cyberattaque-sur-un-geant-chinois-la-piste-americaine-se-preciserait
