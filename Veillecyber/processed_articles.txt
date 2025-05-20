@@ -96,3 +96,4 @@ https://www.numerama.com/tech/704408-que-faire-lorsque-son-compte-facebook-est-p
 https://thehackernews.com/2025/05/china-linked-apts-exploit-sap-cve-2025.html
 https://thehackernews.com/2025/05/microsoft-fixes-78-flaws-5-zero-days.html
 https://www.zataz.com/cyberattaque-sur-un-geant-chinois-la-piste-americaine-se-preciserait
+https://www.undernews.fr/hacking-hacktivisme/bond-record-des-cyberattaques-automatisees-menees-par-des-assaillants-capitalisant-sur-lia-et-de-nouvelles-techniques.html
