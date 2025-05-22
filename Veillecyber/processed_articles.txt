@@ -99,3 +99,6 @@ https://www.zataz.com/cyberattaque-sur-un-geant-chinois-la-piste-americaine-se-p
 https://www.undernews.fr/hacking-hacktivisme/bond-record-des-cyberattaques-automatisees-menees-par-des-assaillants-capitalisant-sur-lia-et-de-nouvelles-techniques.html
 https://www.undernews.fr/malwares-virus-antivirus/comprendre-et-prevenir-les-malware-ia.html
 https://www.numerama.com/cyberguerre/1944501-les-hackers-nord-coreens-tentent-de-derober-des-cryptomonnaies-avec-de-fausses-annonces-dembauche.html
+https://thehackernews.com/2025/05/weekly-recap-zero-day-exploits-insider.html
+https://www.zataz.com/opencve-la-startup-francaise-qui-traque-les-failles-pour-securiser-les-entreprises
+https://thehackernews.com/2025/05/russian-hackers-exploit-email-and-vpn.html
