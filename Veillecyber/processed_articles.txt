@@ -105,3 +105,6 @@ https://thehackernews.com/2025/05/russian-hackers-exploit-email-and-vpn.html
 https://www.undernews.fr/hacking-hacktivisme/infoblox-threat-intelligence-devoile-hazy-hawk-un-acteur-malveillant-qui-detourne-des-sous-domaines.html
 https://www.bleepingcomputer.com/news/security/kettering-health-hit-by-system-wide-outage-after-ransomware-attack
 https://www.numerama.com/cyberguerre/1953157-une-cyberattaque-sur-une-maquette-en-lego-permet-dillustrer-larret-dune-usine.html
+https://www.undernews.fr/reseau-securite/cyberattaques-par-deni-de-service-distribue-la-france-est-ciblee-mais-elle-est-aussi-equipee-pour-faire-face.html
+https://www.undernews.fr/hacking-hacktivisme/exploitation-de-lessor-de-lia-comment-les-cybercriminels-exploitent-la-confiance-dans-les-plateformes-generatives.html
+https://www.theregister.com/2025/05/22/chinese_crew_us_city_utilities
