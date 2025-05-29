@@ -117,3 +117,5 @@ https://www.numerama.com/cyberguerre/1950557-oui-il-est-encore-possible-de-voler
 https://www.undernews.fr/reseau-securite/audit-de-cybersecurite-pourquoi-lerp-doit-etre-en-premiere-ligne.html
 https://www.zataz.com/julien-dore-crypto-et-faux-managers-larnaque-qui-brise-des-coeurs-et-des-comptes-en-banque
 https://www.theregister.com/2025/05/27/fake_social_media_ads_ai_tool
+https://thehackernews.com/2025/05/chinese-apt41-exploits-google-calendar.html
+https://www.theregister.com/2025/05/28/dragonforce_ransomware_gang_sets_fire
