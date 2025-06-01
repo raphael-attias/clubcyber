@@ -3056,3 +3056,70 @@
 2025-05-31 06:32:57,746 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
 2025-05-31 06:32:58,951 [INFO] 2/3 articles envoyés.
 2025-05-31 06:32:58,951 [INFO] Traitement terminé.
+2025-06-01 06:30:15,555 [INFO] Démarrage du script de veille cybersécurité
+2025-06-01 06:30:15,555 [INFO] 124 articles déjà traités.
+2025-06-01 06:30:15,555 [INFO] Scraping cybernews
+2025-06-01 06:30:15,960 [WARNING] fromstring() returned an invalid string: ...
+2025-06-01 06:30:15,960 [WARNING] Source https://cybernews.com parse error.
+2025-06-01 06:30:15,960 [CRITICAL] Must extract urls from either html, text or doc!
+2025-06-01 06:30:16,006 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/
+2025-06-01 06:30:16,062 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/rss
+2025-06-01 06:30:16,063 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feeds
+2025-06-01 06:30:16,068 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feed
+2025-06-01 06:30:16,370 [INFO] Scraping thehackernews
+2025-06-01 06:30:17,298 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/rss
+2025-06-01 06:30:17,306 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feed
+2025-06-01 06:30:17,387 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feeds
+2025-06-01 06:30:21,261 [INFO] Scraping zataz
+2025-06-01 06:30:25,195 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zataz.com/feeds
+2025-06-01 06:30:57,342 [INFO] Scraping undernews
+2025-06-01 06:31:01,785 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.undernews.fr/feeds
+2025-06-01 06:31:20,565 [INFO] Scraping theregister
+2025-06-01 06:31:21,877 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/rss
+2025-06-01 06:31:21,886 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feed
+2025-06-01 06:31:22,125 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feeds
+2025-06-01 06:31:26,696 [INFO] Scraping darkreading
+2025-06-01 06:31:26,973 [WARNING] fromstring() returned an invalid string: ...
+2025-06-01 06:31:26,973 [WARNING] Source https://www.darkreading.com parse error.
+2025-06-01 06:31:26,973 [CRITICAL] Must extract urls from either html, text or doc!
+2025-06-01 06:31:27,052 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/
+2025-06-01 06:31:27,124 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/rss
+2025-06-01 06:31:27,125 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feeds
+2025-06-01 06:31:27,126 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feed
+2025-06-01 06:31:27,480 [INFO] Scraping usine_digitale
+2025-06-01 06:31:34,972 [INFO] Scraping bleepingcomputer
+2025-06-01 06:31:36,909 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feeds
+2025-06-01 06:31:36,958 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/rss
+2025-06-01 06:31:36,978 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feed
+2025-06-01 06:32:19,590 [INFO] Scraping lemondeinformatique
+2025-06-01 06:32:20,494 [WARNING] fromstring() returned an invalid string: ...
+2025-06-01 06:32:20,494 [WARNING] Source https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/ parse error.
+2025-06-01 06:32:20,494 [CRITICAL] Must extract urls from either html, text or doc!
+2025-06-01 06:32:21,267 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/
+2025-06-01 06:32:21,976 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/rss
+2025-06-01 06:32:21,978 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feeds
+2025-06-01 06:32:22,020 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feed
+2025-06-01 06:32:28,409 [INFO] Scraping krebsonsecurity
+2025-06-01 06:32:29,494 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://krebsonsecurity.com/feeds
+2025-06-01 06:32:30,639 [WARNING] Erreur newspaper : Article `download()` failed with 403 Client Error: Forbidden for url: https://www.rocketsoftware.com/en-us/insights/mainframe-passwords-are-security-liability?utag_name=2025_Q2_AMER_A_SHA_MFS_Awr_BA_KOS_1P_SHA-Static&utm_medium=BA&utm_source=KOS&utm_content=wbpg&utm_offer=MFS&utm_term=none&utm_campaign=2025_Q2_AMER_APP_pm_MFS_S-E3 on URL https://www.rocketsoftware.com/en-us/insights/mainframe-passwords-are-security-liability?utag_name=2025_Q2_AMER_A_SHA_MFS_Awr_BA_KOS_1P_SHA-Static&utm_medium=BA&utm_source=KOS&utm_content=wbpg&utm_offer=MFS&utm_term=none&utm_campaign=2025_Q2_AMER_APP_pm_MFS_S-E3
+2025-06-01 06:33:16,579 [INFO] Scraping silicon
+2025-06-01 06:33:20,504 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.silicon.fr/feeds
+2025-06-01 06:33:20,531 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.silicon.fr/feed
+2025-06-01 06:33:43,482 [WARNING] Erreur newspaper : Article `download()` failed with Exceeded 30 redirects. on URL https://livreblanc.silicon.fr/resource/une-collaboration-strategique-qualcomm-technologies-x-inmac-wstore?&utm_source=newsletter&utm_medium=email&utm_campaign=sil_fr&nmg_format=LIVRES_BLANC&utm_content=ddmmyyyy&nmg_order=23466-0024
+2025-06-01 06:33:57,396 [WARNING] Erreur newspaper : Article `download()` failed with Exceeded 30 redirects. on URL https://livreblanc.silicon.fr/resource/observabilite-entre-progres-de-lia-et-tension-sur-les-budgets-cap-sur-lautomatisation-et-les-fondamentaux?&utm_source=newsletter&utm_medium=email&utm_campaign=sil_fr&nmg_format=LIVRES_BLANC&utm_content=ddmmyyyy&nmg_order=22896-0001
+2025-06-01 06:34:11,305 [WARNING] Erreur newspaper : Article `download()` failed with Exceeded 30 redirects. on URL https://livreblanc.silicon.fr/resource/gagnez-en-productivite-grace-a-lia?&utm_source=newsletter&utm_medium=email&utm_campaign=sil_fr&nmg_format=LIVRES_BLANC&utm_content=ddmmyyyy&nmg_order=38871-0001
+2025-06-01 06:34:25,214 [WARNING] Erreur newspaper : Article `download()` failed with Exceeded 30 redirects. on URL https://livreblanc.silicon.fr/resource/revendeurs-it-tout-savoir-sur-les-sauvegardes-cloud-pour-booster-vos-ventes?&utm_source=newsletter&utm_medium=email&utm_campaign=sil_fr&nmg_format=LIVRES_BLANC&utm_content=ddmmyyyy&nmg_order=33191-0001
+2025-06-01 06:34:39,122 [WARNING] Erreur newspaper : Article `download()` failed with Exceeded 30 redirects. on URL https://livreblanc.silicon.fr/resource/briser-les-barrieres-de-la-securite-en-entreprise?&utm_source=newsletter&utm_medium=email&utm_campaign=sil_fr&nmg_format=LIVRES_BLANC&utm_content=ddmmyyyy&nmg_order=
+2025-06-01 06:34:44,803 [INFO] Scraping zdnet
+2025-06-01 06:34:47,359 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zdnet.fr/feeds
+2025-06-01 06:35:00,026 [INFO] Scraping numerama
+2025-06-01 06:35:05,480 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.numerama.com/feeds
+2025-06-01 06:35:33,672 [INFO] Envoi (score 29) : ⚡ Weekly Recap: APT Campaigns, Browser Hijacks, AI Malware, Cloud Breaches and Critical CVEs
+2025-06-01 06:35:45,885 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-01 06:35:46,147 [WARNING] Échec envoi ou résumé vide : https://thehackernews.com/2025/05/weekly-recap-apt-campaigns-browser.html
+2025-06-01 06:35:47,148 [INFO] Envoi (score 24) : Hacking in progress : menace silencieuse sur les cabinets d’avocats
+2025-06-01 06:35:51,697 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-01 06:35:53,166 [INFO] Envoi (score 18) : China-Linked Hackers Exploit SAP and SQL Server Flaws in Attacks Across Asia and Brazil
+2025-06-01 06:35:56,995 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-01 06:35:58,311 [INFO] 2/3 articles envoyés.
+2025-06-01 06:35:58,311 [INFO] Traitement terminé.
