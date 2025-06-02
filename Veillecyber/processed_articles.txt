@@ -124,3 +124,4 @@ https://thehackernews.com/2025/05/dragonforce-exploits-simplehelp-flaws.html
 https://www.zataz.com/gabriel-kimiaie-asadi-bildstein-linsaisissable-hacker-francais-aux-millions-evapores
 https://www.zataz.com/menace-silencieuse-sur-les-cabinets-davocats
 https://thehackernews.com/2025/05/china-linked-hackers-exploit-sap-and.html
+https://www.bleepingcomputer.com/news/security/connectwise-breached-in-cyberattack-linked-to-nation-state-hackers
