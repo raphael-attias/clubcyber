@@ -130,3 +130,6 @@ https://www.zataz.com/les-donnees-de-millions-de-licencies-sportifs-francais-de-
 https://www.undernews.fr/hacking-hacktivisme/eset-aux-cotes-du-fbi-et-deuropol-participe-a-la-perturbation-du-reseau-cybercriminel-danabot.html
 https://www.numerama.com/cyberguerre/1936795-cyberattaque-chez-autosur-quelles-informations-clients-ont-ete-exposees.html
 https://www.zataz.com/le-cyberpirate-de-baltimore-plaide-coupable-30-ans-de-prison-en-jeu
+https://thehackernews.com/2025/06/google-exposes-vishing-group-unc6040.html
+https://www.zataz.com/trafic-didentites-et-cyber-fuites-lautre-visage-de-leconomie-numerique
+https://intel471.com/blog/a-look-at-the-residential-proxy-market
