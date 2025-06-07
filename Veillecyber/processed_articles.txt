@@ -133,3 +133,6 @@ https://www.zataz.com/le-cyberpirate-de-baltimore-plaide-coupable-30-ans-de-pris
 https://thehackernews.com/2025/06/google-exposes-vishing-group-unc6040.html
 https://www.zataz.com/trafic-didentites-et-cyber-fuites-lautre-visage-de-leconomie-numerique
 https://intel471.com/blog/a-look-at-the-residential-proxy-market
+https://www.zdnet.fr/actualites/salesforce-vise-par-une-attaque-redoutable-voici-lastuce-simple-utilisee-par-les-cybercriminels-pour-voler-vos-donnees-476742.htm
+https://www.undernews.fr/reseau-securite/akamai-releve-les-defis-de-securite-et-de-conformite-de-dns-grace-a-dns-posture-management.html
+https://www.undernews.fr/authentification-biometrie/pourquoi-lauthentification-multi-facteur-est-non-negociable.html
