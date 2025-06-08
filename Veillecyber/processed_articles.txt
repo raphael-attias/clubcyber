@@ -136,3 +136,6 @@ https://intel471.com/blog/a-look-at-the-residential-proxy-market
 https://www.zdnet.fr/actualites/salesforce-vise-par-une-attaque-redoutable-voici-lastuce-simple-utilisee-par-les-cybercriminels-pour-voler-vos-donnees-476742.htm
 https://www.undernews.fr/reseau-securite/akamai-releve-les-defis-de-securite-et-de-conformite-de-dns-grace-a-dns-posture-management.html
 https://www.undernews.fr/authentification-biometrie/pourquoi-lauthentification-multi-facteur-est-non-negociable.html
+https://www.numerama.com/cyberguerre/1984891-des-cybercriminels-detournent-salesforce-pour-infiltrer-des-entreprises-europeennes-et-americaines.html
+https://www.zataz.com/le-recap-cybersecurite-semaine-du-1er-au-7-juin-2025
+https://www.zataz.com/black-owl-lombre-qui-plane-sur-le-cyberespace-russe
