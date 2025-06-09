@@ -139,3 +139,6 @@ https://www.undernews.fr/authentification-biometrie/pourquoi-lauthentification-m
 https://www.numerama.com/cyberguerre/1984891-des-cybercriminels-detournent-salesforce-pour-infiltrer-des-entreprises-europeennes-et-americaines.html
 https://www.zataz.com/le-recap-cybersecurite-semaine-du-1er-au-7-juin-2025
 https://www.zataz.com/black-owl-lombre-qui-plane-sur-le-cyberespace-russe
+https://thehackernews.com/2025/06/the-secret-defense-strategy-of-four.html
+https://www.theregister.com/2025/06/08/exnsc_official_not_sure_us
+https://www.undernews.fr/malwares-virus-antivirus/sentinellabs-alerte-sur-une-nouvelle-cybermenace-qui-utilise-les-captcha-pour-diffuser-des-malwares-clickfix.html
