@@ -145,3 +145,6 @@ https://www.undernews.fr/malwares-virus-antivirus/sentinellabs-alerte-sur-une-no
 https://www.theregister.com/2025/06/09/china_malware_flip_switch_sentinelone
 https://www.zataz.com/linvasion-silencieuse-des-faux-medias-generes-par-ia
 https://www.zataz.com/cartier-victime-dune-cyberattaque-les-donnees-clients-ciblees
+https://thehackernews.com/2025/06/weekly-recap-chrome-0-day-data-wipers.html
+https://www.theregister.com/2025/06/10/critical_wazuh_bug_exploited_in
+https://www.undernews.fr/reseau-securite/cybersecurite-des-collectivites-locales-enjeux-croissants-et-reponses-necessaires.html
