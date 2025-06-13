@@ -151,3 +151,6 @@ https://www.undernews.fr/reseau-securite/cybersecurite-des-collectivites-locales
 https://thehackernews.com/2025/06/former-black-basta-members-use.html
 https://www.theregister.com/2025/06/11/salesforce_cves_misconfigs
 https://www.undernews.fr/undernews/les-attaques-ddos-entrent-dans-une-nouvelle-ere-et-le-secteur-financier-est-en-premiere-ligne.html
+https://www.godaddy.com/resources/news/godaddy-annual-cybersecurity-report
+https://www.silicon.fr/Thematique/cybersecurite-1371/Breves/comment-ouest-france-passe-zero-trust-jo-paris-482385.htm
+https://www.silicon.fr/Thematique/cybersecurite-1371/Breves/faille-echoleak-microsoft-copilot-victime-rag-482428.htm
