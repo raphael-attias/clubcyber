@@ -4043,3 +4043,68 @@
 2025-06-13 06:35:59,606 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
 2025-06-13 06:36:00,873 [INFO] 3/3 articles envoyés.
 2025-06-13 06:36:00,873 [INFO] Traitement terminé.
+2025-06-14 06:29:17,063 [INFO] Démarrage du script de veille cybersécurité
+2025-06-14 06:29:17,063 [INFO] 156 articles déjà traités.
+2025-06-14 06:29:17,063 [INFO] Scraping lemondeinformatique
+2025-06-14 06:29:17,807 [WARNING] fromstring() returned an invalid string: ...
+2025-06-14 06:29:17,807 [WARNING] Source https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/ parse error.
+2025-06-14 06:29:17,807 [CRITICAL] Must extract urls from either html, text or doc!
+2025-06-14 06:29:18,385 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/
+2025-06-14 06:29:18,979 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feeds
+2025-06-14 06:29:18,996 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feed
+2025-06-14 06:29:19,034 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/rss
+2025-06-14 06:29:23,390 [INFO] Scraping zdnet
+2025-06-14 06:29:25,561 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zdnet.fr/feeds
+2025-06-14 06:29:35,112 [INFO] Scraping darkreading
+2025-06-14 06:29:35,219 [WARNING] fromstring() returned an invalid string: ...
+2025-06-14 06:29:35,219 [WARNING] Source https://www.darkreading.com parse error.
+2025-06-14 06:29:35,219 [CRITICAL] Must extract urls from either html, text or doc!
+2025-06-14 06:29:35,239 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/
+2025-06-14 06:29:35,270 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/rss
+2025-06-14 06:29:35,271 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feeds
+2025-06-14 06:29:35,281 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feed
+2025-06-14 06:29:35,468 [INFO] Scraping numerama
+2025-06-14 06:29:39,897 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.numerama.com/feeds
+2025-06-14 06:30:00,135 [INFO] Scraping zataz
+2025-06-14 06:30:06,615 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zataz.com/feeds
+2025-06-14 06:30:38,321 [INFO] Scraping usine_digitale
+2025-06-14 06:30:40,419 [CRITICAL] [REQUEST FAILED] ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-06-14 06:30:40,616 [WARNING] Deleting category https://www.usine-digitale.fr/ia-generative from source https://www.usine-digitale.fr/ due to download error
+2025-06-14 06:30:44,091 [INFO] Scraping undernews
+2025-06-14 06:30:48,374 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.undernews.fr/feeds
+2025-06-14 06:31:03,544 [INFO] Scraping krebsonsecurity
+2025-06-14 06:31:04,406 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://krebsonsecurity.com/feeds
+2025-06-14 06:31:25,968 [INFO] Scraping theregister
+2025-06-14 06:31:27,019 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feed
+2025-06-14 06:31:27,030 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/rss
+2025-06-14 06:31:27,033 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feeds
+2025-06-14 06:31:30,678 [INFO] Scraping thehackernews
+2025-06-14 06:31:31,689 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feeds
+2025-06-14 06:31:31,721 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/rss
+2025-06-14 06:31:31,734 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feed
+2025-06-14 06:31:34,003 [INFO] Scraping silicon
+2025-06-14 06:31:36,724 [CRITICAL] [REQUEST FAILED] 500 Server Error: Internal Server Error for url: https://www.silicon.fr/articles
+2025-06-14 06:31:37,167 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.silicon.fr/feed
+2025-06-14 06:31:37,176 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.silicon.fr/feeds
+2025-06-14 06:31:57,749 [WARNING] Erreur newspaper : Article `download()` failed with Exceeded 30 redirects. on URL https://livreblanc.silicon.fr/resource/un-duo-gagnant-pour-votre-entreprise-serveur-primergy-avec-windows-server-2025?&utm_source=newsletter&utm_medium=email&utm_campaign=sil_fr&nmg_format=LIVRES_BLANC&utm_content=ddmmyyyy&nmg_order=38739-0003
+2025-06-14 06:32:07,521 [WARNING] Erreur newspaper : Article `download()` failed with Exceeded 30 redirects. on URL https://livreblanc.silicon.fr/resource/cyber-services-solutions-le-premier-expert-en-cyber-services?&utm_source=newsletter&utm_medium=email&utm_campaign=sil_fr&nmg_format=LIVRES_BLANC&utm_content=ddmmyyyy&nmg_order=39987-0001
+2025-06-14 06:32:10,200 [INFO] Scraping bleepingcomputer
+2025-06-14 06:32:11,540 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feeds
+2025-06-14 06:32:11,566 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feed
+2025-06-14 06:32:11,638 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/rss
+2025-06-14 06:32:44,179 [INFO] Scraping cybernews
+2025-06-14 06:32:44,266 [WARNING] fromstring() returned an invalid string: ...
+2025-06-14 06:32:44,266 [WARNING] Source https://cybernews.com parse error.
+2025-06-14 06:32:44,266 [CRITICAL] Must extract urls from either html, text or doc!
+2025-06-14 06:32:44,299 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/
+2025-06-14 06:32:44,332 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feed
+2025-06-14 06:32:44,333 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/rss
+2025-06-14 06:32:44,334 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feeds
+2025-06-14 06:32:44,555 [INFO] Envoi (score 27) : Ransomware Gangs Exploit Unpatched SimpleHelp Flaws to Target Victims with Double Extortion
+2025-06-14 06:32:51,598 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-14 06:32:54,597 [INFO] Envoi (score 20) : DanaBleed : l’erreur fatale qui a fait tomber les maîtres du hacking
+2025-06-14 06:32:57,993 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-14 06:32:59,295 [INFO] Envoi (score 19) : Leak Copilot : quand l’IA de Microsoft devient une passoire à données
+2025-06-14 06:33:10,902 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-14 06:33:12,082 [INFO] 3/3 articles envoyés.
+2025-06-14 06:33:12,082 [INFO] Traitement terminé.

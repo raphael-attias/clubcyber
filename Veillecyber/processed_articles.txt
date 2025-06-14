@@ -154,3 +154,6 @@ https://www.undernews.fr/undernews/les-attaques-ddos-entrent-dans-une-nouvelle-e
 https://www.godaddy.com/resources/news/godaddy-annual-cybersecurity-report
 https://www.silicon.fr/Thematique/cybersecurite-1371/Breves/comment-ouest-france-passe-zero-trust-jo-paris-482385.htm
 https://www.silicon.fr/Thematique/cybersecurite-1371/Breves/faille-echoleak-microsoft-copilot-victime-rag-482428.htm
+https://thehackernews.com/2025/06/ransomware-gangs-exploit-unpatched.html
+https://www.numerama.com/cyberguerre/1991253-danableed-lerreur-fatale-qui-a-fait-tomber-les-maitres-du-hacking.html
+https://www.numerama.com/cyberguerre/1991679-leak-copilot-quand-lia-de-microsoft-devient-une-passoire-a-donnees.html
