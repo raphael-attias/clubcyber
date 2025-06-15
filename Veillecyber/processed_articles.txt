@@ -157,3 +157,5 @@ https://www.silicon.fr/Thematique/cybersecurite-1371/Breves/faille-echoleak-micr
 https://thehackernews.com/2025/06/ransomware-gangs-exploit-unpatched.html
 https://www.numerama.com/cyberguerre/1991253-danableed-lerreur-fatale-qui-a-fait-tomber-les-maitres-du-hacking.html
 https://www.numerama.com/cyberguerre/1991679-leak-copilot-quand-lia-de-microsoft-devient-une-passoire-a-donnees.html
+https://www.numerama.com/cyberguerre/1974803-comment-les-cybercriminels-de-lockbit-negocient-leurs-rancons.html
+https://www.zataz.com/usurpation-vocale-les-sondages-telephoniques-detournes-par-les-cybercriminels
