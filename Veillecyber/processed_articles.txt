@@ -159,3 +159,5 @@ https://www.numerama.com/cyberguerre/1991253-danableed-lerreur-fatale-qui-a-fait
 https://www.numerama.com/cyberguerre/1991679-leak-copilot-quand-lia-de-microsoft-devient-une-passoire-a-donnees.html
 https://www.numerama.com/cyberguerre/1974803-comment-les-cybercriminels-de-lockbit-negocient-leurs-rancons.html
 https://www.zataz.com/usurpation-vocale-les-sondages-telephoniques-detournes-par-les-cybercriminels
+https://www.zataz.com/une-faille-chez-google-exposait-les-numeros-de-telephone-des-comptes
+https://www.theregister.com/2025/06/15/cybersecurity_news_in_brief
