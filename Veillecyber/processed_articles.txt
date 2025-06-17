@@ -161,3 +161,6 @@ https://www.numerama.com/cyberguerre/1974803-comment-les-cybercriminels-de-lockb
 https://www.zataz.com/usurpation-vocale-les-sondages-telephoniques-detournes-par-les-cybercriminels
 https://www.zataz.com/une-faille-chez-google-exposait-les-numeros-de-telephone-des-comptes
 https://www.theregister.com/2025/06/15/cybersecurity_news_in_brief
+https://thehackernews.com/2025/06/weekly-recap-iphone-spyware-microsoft-0.html
+https://www.zataz.com/center-parcs-victime-dune-cyberattaque-20-000-clients-concernes
+https://www.undernews.fr/anonymat-cryptographie/donnees-personnelles-et-portails-de-connexion-passer-de-lotp-a-une-authentification-plus-sure.html
