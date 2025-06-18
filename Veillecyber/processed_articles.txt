@@ -164,3 +164,6 @@ https://www.theregister.com/2025/06/15/cybersecurity_news_in_brief
 https://thehackernews.com/2025/06/weekly-recap-iphone-spyware-microsoft-0.html
 https://www.zataz.com/center-parcs-victime-dune-cyberattaque-20-000-clients-concernes
 https://www.undernews.fr/anonymat-cryptographie/donnees-personnelles-et-portails-de-connexion-passer-de-lotp-a-une-authentification-plus-sure.html
+https://www.zataz.com/fuite-massive-a-sorbonne-universite-donnees-bancaires-contrats-et-numeros-de-secu-dans-la-nature
+https://www.zataz.com/le-recap-cyber-de-la-semaine-du-10-au-14-juin-2025
+https://www.zataz.com/des-donnees-du-gouvernement-francais-piratees-vraiment
