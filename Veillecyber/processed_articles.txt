@@ -167,3 +167,6 @@ https://www.undernews.fr/anonymat-cryptographie/donnees-personnelles-et-portails
 https://www.zataz.com/fuite-massive-a-sorbonne-universite-donnees-bancaires-contrats-et-numeros-de-secu-dans-la-nature
 https://www.zataz.com/le-recap-cyber-de-la-semaine-du-10-au-14-juin-2025
 https://www.zataz.com/des-donnees-du-gouvernement-francais-piratees-vraiment
+https://www.theregister.com/2025/06/18/specops_how_to_bridge_mfa_gap
+https://thehackernews.com/2025/06/langchain-langsmith-bug-let-hackers.html
+https://thehackernews.com/2025/06/google-chrome-zero-day-cve-2025-2783.html
