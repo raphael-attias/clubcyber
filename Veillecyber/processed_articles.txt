@@ -170,3 +170,6 @@ https://www.zataz.com/des-donnees-du-gouvernement-francais-piratees-vraiment
 https://www.theregister.com/2025/06/18/specops_how_to_bridge_mfa_gap
 https://thehackernews.com/2025/06/langchain-langsmith-bug-let-hackers.html
 https://thehackernews.com/2025/06/google-chrome-zero-day-cve-2025-2783.html
+https://www.theregister.com/2025/06/18/veeam_fixes_third_critical_rce
+https://thehackernews.com/2025/06/apple-zero-click-flaw-in-messages.html
+https://www.undernews.fr/reseau-securite/les-bons-reflexes-apres-une-cyberattaque-et-pour-proteger-son-si.html
