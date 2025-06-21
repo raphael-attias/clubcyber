@@ -173,3 +173,6 @@ https://thehackernews.com/2025/06/google-chrome-zero-day-cve-2025-2783.html
 https://www.theregister.com/2025/06/18/veeam_fixes_third_critical_rce
 https://thehackernews.com/2025/06/apple-zero-click-flaw-in-messages.html
 https://www.undernews.fr/reseau-securite/les-bons-reflexes-apres-une-cyberattaque-et-pour-proteger-son-si.html
+https://www.zataz.com/kali-gpt-lia-qui-revolutionne-la-cybersecurite
+https://www.theregister.com/2025/06/17/23andme_ico_fine
+https://thehackernews.com/2025/06/microsoft-patches-67-vulnerabilities.html
