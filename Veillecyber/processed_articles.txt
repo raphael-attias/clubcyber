@@ -176,3 +176,6 @@ https://www.undernews.fr/reseau-securite/les-bons-reflexes-apres-une-cyberattaqu
 https://www.zataz.com/kali-gpt-lia-qui-revolutionne-la-cybersecurite
 https://www.theregister.com/2025/06/17/23andme_ico_fine
 https://thehackernews.com/2025/06/microsoft-patches-67-vulnerabilities.html
+https://www.zataz.com/le-moineau-predateur-israelien-sattaque-a-liran-de-son-nid
+https://www.undernews.fr/hacking-hacktivisme/vexing-et-vicious-lalliance-inattendue-entre-des-hackers-wordpress-et-une-cabale-de-ladtech.html
+https://thehackernews.com/2025/06/irans-state-tv-hijacked-mid-broadcast.html
