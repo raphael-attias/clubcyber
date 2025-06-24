@@ -182,3 +182,4 @@ https://thehackernews.com/2025/06/irans-state-tv-hijacked-mid-broadcast.html
 https://thehackernews.com/2025/06/how-to-protect-your-backups-from-ransomware-attacks.html
 https://thehackernews.com/2025/06/tp-link-router-flaw-cve-2023-33538.html
 https://www.theregister.com/2025/06/23/infosec_news_in_brief
+https://www.undernews.fr/reseau-securite/securiser-ses-acces-erp-authentification-permissions-et-bonnes-pratiques.html
