@@ -183,3 +183,5 @@ https://thehackernews.com/2025/06/how-to-protect-your-backups-from-ransomware-at
 https://thehackernews.com/2025/06/tp-link-router-flaw-cve-2023-33538.html
 https://www.theregister.com/2025/06/23/infosec_news_in_brief
 https://www.undernews.fr/reseau-securite/securiser-ses-acces-erp-authentification-permissions-et-bonnes-pratiques.html
+https://thehackernews.com/2025/06/apt28-uses-signal-chat-to-deploy.html
+https://thehackernews.com/2025/06/between-buzz-and-reality-ctem.html
