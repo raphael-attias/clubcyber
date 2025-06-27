@@ -5066,3 +5066,66 @@
 2025-06-26 06:37:02,611 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
 2025-06-26 06:37:03,830 [INFO] 2/3 articles envoyés.
 2025-06-26 06:37:03,830 [INFO] Traitement terminé.
+2025-06-27 06:33:17,028 [INFO] Démarrage du script de veille cybersécurité
+2025-06-27 06:33:17,028 [INFO] 189 articles déjà traités.
+2025-06-27 06:33:17,028 [INFO] Scraping numerama
+2025-06-27 06:33:20,255 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.numerama.com/feeds
+2025-06-27 06:33:39,905 [INFO] Scraping cybernews
+2025-06-27 06:33:40,045 [WARNING] fromstring() returned an invalid string: ...
+2025-06-27 06:33:40,045 [WARNING] Source https://cybernews.com parse error.
+2025-06-27 06:33:40,046 [CRITICAL] Must extract urls from either html, text or doc!
+2025-06-27 06:33:40,092 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/
+2025-06-27 06:33:40,127 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feed
+2025-06-27 06:33:40,133 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feeds
+2025-06-27 06:33:40,144 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/rss
+2025-06-27 06:33:40,413 [INFO] Scraping silicon
+2025-06-27 06:33:42,951 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.silicon.fr/feeds
+2025-06-27 06:33:42,956 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.silicon.fr/feed
+2025-06-27 06:34:00,667 [WARNING] Erreur newspaper : Article `download()` failed with Exceeded 30 redirects. on URL https://livreblanc.silicon.fr/resource/du-vpn-au-ztna-securiser-votre-entreprise-face-aux-menaces-de-demain?&utm_source=newsletter&utm_medium=email&utm_campaign=sil_fr&nmg_format=LIVRES_BLANC&utm_content=ddmmyyyy&nmg_order=30017-0001
+2025-06-27 06:34:11,919 [WARNING] Erreur newspaper : Article `download()` failed with Exceeded 30 redirects. on URL https://livreblanc.silicon.fr/resource/cyber-services-solutions-le-premier-expert-en-cyber-services?&utm_source=newsletter&utm_medium=email&utm_campaign=sil_fr&nmg_format=LIVRES_BLANC&utm_content=ddmmyyyy&nmg_order=39987-0001
+2025-06-27 06:34:13,109 [INFO] Scraping zataz
+2025-06-27 06:34:16,457 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zataz.com/feeds
+2025-06-27 06:34:43,518 [INFO] Scraping usine_digitale
+2025-06-27 06:34:47,561 [INFO] Scraping undernews
+2025-06-27 06:34:50,813 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.undernews.fr/feeds
+2025-06-27 06:35:05,841 [INFO] Scraping bleepingcomputer
+2025-06-27 06:35:06,766 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feed
+2025-06-27 06:35:06,768 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/rss
+2025-06-27 06:35:06,776 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feeds
+2025-06-27 06:35:37,689 [INFO] Scraping zdnet
+2025-06-27 06:35:39,552 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zdnet.fr/feeds
+2025-06-27 06:35:47,706 [INFO] Scraping theregister
+2025-06-27 06:35:48,833 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/rss
+2025-06-27 06:35:48,834 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feeds
+2025-06-27 06:35:48,836 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feed
+2025-06-27 06:35:52,266 [INFO] Scraping lemondeinformatique
+2025-06-27 06:35:52,887 [WARNING] fromstring() returned an invalid string: ...
+2025-06-27 06:35:52,887 [WARNING] Source https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/ parse error.
+2025-06-27 06:35:52,887 [CRITICAL] Must extract urls from either html, text or doc!
+2025-06-27 06:35:53,359 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/
+2025-06-27 06:35:53,901 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/rss
+2025-06-27 06:35:53,903 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feeds
+2025-06-27 06:35:53,904 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feed
+2025-06-27 06:35:58,000 [INFO] Scraping thehackernews
+2025-06-27 06:35:58,889 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feeds
+2025-06-27 06:35:58,893 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feed
+2025-06-27 06:35:58,901 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/rss
+2025-06-27 06:36:01,264 [INFO] Scraping krebsonsecurity
+2025-06-27 06:36:02,215 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://krebsonsecurity.com/feeds
+2025-06-27 06:36:02,738 [WARNING] Erreur newspaper : Article `download()` failed with 403 Client Error: Forbidden for url: https://www.rocketsoftware.com/en-us/insights/mainframe-passwords-are-security-liability?utag_name=2025_Q2_AMER_A_SHA_MFS_Awr_BA_KOS_1P_SHA-Static&utm_medium=BA&utm_source=KOS&utm_content=wbpg&utm_offer=MFS&utm_term=none&utm_campaign=2025_Q2_AMER_APP_pm_MFS_S-E3 on URL https://www.rocketsoftware.com/en-us/insights/mainframe-passwords-are-security-liability?utag_name=2025_Q2_AMER_A_SHA_MFS_Awr_BA_KOS_1P_SHA-Static&utm_medium=BA&utm_source=KOS&utm_content=wbpg&utm_offer=MFS&utm_term=none&utm_campaign=2025_Q2_AMER_APP_pm_MFS_S-E3
+2025-06-27 06:36:33,206 [INFO] Scraping darkreading
+2025-06-27 06:36:33,425 [WARNING] fromstring() returned an invalid string: ...
+2025-06-27 06:36:33,425 [WARNING] Source https://www.darkreading.com parse error.
+2025-06-27 06:36:33,425 [CRITICAL] Must extract urls from either html, text or doc!
+2025-06-27 06:36:33,462 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/
+2025-06-27 06:36:33,494 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/rss
+2025-06-27 06:36:33,495 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feeds
+2025-06-27 06:36:33,513 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feed
+2025-06-27 06:36:33,742 [INFO] Envoi (score 20) : ZATAZ » Dans les bas-fonds de BreachForums
+2025-06-27 06:36:36,767 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 06:36:37,942 [INFO] Envoi (score 20) : Typhoon-like gang slinging TLS certificate 'signed' by LAPD
+2025-06-27 06:36:43,207 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 06:36:45,643 [INFO] Envoi (score 19) : CISA Adds 3 Flaws to KEV Catalog, Impacting AMI MegaRAC, D-Link, Fortinet
+2025-06-27 06:36:51,750 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-27 06:36:52,923 [INFO] 3/3 articles envoyés.
+2025-06-27 06:36:52,923 [INFO] Traitement terminé.

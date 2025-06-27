@@ -187,3 +187,6 @@ https://thehackernews.com/2025/06/apt28-uses-signal-chat-to-deploy.html
 https://thehackernews.com/2025/06/between-buzz-and-reality-ctem.html
 https://www.zataz.com/recap-cyber-du-21-juin-2025
 https://www.bleepingcomputer.com/news/security/winrar-patches-bug-letting-malware-launch-from-extracted-archives
+https://www.zataz.com/dans-les-bas-fonds-de-breachforums
+https://www.theregister.com/2025/06/23/lapdog_orb_network_attack_campaign
+https://thehackernews.com/2025/06/cisa-adds-3-flaws-to-kev-catalog.html
