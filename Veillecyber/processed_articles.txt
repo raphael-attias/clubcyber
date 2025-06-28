@@ -190,3 +190,6 @@ https://www.bleepingcomputer.com/news/security/winrar-patches-bug-letting-malwar
 https://www.zataz.com/dans-les-bas-fonds-de-breachforums
 https://www.theregister.com/2025/06/23/lapdog_orb_network_attack_campaign
 https://thehackernews.com/2025/06/cisa-adds-3-flaws-to-kev-catalog.html
+https://www.undernews.fr/hacking-hacktivisme/cyberattaques-par-deni-de-service-distribue-toutes-les-collectivites-sont-ciblees.html
+https://www.undernews.fr/hacking-hacktivisme/secteur-de-lenergie-la-cybermenace-setend-a-toute-la-filiere.html
+https://www.undernews.fr/malwares-virus-antivirus/selon-une-nouvelle-etude-publiee-par-sophos-pres-dune-entreprise-sur-deux-accepte-de-verser-la-rancon-demandee.html
