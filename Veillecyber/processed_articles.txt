@@ -202,3 +202,6 @@ https://www.zataz.com/quatre-hackers-francais-arretes-pour-gestion-de-breachforu
 https://thehackernews.com/2025/06/blind-eagle-uses-proton66-hosting-for.html
 https://www.undernews.fr/telephonie-phreaking-voip/securite-mobile-zimperium-devoile-les-dangers-de-lescalade-des-privileges-sur-android.html
 https://thehackernews.com/2025/07/a-new-maturity-model-for-browser.html
+https://thehackernews.com/2025/07/that-network-traffic-looks-legit-but-it.html
+https://krebsonsecurity.com/2025/06/senator-chides-fbi-for-weak-advice-on-mobile-security
+https://thehackernews.com/2025/07/north-korean-hackers-target-web3-with.html
