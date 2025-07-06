@@ -207,3 +207,5 @@ https://krebsonsecurity.com/2025/06/senator-chides-fbi-for-weak-advice-on-mobile
 https://thehackernews.com/2025/07/north-korean-hackers-target-web3-with.html
 https://www.numerama.com/cyberguerre/2025863-chatgpt-vous-renvoie-vers-de-mauvaises-urls-et-cest-une-formidable-nouvelle-pour-les-hackers.html
 https://thehackernews.com/2025/07/the-hidden-weaknesses-in-ai-soc-tools.html
+https://thehackernews.com/2025/07/mobile-security-alert-352-iconads-fraud.html
+https://thehackernews.com/2025/06/the-hidden-risks-of-saas-why-built-in.html
