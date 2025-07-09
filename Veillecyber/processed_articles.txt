@@ -211,3 +211,4 @@ https://thehackernews.com/2025/07/mobile-security-alert-352-iconads-fraud.html
 https://thehackernews.com/2025/06/the-hidden-risks-of-saas-why-built-in.html
 https://www.zdnet.fr/actualites/comment-ces-pirates-lies-a-la-chine-ciblent-la-france-478572.htm
 https://www.undernews.fr/reseau-securite/keysight-devoile-des-canaux-tls-caches-capables-deviter-les-defenses-reseaux.html
+https://www.theregister.com/2025/07/06/infosec_roundup
