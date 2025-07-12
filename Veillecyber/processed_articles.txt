@@ -212,3 +212,6 @@ https://thehackernews.com/2025/06/the-hidden-risks-of-saas-why-built-in.html
 https://www.zdnet.fr/actualites/comment-ces-pirates-lies-a-la-chine-ciblent-la-france-478572.htm
 https://www.undernews.fr/reseau-securite/keysight-devoile-des-canaux-tls-caches-capables-deviter-les-defenses-reseaux.html
 https://www.theregister.com/2025/07/06/infosec_roundup
+https://www.zataz.com/un-hacker-chinois-arrete-en-italie-lextradition-qui-secoue-la-cyberguerre-mondiale
+https://www.undernews.fr/malwares-virus-antivirus/rapport-threat-lab-watchguard-une-augmentation-de-171-des-malwares-inedits-detectes-un-nouveau-record.html
+https://www.undernews.fr/hacking-hacktivisme/arrestation-membre-silk-typhoon-declaration-du-gtig.html
