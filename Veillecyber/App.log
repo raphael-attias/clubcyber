@@ -6457,3 +6457,67 @@
 {"object":"error","message":"Service tier capacity exceeded for this model.","type":"service_tier_capacity_exceeded","param":null,"code":"3505"}
 2025-07-13 06:35:38,992 [INFO] 2/3 articles envoyés.
 2025-07-13 06:35:38,993 [INFO] Traitement terminé.
+2025-07-14 06:36:19,427 [INFO] Démarrage du script de veille cybersécurité
+2025-07-14 06:36:19,427 [INFO] 219 articles déjà traités.
+2025-07-14 06:36:19,428 [INFO] Scraping numerama
+2025-07-14 06:36:24,540 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.numerama.com/feeds
+2025-07-14 06:36:53,161 [INFO] Scraping darkreading
+2025-07-14 06:36:53,227 [WARNING] fromstring() returned an invalid string: ...
+2025-07-14 06:36:53,227 [WARNING] Source https://www.darkreading.com parse error.
+2025-07-14 06:36:53,227 [CRITICAL] Must extract urls from either html, text or doc!
+2025-07-14 06:36:53,280 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/
+2025-07-14 06:36:53,308 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/rss
+2025-07-14 06:36:53,309 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feed
+2025-07-14 06:36:53,327 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feeds
+2025-07-14 06:36:53,564 [INFO] Scraping thehackernews
+2025-07-14 06:36:54,476 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feed
+2025-07-14 06:36:54,514 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feeds
+2025-07-14 06:36:54,536 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/rss
+2025-07-14 06:36:57,147 [INFO] Scraping cybernews
+2025-07-14 06:36:57,199 [WARNING] fromstring() returned an invalid string: ...
+2025-07-14 06:36:57,199 [WARNING] Source https://cybernews.com parse error.
+2025-07-14 06:36:57,199 [CRITICAL] Must extract urls from either html, text or doc!
+2025-07-14 06:36:57,233 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/
+2025-07-14 06:36:57,264 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feeds
+2025-07-14 06:36:57,269 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/rss
+2025-07-14 06:36:57,284 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feed
+2025-07-14 06:36:57,509 [INFO] Scraping undernews
+2025-07-14 06:37:01,956 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.undernews.fr/feeds
+2025-07-14 06:37:23,180 [INFO] Scraping usine_digitale
+2025-07-14 06:37:30,343 [INFO] Scraping zataz
+2025-07-14 06:37:33,437 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zataz.com/feeds
+2025-07-14 06:37:58,405 [INFO] Scraping bleepingcomputer
+2025-07-14 06:38:00,494 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feeds
+2025-07-14 06:38:00,504 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/rss
+2025-07-14 06:38:00,565 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feed
+2025-07-14 06:38:33,875 [INFO] Scraping zdnet
+2025-07-14 06:38:36,265 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zdnet.fr/feeds
+2025-07-14 06:38:47,987 [INFO] Scraping krebsonsecurity
+2025-07-14 06:38:48,625 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://krebsonsecurity.com/feeds
+2025-07-14 06:39:04,316 [WARNING] Erreur newspaper : Article `download()` failed with 403 Client Error: Forbidden for url: https://www.nationalcrimeagency.gov.uk/news/retail-cyber-attacks-nca-arrest-four-for-attacks-on-m-s-co-op-and-harrods on URL https://www.nationalcrimeagency.gov.uk/news/retail-cyber-attacks-nca-arrest-four-for-attacks-on-m-s-co-op-and-harrods
+2025-07-14 06:40:04,843 [WARNING] Erreur newspaper : Article `download()` failed with 403 Client Error: Forbidden for url: https://www.wsj.com/politics/policy/federal-authorities-probe-effort-to-impersonate-white-house-chief-of-staff-65da0d59 on URL https://www.wsj.com/politics/policy/federal-authorities-probe-effort-to-impersonate-white-house-chief-of-staff-65da0d59
+2025-07-14 06:40:04,852 [INFO] Scraping silicon
+2025-07-14 06:40:08,216 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.silicon.fr/feeds
+2025-07-14 06:40:08,220 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.silicon.fr/feed
+2025-07-14 06:40:34,437 [WARNING] Erreur newspaper : Article `download()` failed with Exceeded 30 redirects. on URL https://livreblanc.silicon.fr/resource/tendances-menaces-et-enseignements-des-experts
+2025-07-14 06:40:52,199 [WARNING] Erreur newspaper : Article `download()` failed with Exceeded 30 redirects. on URL https://livreblanc.silicon.fr/resource/le-budget-de-la-dsi-sous-pression
+2025-07-14 06:41:09,505 [INFO] Scraping theregister
+2025-07-14 06:41:10,776 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feeds
+2025-07-14 06:41:10,782 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/rss
+2025-07-14 06:41:10,786 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feed
+2025-07-14 06:41:15,162 [INFO] Scraping lemondeinformatique
+2025-07-14 06:41:16,125 [WARNING] fromstring() returned an invalid string: ...
+2025-07-14 06:41:16,125 [WARNING] Source https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/ parse error.
+2025-07-14 06:41:16,126 [CRITICAL] Must extract urls from either html, text or doc!
+2025-07-14 06:41:16,990 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/
+2025-07-14 06:41:17,775 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feeds
+2025-07-14 06:41:17,775 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/rss
+2025-07-14 06:41:17,777 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feed
+2025-07-14 06:41:23,741 [INFO] Envoi (score 18) : Over 600 Laravel Apps Exposed to Remote Code Execution Due to Leaked APP_KEYs on GitHub
+2025-07-14 06:41:26,979 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-14 06:41:28,507 [INFO] Envoi (score 18) : The Dark Nexus Between Harm Groups and ‘The Com’ – Krebs on Security
+2025-07-14 06:41:37,285 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-14 06:41:38,591 [INFO] Envoi (score 16) : Cyberattaques russes : pour la première fois, la France s’en prend directement à Moscou
+2025-07-14 06:41:45,552 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-14 06:41:46,865 [INFO] 3/3 articles envoyés.
+2025-07-14 06:41:46,865 [INFO] Traitement terminé.
