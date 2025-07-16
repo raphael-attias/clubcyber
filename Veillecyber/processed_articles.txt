@@ -221,3 +221,4 @@ https://thehackernews.com/2025/07/over-600-laravel-apps-exposed-to-remote.html
 https://krebsonsecurity.com/2024/09/the-dark-nexus-between-harm-groups-and-the-com
 https://www.numerama.com/cyberguerre/1962399-cyberattaques-russes-pour-la-premiere-fois-la-france-sen-prend-directement-a-moscou.html
 https://www.zataz.com/comment-la-transcription-audio-en-texte-accelere-la-transformation-numerique-des-pme
+https://thehackernews.com/2025/07/critical-mcp-remote-vulnerability.html
