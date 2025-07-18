@@ -224,3 +224,5 @@ https://www.zataz.com/comment-la-transcription-audio-en-texte-accelere-la-transf
 https://thehackernews.com/2025/07/critical-mcp-remote-vulnerability.html
 https://thehackernews.com/2025/07/unc6148-backdoors-fully-patched.html
 https://thehackernews.com/2025/07/google-ai-big-sleep-stops-exploitation.html
+https://thehackernews.com/2025/07/hackers-exploit-apache-http-server-flaw.html
+https://www.undernews.fr/reseau-securite/cybersecurite-iot-keyfactor-liste-les-10-etapes-cles-pour-anticiper-les-menaces-et-se-conformer-aux-nouvelles-exigences-reglementaires.html
