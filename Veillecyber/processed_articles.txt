@@ -226,3 +226,6 @@ https://thehackernews.com/2025/07/unc6148-backdoors-fully-patched.html
 https://thehackernews.com/2025/07/google-ai-big-sleep-stops-exploitation.html
 https://thehackernews.com/2025/07/hackers-exploit-apache-http-server-flaw.html
 https://www.undernews.fr/reseau-securite/cybersecurite-iot-keyfactor-liste-les-10-etapes-cles-pour-anticiper-les-menaces-et-se-conformer-aux-nouvelles-exigences-reglementaires.html
+https://thehackernews.com/2025/07/chinese-hackers-target-taiwans.html
+https://www.zataz.com/ffmoto-piratee-la-federation-francaise-de-motocyclisme-victime-dune-nouvelle-fuite-massive-de-donnees
+https://www.bleepingcomputer.com/news/security/chinese-hackers-breached-national-guard-to-steal-network-configurations
