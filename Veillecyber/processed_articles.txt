@@ -229,3 +229,6 @@ https://www.undernews.fr/reseau-securite/cybersecurite-iot-keyfactor-liste-les-1
 https://thehackernews.com/2025/07/chinese-hackers-target-taiwans.html
 https://www.zataz.com/ffmoto-piratee-la-federation-francaise-de-motocyclisme-victime-dune-nouvelle-fuite-massive-de-donnees
 https://www.bleepingcomputer.com/news/security/chinese-hackers-breached-national-guard-to-steal-network-configurations
+https://www.zdnet.fr/actualites/des-chercheurs-dopenai-anthropic-meta-et-google-emettent-un-avertissement-conjoint-sur-la-securite-de-lia-479097.htm
+https://www.numerama.com/cyberguerre/2031571-a-kyiv-sous-les-bombes-la-joie-et-les-larmes-des-cyberdefenseurs-de-lukraine.html
+https://www.theregister.com/2025/07/16/sonicwall_vpn_hijack
