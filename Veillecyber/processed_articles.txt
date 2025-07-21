@@ -232,3 +232,6 @@ https://www.bleepingcomputer.com/news/security/chinese-hackers-breached-national
 https://www.zdnet.fr/actualites/des-chercheurs-dopenai-anthropic-meta-et-google-emettent-un-avertissement-conjoint-sur-la-securite-de-lia-479097.htm
 https://www.numerama.com/cyberguerre/2031571-a-kyiv-sous-les-bombes-la-joie-et-les-larmes-des-cyberdefenseurs-de-lukraine.html
 https://www.theregister.com/2025/07/16/sonicwall_vpn_hijack
+https://www.theregister.com/2025/07/16/air_serbia_cyberattack
+https://www.zataz.com/intrusion-informatique-fuite-massive-de-donnees-sur-la-plateforme-intervenants-du-cnfpt
+https://www.theregister.com/2025/07/19/idf_cyber_chief_iran
