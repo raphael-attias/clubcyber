@@ -237,3 +237,5 @@ https://www.zataz.com/intrusion-informatique-fuite-massive-de-donnees-sur-la-pla
 https://www.theregister.com/2025/07/19/idf_cyber_chief_iran
 https://www.numerama.com/cyberguerre/2031571-kyiv-sous-les-bombes-la-joie-et-les-larmes-des-cyberdefenseurs-de-lukraine.html
 https://www.theregister.com/2025/07/21/massive_security_snafu_microsoft
+https://www.zdnet.fr/actualites/une-faille-zeroe28091day-dans-sharepoint-microsoft-au-coeur-dune-cyberattaque-mondiale-479225.htm
+https://www.zataz.com/panorama-de-donnees-compromises-etes-vous-dans-la-liste
