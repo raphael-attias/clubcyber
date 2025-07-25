@@ -242,3 +242,6 @@ https://www.zataz.com/panorama-de-donnees-compromises-etes-vous-dans-la-liste
 https://www.zdnet.fr/actualites/cinq-choses-a-savoir-sur-xss-ce-forum-cybercriminel-vise-par-la-justice-francaise-479279.htm
 https://www.undernews.fr/alertes-securite/vulnerabilite-zero-day-de-sharepoint-cve-2025-53770-activement-exploitee.html
 https://www.silicon.fr/Thematique/cybersecurite-1371/Breves/ia-predictive-generative-solutions-cyber-484141.htm
+https://www.zataz.com/cyberprotection-ce-livre-vous-apprend-a-mieux-vous-defendre
+https://thehackernews.com/2025/07/pentests-once-year-nope-its-time-to.html
+https://thehackernews.com/2025/07/fire-ant-exploits-vmware-flaw-to.html
