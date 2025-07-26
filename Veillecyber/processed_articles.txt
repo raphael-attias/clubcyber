@@ -245,3 +245,6 @@ https://www.silicon.fr/Thematique/cybersecurite-1371/Breves/ia-predictive-genera
 https://www.zataz.com/cyberprotection-ce-livre-vous-apprend-a-mieux-vous-defendre
 https://thehackernews.com/2025/07/pentests-once-year-nope-its-time-to.html
 https://thehackernews.com/2025/07/fire-ant-exploits-vmware-flaw-to.html
+https://www.zataz.com/outil-github-pour-cve-2025-53770-exploit-public-ciblant-sharepoint
+https://www.zataz.com/faillite-knights-of-old-cyberattaque-transport-uk
+https://www.zataz.com/royaume-uni-interdiction-paiement-rancon-ransomware
