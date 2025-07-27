@@ -248,3 +248,5 @@ https://thehackernews.com/2025/07/fire-ant-exploits-vmware-flaw-to.html
 https://www.zataz.com/outil-github-pour-cve-2025-53770-exploit-public-ciblant-sharepoint
 https://www.zataz.com/faillite-knights-of-old-cyberattaque-transport-uk
 https://www.zataz.com/royaume-uni-interdiction-paiement-rancon-ransomware
+https://www.undernews.fr/reseau-securite/lhumain-reste-bel-et-bien-le-heros-indetronable-pour-proteger-nos-infrastructures-citriques.html
+https://thehackernews.com/2025/07/critical-microsoft-sharepoint-flaw.html
