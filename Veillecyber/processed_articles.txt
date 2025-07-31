@@ -255,3 +255,6 @@ https://www.cisa.gov/news-events/alerts/2025/07/20/microsoft-releases-guidance-e
 https://www.theregister.com/2025/07/26/microsoft_sharepoint_attacks_leak
 https://thehackernews.com/2025/07/how-browser-became-main-cyber.html
 https://thehackernews.com/2025/07/why-react-didnt-kill-xss-new-javascript.html
+https://www.zataz.com/orange-neutralise-une-cyberattaque-visant-ses-systemes-it
+https://www.numerama.com/cyberguerre/1904371-vingt-ans-de-youtube-ces-hacks-memorables-de-pages.html
+https://www.zataz.com/arrestation-admin-xss-forum-dark-web-cybercriminalite
