@@ -258,3 +258,6 @@ https://thehackernews.com/2025/07/why-react-didnt-kill-xss-new-javascript.html
 https://www.zataz.com/orange-neutralise-une-cyberattaque-visant-ses-systemes-it
 https://www.numerama.com/cyberguerre/1904371-vingt-ans-de-youtube-ces-hacks-memorables-de-pages.html
 https://www.zataz.com/arrestation-admin-xss-forum-dark-web-cybercriminalite
+https://www.zdnet.fr/actualites/des-extensions-malveillantes-peuvent-utiliser-chatgpt-pour-voler-les-donnees-personnelles-479737.htm
+https://www.undernews.fr/malwares-virus-antivirus/rapport-check-point-sur-les-ransomware-t2-2025.html
+https://thehackernews.com/2025/07/product-walkthrough-look-inside-pillars.html
