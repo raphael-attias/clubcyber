@@ -264,3 +264,6 @@ https://thehackernews.com/2025/07/product-walkthrough-look-inside-pillars.html
 https://thehackernews.com/2025/08/storm-2603-exploits-sharepoint-flaws-to.html
 https://www.zataz.com/operation-eastwood-comment-leurope-a-frappe-noname05716
 https://thehackernews.com/2025/08/you-are-what-you-eat-why-your-ai.html
+https://thehackernews.com/2025/08/cl-sta-0969-installs-covert-malware-in.html
+https://www.undernews.fr/reseau-securite/former-pour-mieux-detecter-les-cybermenaces.html
+https://www.undernews.fr/reseau-securite/phishing-hoax/check-point-research-devoile-les-tendances-du-phishing-par-marque-au-2eme-trimestre-2025.html
