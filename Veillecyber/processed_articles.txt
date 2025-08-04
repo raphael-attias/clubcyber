@@ -267,3 +267,5 @@ https://thehackernews.com/2025/08/you-are-what-you-eat-why-your-ai.html
 https://thehackernews.com/2025/08/cl-sta-0969-installs-covert-malware-in.html
 https://www.undernews.fr/reseau-securite/former-pour-mieux-detecter-les-cybermenaces.html
 https://www.undernews.fr/reseau-securite/phishing-hoax/check-point-research-devoile-les-tendances-du-phishing-par-marque-au-2eme-trimestre-2025.html
+https://msrc.microsoft.com/blog/2025/07/customer-guidance-for-sharepoint-vulnerability-cve-2025-53770
+https://www.silicon.fr/Thematique/business-1367/Breves/selection-ete-articles-lire-preparer-rentree-484405.htm
