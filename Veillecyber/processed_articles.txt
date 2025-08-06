@@ -271,3 +271,6 @@ https://msrc.microsoft.com/blog/2025/07/customer-guidance-for-sharepoint-vulnera
 https://www.silicon.fr/Thematique/business-1367/Breves/selection-ete-articles-lire-preparer-rentree-484405.htm
 https://www.theregister.com/2025/08/04/sonicwall_investigates_cyber_incidents
 https://thehackernews.com/2025/08/man-in-middle-attack-prevention-guide.html
+https://thehackernews.com/2025/08/weekly-recap-vpn-0-day-encryption.html
+https://thehackernews.com/2025/08/ai-is-transforming-cybersecurity.html
+https://www.bleepingcomputer.com/news/security/sonicwall-urges-admins-to-disable-sslvpn-amid-rising-attacks
