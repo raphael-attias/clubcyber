@@ -274,3 +274,5 @@ https://thehackernews.com/2025/08/man-in-middle-attack-prevention-guide.html
 https://thehackernews.com/2025/08/weekly-recap-vpn-0-day-encryption.html
 https://thehackernews.com/2025/08/ai-is-transforming-cybersecurity.html
 https://www.bleepingcomputer.com/news/security/sonicwall-urges-admins-to-disable-sslvpn-amid-rising-attacks
+https://www.theregister.com/2025/08/06/google_salesforce_attacks
+https://thehackernews.com/2025/08/cursor-ai-code-editor-vulnerability.html
