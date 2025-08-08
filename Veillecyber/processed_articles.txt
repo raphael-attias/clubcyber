@@ -276,3 +276,6 @@ https://thehackernews.com/2025/08/ai-is-transforming-cybersecurity.html
 https://www.bleepingcomputer.com/news/security/sonicwall-urges-admins-to-disable-sslvpn-amid-rising-attacks
 https://www.theregister.com/2025/08/06/google_salesforce_attacks
 https://thehackernews.com/2025/08/cursor-ai-code-editor-vulnerability.html
+https://www.theregister.com/2025/08/07/cisa_releases_malware_analysis
+https://www.zataz.com/air-france-violation-de-donnees-vigilance-et-coulisses-dune-cyberattaque
+https://www.own.security/en/ressources/blog/russian-language-cybercriminal-forums---chapter-iii-analyzing-the-most-active-and-renowned-communities-english-only
