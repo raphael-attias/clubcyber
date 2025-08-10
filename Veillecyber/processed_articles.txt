@@ -282,3 +282,6 @@ https://www.own.security/en/ressources/blog/russian-language-cybercriminal-forum
 https://thehackernews.com/2025/08/leaked-credentials-up-160-what.html
 https://thehackernews.com/2025/08/sonicwall-confirms-patched.html
 https://www.undernews.fr/alertes-securite/linquietante-recrudescence-des-identifiants-compromis-en-2025.html
+https://www.zataz.com/bouygues-telecom-cyberattaque-fuite-donnees-2025
+https://thehackernews.com/2025/08/cyberark-and-hashicorp-flaws-enable.html
+https://thehackernews.com/2025/08/socgholish-malware-spread-via-ad-tools.html

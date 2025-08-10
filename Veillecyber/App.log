@@ -8509,3 +8509,64 @@
 2025-08-09 06:35:43,889 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
 2025-08-09 06:35:45,059 [INFO] 3/3 articles envoyés.
 2025-08-09 06:35:45,059 [INFO] Traitement terminé.
+2025-08-10 06:32:54,109 [INFO] Démarrage du script de veille cybersécurité
+2025-08-10 06:32:54,110 [INFO] 284 articles déjà traités.
+2025-08-10 06:32:54,110 [INFO] Scraping cybernews
+2025-08-10 06:32:54,453 [WARNING] fromstring() returned an invalid string: ...
+2025-08-10 06:32:54,453 [WARNING] Source https://cybernews.com parse error.
+2025-08-10 06:32:54,453 [CRITICAL] Must extract urls from either html, text or doc!
+2025-08-10 06:32:54,493 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/
+2025-08-10 06:32:54,552 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/rss
+2025-08-10 06:32:54,557 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feeds
+2025-08-10 06:32:54,560 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feed
+2025-08-10 06:32:54,867 [INFO] Scraping thehackernews
+2025-08-10 06:32:55,788 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/rss
+2025-08-10 06:32:55,916 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feed
+2025-08-10 06:32:55,930 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feeds
+2025-08-10 06:32:58,580 [INFO] Scraping bleepingcomputer
+2025-08-10 06:33:00,618 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feeds
+2025-08-10 06:33:00,639 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feed
+2025-08-10 06:33:00,724 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/rss
+2025-08-10 06:33:46,486 [INFO] Scraping lemondeinformatique
+2025-08-10 06:33:47,360 [WARNING] fromstring() returned an invalid string: ...
+2025-08-10 06:33:47,360 [WARNING] Source https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/ parse error.
+2025-08-10 06:33:47,360 [CRITICAL] Must extract urls from either html, text or doc!
+2025-08-10 06:33:48,159 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/
+2025-08-10 06:33:48,966 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feed
+2025-08-10 06:33:48,982 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feeds
+2025-08-10 06:33:48,993 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/rss
+2025-08-10 06:33:55,048 [INFO] Scraping krebsonsecurity
+2025-08-10 06:33:57,647 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://krebsonsecurity.com/feeds
+2025-08-10 06:34:11,601 [WARNING] Erreur newspaper : Article `download()` failed with 403 Client Error: Max restarts limit reached for url: https://www.forbes.com/sites/insertcoin/2014/08/24/sony-online-entertainment-presidents-flight-diverted-by-psn-hackers-bomb-threat/ on URL https://www.forbes.com/sites/insertcoin/2014/08/24/sony-online-entertainment-presidents-flight-diverted-by-psn-hackers-bomb-threat/
+2025-08-10 06:34:43,171 [INFO] Scraping theregister
+2025-08-10 06:34:44,518 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/rss
+2025-08-10 06:34:44,541 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feed
+2025-08-10 06:34:44,563 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feeds
+2025-08-10 06:34:49,030 [INFO] Scraping zataz
+2025-08-10 06:34:52,308 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zataz.com/feeds
+2025-08-10 06:35:17,660 [INFO] Scraping undernews
+2025-08-10 06:35:21,886 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.undernews.fr/feeds
+2025-08-10 06:35:41,620 [INFO] Scraping usine_digitale
+2025-08-10 06:35:48,307 [INFO] Scraping zdnet
+2025-08-10 06:35:51,012 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zdnet.fr/feeds
+2025-08-10 06:36:03,188 [INFO] Scraping darkreading
+2025-08-10 06:36:03,373 [WARNING] fromstring() returned an invalid string: ...
+2025-08-10 06:36:03,373 [WARNING] Source https://www.darkreading.com parse error.
+2025-08-10 06:36:03,373 [CRITICAL] Must extract urls from either html, text or doc!
+2025-08-10 06:36:03,396 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/
+2025-08-10 06:36:03,426 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/rss
+2025-08-10 06:36:03,435 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feed
+2025-08-10 06:36:03,447 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feeds
+2025-08-10 06:36:03,702 [INFO] Scraping numerama
+2025-08-10 06:36:08,245 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.numerama.com/feeds
+2025-08-10 06:36:20,769 [INFO] Scraping silicon
+2025-08-10 06:36:24,300 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.silicon.fr/feeds
+2025-08-10 06:36:24,305 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.silicon.fr/feed
+2025-08-10 06:36:43,133 [INFO] Envoi (score 20) : Bouygues Telecom victime d’une cyberattaque majeure : 6,4 M de clients exposés
+2025-08-10 06:36:48,136 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-10 06:36:49,502 [INFO] Envoi (score 18) : CyberArk and HashiCorp Flaws Enable Remote Vault Takeover Without Credentials
+2025-08-10 06:36:57,786 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-10 06:36:59,220 [INFO] Envoi (score 17) : SocGholish Malware Spread via Ad Tools; Delivers Access to LockBit, Evil Corp, and Others
+2025-08-10 06:37:05,839 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-08-10 06:37:07,054 [INFO] 3/3 articles envoyés.
+2025-08-10 06:37:07,054 [INFO] Traitement terminé.
