@@ -285,3 +285,6 @@ https://www.undernews.fr/alertes-securite/linquietante-recrudescence-des-identif
 https://www.zataz.com/bouygues-telecom-cyberattaque-fuite-donnees-2025
 https://thehackernews.com/2025/08/cyberark-and-hashicorp-flaws-enable.html
 https://thehackernews.com/2025/08/socgholish-malware-spread-via-ad-tools.html
+https://www.numerama.com/cyberguerre/2043707-definition-apt-advanced-persistent-threat.html
+https://www.numerama.com/cyberguerre/2049313-black-hat-2025-comment-une-invitation-google-calendar-piegee-peut-donner-le-controle-de-votre-maison-a-un-hacker-via-gemini.html
+https://www.zataz.com/chanel-victime-dune-cyberattaque-via-une-faille-crm
