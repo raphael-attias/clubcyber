@@ -291,3 +291,5 @@ https://www.zataz.com/chanel-victime-dune-cyberattaque-via-une-faille-crm
 https://thehackernews.com/2025/08/winrar-zero-day-under-active.html
 https://www.theregister.com/2025/08/11/russias_romcom_among_those_exploiting
 https://www.theregister.com/2025/08/10/infosec_in_brief
+https://www.theregister.com/2025/08/12/scattered_spidershinyhunterslapsus_cybercrime_collab
+https://thehackernews.com/2025/08/charon-ransomware-hits-middle-east.html
