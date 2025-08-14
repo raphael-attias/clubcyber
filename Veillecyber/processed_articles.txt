@@ -293,3 +293,5 @@ https://www.theregister.com/2025/08/11/russias_romcom_among_those_exploiting
 https://www.theregister.com/2025/08/10/infosec_in_brief
 https://www.theregister.com/2025/08/12/scattered_spidershinyhunterslapsus_cybercrime_collab
 https://thehackernews.com/2025/08/charon-ransomware-hits-middle-east.html
+https://www.bleepingcomputer.com/news/security/fortinet-warns-of-fortisiem-pre-auth-rce-flaw-with-exploit-in-the-wild
+https://www.silicon.fr/Thematique/cybersecurite-1371/Breves/siem-elastic-soar-maison-choix-universite-grenoble-alpes-484397.htm
