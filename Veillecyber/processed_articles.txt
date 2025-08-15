@@ -295,3 +295,6 @@ https://www.theregister.com/2025/08/12/scattered_spidershinyhunterslapsus_cyberc
 https://thehackernews.com/2025/08/charon-ransomware-hits-middle-east.html
 https://www.bleepingcomputer.com/news/security/fortinet-warns-of-fortisiem-pre-auth-rce-flaw-with-exploit-in-the-wild
 https://www.silicon.fr/Thematique/cybersecurite-1371/Breves/siem-elastic-soar-maison-choix-universite-grenoble-alpes-484397.htm
+https://www.theregister.com/2025/08/14/stock_in_the_channel_pulls
+https://www.zataz.com/cyberattaque-au-museum-de-paris-donnees-paralysees-enquete-ouverte
+https://thehackernews.com/2025/08/have-you-turned-off-your-virtual-oven.html
