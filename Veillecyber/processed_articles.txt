@@ -298,3 +298,6 @@ https://www.silicon.fr/Thematique/cybersecurite-1371/Breves/siem-elastic-soar-ma
 https://www.theregister.com/2025/08/14/stock_in_the_channel_pulls
 https://www.zataz.com/cyberattaque-au-museum-de-paris-donnees-paralysees-enquete-ouverte
 https://thehackernews.com/2025/08/have-you-turned-off-your-virtual-oven.html
+https://thehackernews.com/2025/08/russian-group-encrypthub-exploits-msc.html
+https://www.undernews.fr/reseau-securite/zimperium-alerte-sur-lexplosion-de-vols-didentifiants-une-menace-toujours-plus-importante-pour-les-entreprises.html
+https://www.theregister.com/2025/08/15/typhoonadjacent_chinese_crew_taiwan_web_servers
