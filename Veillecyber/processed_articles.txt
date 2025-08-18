@@ -303,3 +303,5 @@ https://www.undernews.fr/reseau-securite/zimperium-alerte-sur-lexplosion-de-vols
 https://www.theregister.com/2025/08/15/typhoonadjacent_chinese_crew_taiwan_web_servers
 https://www.bleepingcomputer.com/news/security/colt-telecom-attack-claimed-by-warlock-ransomware-data-up-for-sale
 https://thehackernews.com/2025/08/taiwan-web-servers-breached-by-uat-7237.html
+https://thehackernews.com/2025/08/new-win-ddos-flaws-let-attackers-turn.html
+https://www.theregister.com/2025/08/14/fbi_email_accounts_for_sale
