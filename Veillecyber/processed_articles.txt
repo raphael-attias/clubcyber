@@ -307,3 +307,4 @@ https://thehackernews.com/2025/08/new-win-ddos-flaws-let-attackers-turn.html
 https://www.theregister.com/2025/08/14/fbi_email_accounts_for_sale
 https://www.zataz.com/yemen-cyber-army-cyber%e2%80%91justice-au-royaume%e2%80%91uni
 https://www.zataz.com/loperateur-de-ransomware-zeppelin-frappe-en-plein-porte-monnaie
+https://cyberpress.org/rapperbot-exploits-dvrs-to-take-control-of-surveillance-cameras
