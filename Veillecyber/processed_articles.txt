@@ -308,3 +308,4 @@ https://www.theregister.com/2025/08/14/fbi_email_accounts_for_sale
 https://www.zataz.com/yemen-cyber-army-cyber%e2%80%91justice-au-royaume%e2%80%91uni
 https://www.zataz.com/loperateur-de-ransomware-zeppelin-frappe-en-plein-porte-monnaie
 https://cyberpress.org/rapperbot-exploits-dvrs-to-take-control-of-surveillance-cameras
+https://www.bleepingcomputer.com/news/security/murky-panda-hackers-exploit-cloud-trust-to-hack-downstream-customers
