@@ -313,3 +313,4 @@ https://www.theregister.com/2025/08/28/china_salt_typhoon_alert
 https://www.zataz.com/le-recap-cybersecurite-semaine-du-23-aout-2025
 https://www.zataz.com/derriere-les-pubs-piegees-une-strategie-de-piratage-cible
 https://www.undernews.fr/reseau-securite/check-point-revele-une-vulnerabilite-rce-persistante-dans-loutil-de-developpement-ia-cursor-exploitation-silencieuse-via-un-mcp-de-confiance.html
+https://www.theregister.com/2025/08/28/thousands_of_citrix_netscaler_boxes
