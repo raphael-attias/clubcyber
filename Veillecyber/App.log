@@ -10208,3 +10208,65 @@
 2025-08-31 06:33:13,881 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
 2025-08-31 06:33:15,206 [INFO] 1/3 articles envoyés.
 2025-08-31 06:33:15,206 [INFO] Traitement terminé.
+2025-09-01 06:34:49,028 [INFO] Démarrage du script de veille cybersécurité
+2025-09-01 06:34:49,028 [INFO] 316 articles déjà traités.
+2025-09-01 06:34:49,028 [INFO] Scraping zdnet
+2025-09-01 06:34:51,822 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zdnet.fr/feeds
+2025-09-01 06:34:59,944 [INFO] Scraping zataz
+2025-09-01 06:35:02,587 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zataz.com/feeds
+2025-09-01 06:35:25,179 [INFO] Scraping krebsonsecurity
+2025-09-01 06:35:25,932 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://krebsonsecurity.com/feeds
+2025-09-01 06:36:09,012 [INFO] Scraping theregister
+2025-09-01 06:36:10,137 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/rss
+2025-09-01 06:36:10,151 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feeds
+2025-09-01 06:36:10,157 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feed
+2025-09-01 06:36:14,154 [INFO] Scraping cybernews
+2025-09-01 06:36:14,308 [WARNING] fromstring() returned an invalid string: ...
+2025-09-01 06:36:14,308 [WARNING] Source https://cybernews.com parse error.
+2025-09-01 06:36:14,308 [CRITICAL] Must extract urls from either html, text or doc!
+2025-09-01 06:36:14,357 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/
+2025-09-01 06:36:14,430 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feed
+2025-09-01 06:36:14,451 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feeds
+2025-09-01 06:36:14,464 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/rss
+2025-09-01 06:36:14,737 [INFO] Scraping bleepingcomputer
+2025-09-01 06:36:15,900 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/rss
+2025-09-01 06:36:15,928 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feed
+2025-09-01 06:36:15,938 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feeds
+2025-09-01 06:36:45,027 [INFO] Scraping undernews
+2025-09-01 06:36:49,190 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.undernews.fr/feeds
+2025-09-01 06:37:03,709 [INFO] Scraping usine_digitale
+2025-09-01 06:37:08,740 [INFO] Scraping numerama
+2025-09-01 06:37:12,604 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.numerama.com/feeds
+2025-09-01 06:37:21,750 [INFO] Scraping silicon
+2025-09-01 06:37:25,002 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.silicon.fr/feeds
+2025-09-01 06:37:25,049 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.silicon.fr/feed
+2025-09-01 06:37:39,322 [INFO] Scraping lemondeinformatique
+2025-09-01 06:37:40,013 [WARNING] fromstring() returned an invalid string: ...
+2025-09-01 06:37:40,013 [WARNING] Source https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/ parse error.
+2025-09-01 06:37:40,013 [CRITICAL] Must extract urls from either html, text or doc!
+2025-09-01 06:37:40,459 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/
+2025-09-01 06:37:41,008 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feed
+2025-09-01 06:37:41,050 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/rss
+2025-09-01 06:37:41,063 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feeds
+2025-09-01 06:37:45,439 [INFO] Scraping thehackernews
+2025-09-01 06:37:46,846 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feeds
+2025-09-01 06:37:46,878 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/rss
+2025-09-01 06:37:46,905 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feed
+2025-09-01 06:37:49,658 [INFO] Scraping darkreading
+2025-09-01 06:37:49,722 [WARNING] fromstring() returned an invalid string: ...
+2025-09-01 06:37:49,722 [WARNING] Source https://www.darkreading.com parse error.
+2025-09-01 06:37:49,722 [CRITICAL] Must extract urls from either html, text or doc!
+2025-09-01 06:37:49,772 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/
+2025-09-01 06:37:49,845 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/rss
+2025-09-01 06:37:49,854 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feeds
+2025-09-01 06:37:49,855 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feed
+2025-09-01 06:37:50,047 [INFO] Envoi (score 30) : ⚡ Weekly Recap: Password Manager Flaws, Apple 0-Day, Hidden AI Prompts, In-the-Wild Exploits & More
+2025-09-01 06:38:06,558 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-01 06:38:06,667 [WARNING] Échec envoi ou résumé vide : https://thehackernews.com/2025/08/weekly-recap-password-manager-flaws.html
+2025-09-01 06:38:07,668 [INFO] Envoi (score 21) : Les employés et l’IA épuisent les RSSI – Voice of the CISO 2025
+2025-09-01 06:38:12,186 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-01 06:38:13,401 [INFO] Envoi (score 20) : Why your business needs a password manager now
+2025-09-01 06:38:20,928 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-01 06:38:21,017 [WARNING] Échec envoi ou résumé vide : https://www.theregister.com/2025/08/28/16_billion_credentials_exposed
+2025-09-01 06:38:22,018 [INFO] 1/3 articles envoyés.
+2025-09-01 06:38:22,018 [INFO] Traitement terminé.
