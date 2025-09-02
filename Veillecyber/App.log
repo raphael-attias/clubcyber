@@ -10270,3 +10270,67 @@
 2025-09-01 06:38:21,017 [WARNING] Échec envoi ou résumé vide : https://www.theregister.com/2025/08/28/16_billion_credentials_exposed
 2025-09-01 06:38:22,018 [INFO] 1/3 articles envoyés.
 2025-09-01 06:38:22,018 [INFO] Traitement terminé.
+2025-09-02 06:33:08,057 [INFO] Démarrage du script de veille cybersécurité
+2025-09-02 06:33:08,058 [INFO] 317 articles déjà traités.
+2025-09-02 06:33:08,058 [INFO] Scraping cybernews
+2025-09-02 06:33:08,645 [WARNING] fromstring() returned an invalid string: ...
+2025-09-02 06:33:08,645 [WARNING] Source https://cybernews.com parse error.
+2025-09-02 06:33:08,645 [CRITICAL] Must extract urls from either html, text or doc!
+2025-09-02 06:33:08,742 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/
+2025-09-02 06:33:08,843 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/rss
+2025-09-02 06:33:08,860 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feed
+2025-09-02 06:33:08,860 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feeds
+2025-09-02 06:33:09,245 [INFO] Scraping bleepingcomputer
+2025-09-02 06:33:11,050 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feed
+2025-09-02 06:33:11,088 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feeds
+2025-09-02 06:33:11,094 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/rss
+2025-09-02 06:33:45,754 [INFO] Scraping zataz
+2025-09-02 06:33:49,017 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zataz.com/feeds
+2025-09-02 06:34:13,743 [INFO] Scraping usine_digitale
+2025-09-02 06:34:20,827 [INFO] Scraping zdnet
+2025-09-02 06:34:23,391 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zdnet.fr/feeds
+2025-09-02 06:34:34,237 [INFO] Scraping numerama
+2025-09-02 06:34:38,725 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.numerama.com/feeds
+2025-09-02 06:34:55,479 [INFO] Scraping theregister
+2025-09-02 06:34:56,900 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feeds
+2025-09-02 06:34:56,911 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feed
+2025-09-02 06:34:56,926 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/rss
+2025-09-02 06:35:02,139 [INFO] Scraping lemondeinformatique
+2025-09-02 06:35:02,919 [WARNING] fromstring() returned an invalid string: ...
+2025-09-02 06:35:02,919 [WARNING] Source https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/ parse error.
+2025-09-02 06:35:02,919 [CRITICAL] Must extract urls from either html, text or doc!
+2025-09-02 06:35:03,588 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/
+2025-09-02 06:35:04,250 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feed
+2025-09-02 06:35:04,252 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/rss
+2025-09-02 06:35:04,296 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feeds
+2025-09-02 06:35:09,238 [INFO] Scraping thehackernews
+2025-09-02 06:35:10,155 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feed
+2025-09-02 06:35:10,176 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feeds
+2025-09-02 06:35:10,179 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/rss
+2025-09-02 06:35:13,698 [INFO] Scraping silicon
+2025-09-02 06:35:16,575 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.silicon.fr/feed
+2025-09-02 06:35:16,591 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.silicon.fr/feeds
+2025-09-02 06:35:34,226 [INFO] Scraping darkreading
+2025-09-02 06:35:34,498 [WARNING] fromstring() returned an invalid string: ...
+2025-09-02 06:35:34,498 [WARNING] Source https://www.darkreading.com parse error.
+2025-09-02 06:35:34,498 [CRITICAL] Must extract urls from either html, text or doc!
+2025-09-02 06:35:34,582 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/
+2025-09-02 06:35:34,684 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feed
+2025-09-02 06:35:34,705 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feeds
+2025-09-02 06:35:34,711 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/rss
+2025-09-02 06:35:35,062 [INFO] Scraping krebsonsecurity
+2025-09-02 06:35:36,719 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://krebsonsecurity.com/feeds
+2025-09-02 06:35:37,128 [WARNING] Erreur newspaper : Article `download()` failed with 403 Client Error: Forbidden for url: https://www.gartner.com/en/conferences/na/identity-access-management-us?utm_source=krebs&utm_medium=banner&utm_campaign=EVT_NA_2025_IAM20_PP_MP6_KREBSONSECURITY on URL https://www.gartner.com/en/conferences/na/identity-access-management-us?utm_source=krebs&utm_medium=banner&utm_campaign=EVT_NA_2025_IAM20_PP_MP6_KREBSONSECURITY
+2025-09-02 06:36:29,427 [INFO] Scraping undernews
+2025-09-02 06:36:33,864 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.undernews.fr/feeds
+2025-09-02 06:36:52,396 [INFO] Envoi (score 27) : ⚡ Weekly Recap: WhatsApp 0-Day, Docker Bug, Salesforce Breach, Fake CAPTCHAs, Spyware App & More
+2025-09-02 06:37:08,897 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 06:37:09,097 [WARNING] Échec envoi ou résumé vide : https://thehackernews.com/2025/09/weekly-recap-whatsapp-0-day-docker-bug.html
+2025-09-02 06:37:10,097 [INFO] Envoi (score 24) : Un pirate vend 523,7 GB de stealer logs : immersion dans l’économie clandestine des identifiants volés
+2025-09-02 06:37:16,215 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 06:37:16,492 [WARNING] Échec envoi ou résumé vide : https://www.zataz.com/un-pirate-vend-5237-gb-de-stealer-logs-immersion-dans-leconomie-clandestine-des-identifiants-voles
+2025-09-02 06:37:17,493 [INFO] Envoi (score 21) : ShinyHunters behind Salesforce data theft attacks at Qantas, Allianz Life, and LVMH
+2025-09-02 06:37:23,067 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-02 06:37:23,236 [WARNING] Échec envoi ou résumé vide : https://www.bleepingcomputer.com/news/security/shinyhunters-behind-salesforce-data-theft-attacks-at-qantas-allianz-life-and-lvmh
+2025-09-02 06:37:24,236 [INFO] 0/3 articles envoyés.
+2025-09-02 06:37:24,236 [INFO] Traitement terminé.
