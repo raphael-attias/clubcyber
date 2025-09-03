@@ -315,3 +315,4 @@ https://www.zataz.com/derriere-les-pubs-piegees-une-strategie-de-piratage-cible
 https://www.undernews.fr/reseau-securite/check-point-revele-une-vulnerabilite-rce-persistante-dans-loutil-de-developpement-ia-cursor-exploitation-silencieuse-via-un-mcp-de-confiance.html
 https://www.theregister.com/2025/08/28/thousands_of_citrix_netscaler_boxes
 https://www.undernews.fr/reseau-securite/les-employes-et-lia-epuisent-les-rssi-voice-of-the-ciso-2025.html
+https://www.undernews.fr/reseau-securite/firewall-ids/invisible-chiffree-intelligente-la-nouvelle-menace-que-votre-firewall-ne-voit-pas.html
