@@ -317,3 +317,4 @@ https://www.theregister.com/2025/08/28/thousands_of_citrix_netscaler_boxes
 https://www.undernews.fr/reseau-securite/les-employes-et-lia-epuisent-les-rssi-voice-of-the-ciso-2025.html
 https://www.undernews.fr/reseau-securite/firewall-ids/invisible-chiffree-intelligente-la-nouvelle-menace-que-votre-firewall-ne-voit-pas.html
 https://www.undernews.fr/malwares-virus-antivirus/rapport-annuel-threatlabz-sur-les-attaques-par-ransomware.html
+https://www.undernews.fr/reseau-securite/nouveau-livre-blanc-de-filigran-adopter-une-demarche-structuree-pour-faire-face-aux-cybermenaces-dans-la-tech.html
