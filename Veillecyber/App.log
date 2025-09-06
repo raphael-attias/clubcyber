@@ -10542,3 +10542,64 @@
 {"object":"error","message":"Service tier capacity exceeded for this model.","type":"service_tier_capacity_exceeded","param":null,"code":"3505"}
 2025-09-05 06:34:20,821 [INFO] 1/3 articles envoyés.
 2025-09-05 06:34:20,821 [INFO] Traitement terminé.
+2025-09-06 06:27:55,984 [INFO] Démarrage du script de veille cybersécurité
+2025-09-06 06:27:55,984 [INFO] 320 articles déjà traités.
+2025-09-06 06:27:55,984 [INFO] Scraping numerama
+2025-09-06 06:28:00,865 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.numerama.com/feeds
+2025-09-06 06:28:10,851 [INFO] Scraping zataz
+2025-09-06 06:28:13,977 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zataz.com/feeds
+2025-09-06 06:28:42,968 [INFO] Scraping silicon
+2025-09-06 06:28:46,344 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.silicon.fr/feed
+2025-09-06 06:28:46,373 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.silicon.fr/feeds
+2025-09-06 06:28:55,650 [INFO] Scraping bleepingcomputer
+2025-09-06 06:28:57,768 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feeds
+2025-09-06 06:28:57,783 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/rss
+2025-09-06 06:28:57,793 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feed
+2025-09-06 06:29:41,672 [INFO] Scraping undernews
+2025-09-06 06:29:46,098 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.undernews.fr/feeds
+2025-09-06 06:30:06,138 [INFO] Scraping usine_digitale
+2025-09-06 06:30:14,774 [INFO] Scraping zdnet
+2025-09-06 06:30:17,280 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zdnet.fr/feeds
+2025-09-06 06:30:29,453 [INFO] Scraping krebsonsecurity
+2025-09-06 06:30:30,585 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://krebsonsecurity.com/feeds
+2025-09-06 06:30:31,565 [WARNING] Erreur newspaper : Article `download()` failed with 403 Client Error: Forbidden for url: https://www.gartner.com/en/conferences/na/identity-access-management-us?utm_source=krebs&utm_medium=banner&utm_campaign=EVT_NA_2025_IAM20_PP_MP6_KREBSONSECURITY on URL https://www.gartner.com/en/conferences/na/identity-access-management-us?utm_source=krebs&utm_medium=banner&utm_campaign=EVT_NA_2025_IAM20_PP_MP6_KREBSONSECURITY
+2025-09-06 06:30:59,714 [INFO] Scraping cybernews
+2025-09-06 06:30:59,950 [WARNING] fromstring() returned an invalid string: ...
+2025-09-06 06:30:59,950 [WARNING] Source https://cybernews.com parse error.
+2025-09-06 06:30:59,950 [CRITICAL] Must extract urls from either html, text or doc!
+2025-09-06 06:31:00,022 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/
+2025-09-06 06:31:00,110 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feeds
+2025-09-06 06:31:00,116 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/rss
+2025-09-06 06:31:00,146 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feed
+2025-09-06 06:31:00,473 [INFO] Scraping lemondeinformatique
+2025-09-06 06:31:01,333 [WARNING] fromstring() returned an invalid string: ...
+2025-09-06 06:31:01,333 [WARNING] Source https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/ parse error.
+2025-09-06 06:31:01,333 [CRITICAL] Must extract urls from either html, text or doc!
+2025-09-06 06:31:02,121 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/
+2025-09-06 06:31:02,881 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feed
+2025-09-06 06:31:02,920 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feeds
+2025-09-06 06:31:02,931 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/rss
+2025-09-06 06:31:08,821 [INFO] Scraping thehackernews
+2025-09-06 06:31:09,812 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feed
+2025-09-06 06:31:09,837 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feeds
+2025-09-06 06:31:09,862 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/rss
+2025-09-06 06:31:13,286 [INFO] Scraping darkreading
+2025-09-06 06:31:13,682 [WARNING] fromstring() returned an invalid string: ...
+2025-09-06 06:31:13,682 [WARNING] Source https://www.darkreading.com parse error.
+2025-09-06 06:31:13,682 [CRITICAL] Must extract urls from either html, text or doc!
+2025-09-06 06:31:13,781 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/
+2025-09-06 06:31:13,892 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/rss
+2025-09-06 06:31:13,902 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feeds
+2025-09-06 06:31:13,907 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feed
+2025-09-06 06:31:14,375 [INFO] Scraping theregister
+2025-09-06 06:31:15,803 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feeds
+2025-09-06 06:31:15,805 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feed
+2025-09-06 06:31:15,820 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/rss
+2025-09-06 06:31:20,980 [INFO] Envoi (score 23) : The Ongoing Fallout from a Breach at AI Chatbot Maker Salesloft – Krebs on Security
+2025-09-06 06:31:28,933 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 06:31:30,359 [INFO] Envoi (score 22) : Un EDR Killer partagé entre groupes de ransomware
+2025-09-06 06:31:36,513 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 06:31:37,764 [INFO] Envoi (score 19) : Quel iPhone acheter en 2025 ? Notre guide pour bien choisir
+2025-09-06 06:31:49,533 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-06 06:31:50,859 [INFO] 3/3 articles envoyés.
+2025-09-06 06:31:50,860 [INFO] Traitement terminé.

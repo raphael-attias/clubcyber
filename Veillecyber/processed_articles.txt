@@ -318,3 +318,6 @@ https://www.undernews.fr/reseau-securite/les-employes-et-lia-epuisent-les-rssi-v
 https://www.undernews.fr/reseau-securite/firewall-ids/invisible-chiffree-intelligente-la-nouvelle-menace-que-votre-firewall-ne-voit-pas.html
 https://www.undernews.fr/malwares-virus-antivirus/rapport-annuel-threatlabz-sur-les-attaques-par-ransomware.html
 https://www.undernews.fr/reseau-securite/nouveau-livre-blanc-de-filigran-adopter-une-demarche-structuree-pour-faire-face-aux-cybermenaces-dans-la-tech.html
+https://krebsonsecurity.com/2025/09/the-ongoing-fallout-from-a-breach-at-ai-chatbot-maker-salesloft
+https://www.datasecuritybreach.fr/un-edr-killer-partage-entre-groupes-de-ransomware
+https://www.numerama.com/tech/288962-guide-dachat-quel-iphone-choisir-en-2017.html
