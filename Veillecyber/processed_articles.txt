@@ -321,3 +321,4 @@ https://www.undernews.fr/reseau-securite/nouveau-livre-blanc-de-filigran-adopter
 https://krebsonsecurity.com/2025/09/the-ongoing-fallout-from-a-breach-at-ai-chatbot-maker-salesloft
 https://www.datasecuritybreach.fr/un-edr-killer-partage-entre-groupes-de-ransomware
 https://www.numerama.com/tech/288962-guide-dachat-quel-iphone-choisir-en-2017.html
+https://thehackernews.com/2025/09/cisa-orders-immediate-patch-of-critical.html
