@@ -324,3 +324,4 @@ https://www.numerama.com/tech/288962-guide-dachat-quel-iphone-choisir-en-2017.ht
 https://thehackernews.com/2025/09/cisa-orders-immediate-patch-of-critical.html
 https://www.zataz.com/trois-ars-victimes-dune-cyberattaque-avec-vol-de-donnees
 https://www.zataz.com/openai-lance-un-bug-bounty-inedit-sur-gpt-5-bio
+https://www.zataz.com/apple-alerte-ses-utilisateurs-francais-cibles-par-des-logiciels-espions
