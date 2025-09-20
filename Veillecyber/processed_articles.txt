@@ -327,3 +327,4 @@ https://www.zataz.com/openai-lance-un-bug-bounty-inedit-sur-gpt-5-bio
 https://www.zataz.com/apple-alerte-ses-utilisateurs-francais-cibles-par-des-logiciels-espions
 https://thehackernews.com/2025/09/fbi-warns-of-unc6040-and-unc6395.html
 https://thehackernews.com/2025/09/scattered-spider-resurfaces-with.html
+https://thehackernews.com/2025/09/researchers-uncover-gpt-4-powered.html
