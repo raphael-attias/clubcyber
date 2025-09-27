@@ -330,3 +330,6 @@ https://thehackernews.com/2025/09/scattered-spider-resurfaces-with.html
 https://thehackernews.com/2025/09/researchers-uncover-gpt-4-powered.html
 https://www.zataz.com/revengehotels-lia-utilisee-pour-voler-les-donnees-dhotels
 https://thehackernews.com/2025/09/sonicwall-ssl-vpn-flaw-and.html
+https://www.theregister.com/2025/09/24/google_china_spy_report
+https://thehackernews.com/2025/09/crash-tests-for-security-why-bas-is.html
+https://thehackernews.com/2025/09/salesforce-patches-critical-forcedleak.html
