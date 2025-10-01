@@ -335,3 +335,4 @@ https://thehackernews.com/2025/09/crash-tests-for-security-why-bas-is.html
 https://thehackernews.com/2025/09/salesforce-patches-critical-forcedleak.html
 https://www.zataz.com/cyberattaque-sur-un-prestataire-aerien-perturbe-bruxelles-londres-et-berlin
 https://www.theregister.com/2025/09/26/salesforce_agentforce_forceleak_attack
+https://thehackernews.com/2025/09/fortra-goanywhere-cvss-10-flaw.html
