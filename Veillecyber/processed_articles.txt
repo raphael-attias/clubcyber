@@ -338,3 +338,5 @@ https://www.theregister.com/2025/09/26/salesforce_agentforce_forceleak_attack
 https://thehackernews.com/2025/09/fortra-goanywhere-cvss-10-flaw.html
 https://www.silicon.fr/cybersecurite-1371/tribune-expert-ransomware-nouvelle-generation-lextorsion-dopee-a-lia-et-la-hausse-des-attaques-centrees-sur-les-donnees-223608
 https://www.zataz.com/la-faille-qui-a-condamne-freewifi_secure
+https://www.undernews.fr/malwares-virus-antivirus/selon-un-rapport-de-sophos-le-secteur-de-leducation-se-renforce-contre-les-ransomwares.html
+https://www.bleepingcomputer.com/news/security/clop-extortion-emails-claim-theft-of-oracle-e-business-suite-data

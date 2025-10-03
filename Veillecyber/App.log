@@ -12601,3 +12601,81 @@
 2025-10-02 06:33:59,362 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
 2025-10-02 06:34:00,967 [INFO] 2/3 articles envoyés.
 2025-10-02 06:34:00,967 [INFO] Traitement terminé.
+2025-10-03 06:30:53,054 [INFO] Démarrage du script de veille cybersécurité
+2025-10-03 06:30:53,055 [INFO] 340 articles déjà traités.
+2025-10-03 06:30:53,055 [INFO] Scraping bleepingcomputer
+2025-10-03 06:30:58,547 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feed
+2025-10-03 06:30:58,570 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feeds
+2025-10-03 06:30:58,616 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/rss
+2025-10-03 06:31:00,594 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/news/microsoft/new-bug-in-classic-outlook-can-only-be-fixed-via-microsoft-support/ on URL https://www.bleepingcomputer.com/news/microsoft/new-bug-in-classic-outlook-can-only-be-fixed-via-microsoft-support/
+2025-10-03 06:31:00,724 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/news/security/microsoft-outlook-stops-displaying-inline-svg-images-used-in-attacks/ on URL https://www.bleepingcomputer.com/news/security/microsoft-outlook-stops-displaying-inline-svg-images-used-in-attacks/
+2025-10-03 06:31:00,807 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/offer/deals/access-8-cissp-security-and-risk-management-training-courses-for-30/ on URL https://www.bleepingcomputer.com/offer/deals/access-8-cissp-security-and-risk-management-training-courses-for-30/
+2025-10-03 06:31:00,894 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/news/security/draytek-warns-of-remote-code-execution-bug-in-vigor-routers/ on URL https://www.bleepingcomputer.com/news/security/draytek-warns-of-remote-code-execution-bug-in-vigor-routers/
+2025-10-03 06:31:00,968 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/news/security/hackerone-paid-81-million-in-bug-bounties-over-the-past-year/ on URL https://www.bleepingcomputer.com/news/security/hackerone-paid-81-million-in-bug-bounties-over-the-past-year/
+2025-10-03 06:31:01,506 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/news/security/#popular on URL https://www.bleepingcomputer.com/news/security/#popular
+2025-10-03 06:31:01,600 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/tutorials/how-to-access-the-dark-web-using-the-tor-browser/ on URL https://www.bleepingcomputer.com/tutorials/how-to-access-the-dark-web-using-the-tor-browser/
+2025-10-03 06:31:01,691 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/tutorials/how-to-enable-kernel-mode-hardware-enforced-stack-protection-in-windows-11/ on URL https://www.bleepingcomputer.com/tutorials/how-to-enable-kernel-mode-hardware-enforced-stack-protection-in-windows-11/
+2025-10-03 06:31:01,782 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/tutorials/how-to-use-the-windows-registry-editor/ on URL https://www.bleepingcomputer.com/tutorials/how-to-use-the-windows-registry-editor/
+2025-10-03 06:31:01,869 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/tutorials/how-to-backup-and-restore-the-windows-registry/ on URL https://www.bleepingcomputer.com/tutorials/how-to-backup-and-restore-the-windows-registry/
+2025-10-03 06:31:01,921 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/tutorials/how-to-start-windows-in-safe-mode/ on URL https://www.bleepingcomputer.com/tutorials/how-to-start-windows-in-safe-mode/
+2025-10-03 06:31:02,328 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/tutorials/show-hidden-files-in-windows-7/ on URL https://www.bleepingcomputer.com/tutorials/show-hidden-files-in-windows-7/
+2025-10-03 06:31:02,409 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/tutorials/how-to-see-hidden-files-in-windows/ on URL https://www.bleepingcomputer.com/tutorials/how-to-see-hidden-files-in-windows/
+2025-10-03 06:31:02,415 [INFO] Scraping undernews
+2025-10-03 06:31:06,038 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.undernews.fr/feeds
+2025-10-03 06:31:20,200 [INFO] Scraping usine_digitale
+2025-10-03 06:31:24,904 [INFO] Scraping darkreading
+2025-10-03 06:31:25,053 [WARNING] fromstring() returned an invalid string: ...
+2025-10-03 06:31:25,053 [WARNING] Source https://www.darkreading.com parse error.
+2025-10-03 06:31:25,053 [CRITICAL] Must extract urls from either html, text or doc!
+2025-10-03 06:31:25,112 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/
+2025-10-03 06:31:25,189 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feeds
+2025-10-03 06:31:25,196 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/rss
+2025-10-03 06:31:25,201 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feed
+2025-10-03 06:31:25,417 [INFO] Scraping krebsonsecurity
+2025-10-03 06:31:25,820 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://krebsonsecurity.com/feeds
+2025-10-03 06:31:26,635 [WARNING] Erreur newspaper : Article `download()` failed with 403 Client Error: Forbidden for url: https://www.gartner.com/en/conferences/na/identity-access-management-us?utm_source=krebs&utm_medium=banner&utm_campaign=EVT_NA_2025_IAM20_PP_MP6_KREBSONSECURITY on URL https://www.gartner.com/en/conferences/na/identity-access-management-us?utm_source=krebs&utm_medium=banner&utm_campaign=EVT_NA_2025_IAM20_PP_MP6_KREBSONSECURITY
+2025-10-03 06:32:00,430 [WARNING] Erreur newspaper : Article `download()` failed with 403 Client Error: Forbidden for url: https://socket.dev/blog/ongoing-supply-chain-attack-targets-crowdstrike-npm-packages on URL https://socket.dev/blog/ongoing-supply-chain-attack-targets-crowdstrike-npm-packages
+2025-10-03 06:32:04,811 [INFO] Scraping zdnet
+2025-10-03 06:32:06,396 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zdnet.fr/feeds
+2025-10-03 06:32:16,851 [WARNING] Erreur newspaper : Article `download()` failed with Exceeded 30 redirects. on URL https://www.zdnet.fr/actualites/les-lunettes-ray-ban-display-de-meta-ont-elles-contraint-apple-a-changer-ses-plans-482968.htm
+2025-10-03 06:32:16,868 [INFO] Scraping numerama
+2025-10-03 06:32:19,608 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.numerama.com/feeds
+2025-10-03 06:32:31,944 [INFO] Scraping theregister
+2025-10-03 06:32:33,079 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feeds
+2025-10-03 06:32:33,079 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feed
+2025-10-03 06:32:33,086 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/rss
+2025-10-03 06:32:36,682 [INFO] Scraping thehackernews
+2025-10-03 06:32:37,908 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feed
+2025-10-03 06:32:37,942 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/rss
+2025-10-03 06:32:37,945 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feeds
+2025-10-03 06:32:40,643 [INFO] Scraping silicon
+2025-10-03 06:32:41,921 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.silicon.fr/feeds
+2025-10-03 06:32:44,191 [CRITICAL] [REQUEST FAILED] Exceeded 30 redirects.
+2025-10-03 06:32:44,340 [CRITICAL] [REQUEST FAILED] Exceeded 30 redirects.
+2025-10-03 06:32:54,393 [INFO] Scraping zataz
+2025-10-03 06:32:57,365 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zataz.com/feeds
+2025-10-03 06:33:22,301 [INFO] Scraping cybernews
+2025-10-03 06:33:22,444 [WARNING] fromstring() returned an invalid string: ...
+2025-10-03 06:33:22,444 [WARNING] Source https://cybernews.com parse error.
+2025-10-03 06:33:22,444 [CRITICAL] Must extract urls from either html, text or doc!
+2025-10-03 06:33:22,505 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/
+2025-10-03 06:33:22,579 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feed
+2025-10-03 06:33:22,582 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feeds
+2025-10-03 06:33:22,614 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/rss
+2025-10-03 06:33:22,854 [INFO] Scraping lemondeinformatique
+2025-10-03 06:33:23,553 [WARNING] fromstring() returned an invalid string: ...
+2025-10-03 06:33:23,553 [WARNING] Source https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/ parse error.
+2025-10-03 06:33:23,553 [CRITICAL] Must extract urls from either html, text or doc!
+2025-10-03 06:33:24,058 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/
+2025-10-03 06:33:24,667 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/rss
+2025-10-03 06:33:24,677 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feeds
+2025-10-03 06:33:24,683 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feed
+2025-10-03 06:33:28,706 [INFO] Envoi (score 25) : Feds Tie ‘Scattered Spider’ Duo to $115M in Ransoms – Krebs on Security
+2025-10-03 06:33:35,436 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 06:33:35,543 [WARNING] Échec envoi ou résumé vide : https://krebsonsecurity.com/2025/09/feds-tie-scattered-spider-duo-to-115m-in-ransoms
+2025-10-03 06:33:36,543 [INFO] Envoi (score 22) : Selon un rapport de Sophos, le secteur de l’éducation se renforce contre les ransomwares
+2025-10-03 06:33:41,355 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 06:33:43,101 [INFO] Envoi (score 21) : Clop extortion emails claim theft of Oracle E-Business Suite data
+2025-10-03 06:33:48,354 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-03 06:33:49,608 [INFO] 2/3 articles envoyés.
+2025-10-03 06:33:49,608 [INFO] Traitement terminé.
