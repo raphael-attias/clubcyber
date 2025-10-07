@@ -12901,3 +12901,69 @@
 2025-10-06 06:36:28,858 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
 2025-10-06 06:36:30,134 [INFO] 1/3 articles envoyés.
 2025-10-06 06:36:30,135 [INFO] Traitement terminé.
+2025-10-07 06:32:06,029 [INFO] Démarrage du script de veille cybersécurité
+2025-10-07 06:32:06,030 [INFO] 346 articles déjà traités.
+2025-10-07 06:32:06,030 [INFO] Scraping thehackernews
+2025-10-07 06:32:07,114 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feed
+2025-10-07 06:32:07,196 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feeds
+2025-10-07 06:32:07,230 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/rss
+2025-10-07 06:32:11,298 [INFO] Scraping silicon
+2025-10-07 06:32:12,725 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.silicon.fr/feeds
+2025-10-07 06:32:17,360 [CRITICAL] [REQUEST FAILED] Exceeded 30 redirects.
+2025-10-07 06:32:17,467 [CRITICAL] [REQUEST FAILED] Exceeded 30 redirects.
+2025-10-07 06:32:25,677 [INFO] Scraping lemondeinformatique
+2025-10-07 06:32:26,465 [WARNING] fromstring() returned an invalid string: ...
+2025-10-07 06:32:26,465 [WARNING] Source https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/ parse error.
+2025-10-07 06:32:26,465 [CRITICAL] Must extract urls from either html, text or doc!
+2025-10-07 06:32:27,258 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/
+2025-10-07 06:32:27,998 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feeds
+2025-10-07 06:32:28,004 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/rss
+2025-10-07 06:32:28,070 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feed
+2025-10-07 06:32:33,749 [INFO] Scraping krebsonsecurity
+2025-10-07 06:32:34,629 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://krebsonsecurity.com/feeds
+2025-10-07 06:32:35,597 [WARNING] Erreur newspaper : Article `download()` failed with 403 Client Error: Forbidden for url: https://www.gartner.com/en/conferences/na/identity-access-management-us?utm_source=krebs&utm_medium=banner&utm_campaign=EVT_NA_2025_IAM20_PP_MP6_KREBSONSECURITY on URL https://www.gartner.com/en/conferences/na/identity-access-management-us?utm_source=krebs&utm_medium=banner&utm_campaign=EVT_NA_2025_IAM20_PP_MP6_KREBSONSECURITY
+2025-10-07 06:32:58,076 [WARNING] Erreur newspaper : Article `download()` failed with 403 Client Error: Forbidden for url: https://socket.dev/blog/ongoing-supply-chain-attack-targets-crowdstrike-npm-packages on URL https://socket.dev/blog/ongoing-supply-chain-attack-targets-crowdstrike-npm-packages
+2025-10-07 06:33:05,089 [INFO] Scraping bleepingcomputer
+2025-10-07 06:33:07,260 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/rss
+2025-10-07 06:33:07,471 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feeds
+2025-10-07 06:33:07,505 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feed
+2025-10-07 06:34:00,865 [INFO] Scraping numerama
+2025-10-07 06:34:05,112 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.numerama.com/feeds
+2025-10-07 06:34:19,697 [INFO] Scraping theregister
+2025-10-07 06:34:21,028 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feeds
+2025-10-07 06:34:21,042 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feed
+2025-10-07 06:34:21,046 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/rss
+2025-10-07 06:34:25,580 [INFO] Scraping zdnet
+2025-10-07 06:34:27,996 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zdnet.fr/feeds
+2025-10-07 06:34:36,559 [WARNING] Erreur newspaper : Article `download()` failed with Exceeded 30 redirects. on URL https://www.zdnet.fr/actualites/la-main-humaine-dernier-frontiere-a-franchir-pour-les-robots-483110.htm
+2025-10-07 06:34:42,707 [INFO] Scraping usine_digitale
+2025-10-07 06:34:51,829 [INFO] Scraping darkreading
+2025-10-07 06:34:52,047 [WARNING] fromstring() returned an invalid string: ...
+2025-10-07 06:34:52,047 [WARNING] Source https://www.darkreading.com parse error.
+2025-10-07 06:34:52,047 [CRITICAL] Must extract urls from either html, text or doc!
+2025-10-07 06:34:52,148 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/
+2025-10-07 06:34:52,270 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/rss
+2025-10-07 06:34:52,286 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feeds
+2025-10-07 06:34:52,294 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feed
+2025-10-07 06:34:52,706 [INFO] Scraping undernews
+2025-10-07 06:34:56,891 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.undernews.fr/feeds
+2025-10-07 06:35:14,648 [INFO] Scraping zataz
+2025-10-07 06:35:18,145 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zataz.com/feeds
+2025-10-07 06:35:46,275 [INFO] Scraping cybernews
+2025-10-07 06:35:46,417 [WARNING] fromstring() returned an invalid string: ...
+2025-10-07 06:35:46,417 [WARNING] Source https://cybernews.com parse error.
+2025-10-07 06:35:46,417 [CRITICAL] Must extract urls from either html, text or doc!
+2025-10-07 06:35:46,499 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/
+2025-10-07 06:35:46,602 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feeds
+2025-10-07 06:35:46,611 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/rss
+2025-10-07 06:35:46,630 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feed
+2025-10-07 06:35:47,027 [INFO] Envoi (score 30) : ⚡ Weekly Recap: Oracle 0-Day, BitLocker Bypass, VMScape, WhatsApp Worm & More
+2025-10-07 06:35:58,799 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-07 06:35:58,984 [WARNING] Échec envoi ou résumé vide : https://thehackernews.com/2025/10/weekly-recap-oracle-0-day-bitlocker.html
+2025-10-07 06:35:59,984 [INFO] Envoi (score 25) : Feds Tie ‘Scattered Spider’ Duo to $115M in Ransoms – Krebs on Security
+2025-10-07 06:36:08,409 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-07 06:36:08,588 [WARNING] Échec envoi ou résumé vide : https://krebsonsecurity.com/2025/09/feds-tie-scattered-spider-duo-to-115m-in-ransoms
+2025-10-07 06:36:09,588 [INFO] Envoi (score 19) : Fuite et RaaS : le groupe Nova expose ses victimes
+2025-10-07 06:36:14,188 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-07 06:36:15,613 [INFO] 1/3 articles envoyés.
+2025-10-07 06:36:15,613 [INFO] Traitement terminé.
