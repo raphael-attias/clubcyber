@@ -13260,3 +13260,78 @@
 2025-10-11 06:32:08,964 [WARNING] Échec envoi ou résumé vide : https://www.silicon.fr/cybersecurite-1371/tribune-expert-attaques-ddos-deconstruire-les-mythes-pour-mieux-proteger-les-infrastructures-223768
 2025-10-11 06:32:09,964 [INFO] 1/3 articles envoyés.
 2025-10-11 06:32:09,965 [INFO] Traitement terminé.
+2025-10-12 06:28:32,597 [INFO] Démarrage du script de veille cybersécurité
+2025-10-12 06:28:32,598 [INFO] 350 articles déjà traités.
+2025-10-12 06:28:32,598 [INFO] Scraping zdnet
+2025-10-12 06:28:35,146 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zdnet.fr/feeds
+2025-10-12 06:28:44,654 [INFO] Scraping lemondeinformatique
+2025-10-12 06:28:45,344 [WARNING] fromstring() returned an invalid string: ...
+2025-10-12 06:28:45,345 [WARNING] Source https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/ parse error.
+2025-10-12 06:28:45,345 [CRITICAL] Must extract urls from either html, text or doc!
+2025-10-12 06:28:45,915 [CRITICAL] [REQUEST FAILED] 502 Server Error: Bad Gateway for url: https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/
+2025-10-12 06:28:46,540 [CRITICAL] [REQUEST FAILED] 502 Server Error: Bad Gateway for url: https://www.lemondeinformatique.fr/feed
+2025-10-12 06:28:46,550 [CRITICAL] [REQUEST FAILED] 502 Server Error: Bad Gateway for url: https://www.lemondeinformatique.fr/feeds
+2025-10-12 06:28:46,562 [CRITICAL] [REQUEST FAILED] 502 Server Error: Bad Gateway for url: https://www.lemondeinformatique.fr/rss
+2025-10-12 06:28:48,825 [INFO] Scraping usine_digitale
+2025-10-12 06:28:57,777 [INFO] Scraping bleepingcomputer
+2025-10-12 06:28:59,359 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feed
+2025-10-12 06:28:59,530 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/rss
+2025-10-12 06:28:59,559 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feeds
+2025-10-12 06:29:02,636 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/news/security/spain-dismantles-gxc-team-cybercrime-syndicate-arrests-leader/ on URL https://www.bleepingcomputer.com/news/security/spain-dismantles-gxc-team-cybercrime-syndicate-arrests-leader/
+2025-10-12 06:29:02,760 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/offer/deals/get-a-refurbished-lenovo-chromebook-in-this-70-deal/ on URL https://www.bleepingcomputer.com/offer/deals/get-a-refurbished-lenovo-chromebook-in-this-70-deal/
+2025-10-12 06:29:03,342 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/news/security/hackers-exploiting-zero-day-in-gladinet-file-sharing-software/ on URL https://www.bleepingcomputer.com/news/security/hackers-exploiting-zero-day-in-gladinet-file-sharing-software/
+2025-10-12 06:29:03,450 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/news/security/#tlatest on URL https://www.bleepingcomputer.com/news/security/#tlatest
+2025-10-12 06:29:03,561 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/news/security/#popular on URL https://www.bleepingcomputer.com/news/security/#popular
+2025-10-12 06:29:03,677 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/tutorials/how-to-access-the-dark-web-using-the-tor-browser/ on URL https://www.bleepingcomputer.com/tutorials/how-to-access-the-dark-web-using-the-tor-browser/
+2025-10-12 06:29:03,827 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/tutorials/how-to-enable-kernel-mode-hardware-enforced-stack-protection-in-windows-11/ on URL https://www.bleepingcomputer.com/tutorials/how-to-enable-kernel-mode-hardware-enforced-stack-protection-in-windows-11/
+2025-10-12 06:29:03,926 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/tutorials/how-to-use-the-windows-registry-editor/ on URL https://www.bleepingcomputer.com/tutorials/how-to-use-the-windows-registry-editor/
+2025-10-12 06:29:04,030 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/tutorials/how-to-backup-and-restore-the-windows-registry/ on URL https://www.bleepingcomputer.com/tutorials/how-to-backup-and-restore-the-windows-registry/
+2025-10-12 06:29:04,151 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/tutorials/how-to-start-windows-in-safe-mode/ on URL https://www.bleepingcomputer.com/tutorials/how-to-start-windows-in-safe-mode/
+2025-10-12 06:29:04,258 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/tutorials/how-to-remove-a-trojan-virus-worm-or-malware/ on URL https://www.bleepingcomputer.com/tutorials/how-to-remove-a-trojan-virus-worm-or-malware/
+2025-10-12 06:29:04,809 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/tutorials/how-to-see-hidden-files-in-windows/ on URL https://www.bleepingcomputer.com/tutorials/how-to-see-hidden-files-in-windows/
+2025-10-12 06:29:04,817 [INFO] Scraping silicon
+2025-10-12 06:29:07,382 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.silicon.fr/feeds
+2025-10-12 06:29:21,070 [WARNING] Erreur newspaper : Article `download()` failed with HTTPSConnectionPool(host='www.silicon.fr', port=443): Read timed out. (read timeout=7) on URL https://www.silicon.fr/Thematique/communique-de-presse-1381/Breves/aptean-devoile-solution-erp-change-donne-secteur-agroalimentaire-485469.htm
+2025-10-12 06:29:21,688 [INFO] Scraping numerama
+2025-10-12 06:29:24,330 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.numerama.com/feeds
+2025-10-12 06:29:44,984 [INFO] Scraping thehackernews
+2025-10-12 06:29:46,088 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feed
+2025-10-12 06:29:46,094 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/rss
+2025-10-12 06:29:46,098 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feeds
+2025-10-12 06:29:49,723 [INFO] Scraping zataz
+2025-10-12 06:29:53,111 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zataz.com/feeds
+2025-10-12 06:30:20,180 [INFO] Scraping krebsonsecurity
+2025-10-12 06:30:21,949 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://krebsonsecurity.com/feeds
+2025-10-12 06:30:53,120 [WARNING] Erreur newspaper : Article `download()` failed with 403 Client Error: Forbidden for url: https://www.gartner.com/en/conferences/na/identity-access-management-us?utm_source=krebs&utm_medium=banner&utm_campaign=EVT_NA_2025_IAM20_PP_MP6_KREBSONSECURITY on URL https://www.gartner.com/en/conferences/na/identity-access-management-us?utm_source=krebs&utm_medium=banner&utm_campaign=EVT_NA_2025_IAM20_PP_MP6_KREBSONSECURITY
+2025-10-12 06:31:43,289 [INFO] Scraping darkreading
+2025-10-12 06:31:43,536 [WARNING] fromstring() returned an invalid string: ...
+2025-10-12 06:31:43,536 [WARNING] Source https://www.darkreading.com parse error.
+2025-10-12 06:31:43,536 [CRITICAL] Must extract urls from either html, text or doc!
+2025-10-12 06:31:43,635 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/
+2025-10-12 06:31:43,762 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feeds
+2025-10-12 06:31:43,776 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/rss
+2025-10-12 06:31:43,784 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feed
+2025-10-12 06:31:44,231 [INFO] Scraping cybernews
+2025-10-12 06:31:44,379 [WARNING] fromstring() returned an invalid string: ...
+2025-10-12 06:31:44,379 [WARNING] Source https://cybernews.com parse error.
+2025-10-12 06:31:44,379 [CRITICAL] Must extract urls from either html, text or doc!
+2025-10-12 06:31:44,482 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/
+2025-10-12 06:31:44,606 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feeds
+2025-10-12 06:31:44,632 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feed
+2025-10-12 06:31:44,634 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/rss
+2025-10-12 06:31:45,079 [INFO] Scraping theregister
+2025-10-12 06:31:46,228 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feed
+2025-10-12 06:31:46,247 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feeds
+2025-10-12 06:31:46,248 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/rss
+2025-10-12 06:31:50,826 [INFO] Scraping undernews
+2025-10-12 06:31:55,137 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.undernews.fr/feeds
+2025-10-12 06:32:10,953 [INFO] Envoi (score 30) : ⚡ Weekly Recap: Oracle 0-Day, BitLocker Bypass, VMScape, WhatsApp Worm & More
+2025-10-12 06:32:24,127 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-12 06:32:24,337 [WARNING] Échec envoi ou résumé vide : https://thehackernews.com/2025/10/weekly-recap-oracle-0-day-bitlocker.html
+2025-10-12 06:32:25,337 [INFO] Envoi (score 26) : Attaques DDoS : déconstruire les mythes
+2025-10-12 06:32:30,105 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-12 06:32:31,434 [INFO] Envoi (score 21) : Cyberattaque : Jaguar Land Rover reprend sa production
+2025-10-12 06:32:37,538 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-12 06:32:37,714 [WARNING] Échec envoi ou résumé vide : https://www.silicon.fr/business-1367/cyberattaque-jaguar-land-rover-redemarre-apres-plus-dun-mois-de-paralysie-223736
+2025-10-12 06:32:38,715 [INFO] 1/3 articles envoyés.
+2025-10-12 06:32:38,715 [INFO] Traitement terminé.
