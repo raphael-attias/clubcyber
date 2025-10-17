@@ -352,3 +352,5 @@ https://www.silicon.fr/cybersecurite-1371/tribune-expert-attaques-ddos-deconstru
 https://www.zataz.com/pirates-de-la-paie-alerte-sur-un-vague-mondiale-de-detournements-de-salaires
 https://www.silicon.fr/business-1367/cyberattaque-jaguar-land-rover-redemarre-apres-plus-dun-mois-de-paralysie-223736
 https://www.theregister.com/2025/10/14/oracle_rushes_out_another_emergency
+https://www.theregister.com/2025/10/16/machine_learning_meets_malware
+https://www.numerama.com/cyberguerre/2094685-cette-nouvelle-attaque-met-en-danger-la-double-authentification-sur-android.html
