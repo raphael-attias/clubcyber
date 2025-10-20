@@ -357,3 +357,5 @@ https://www.numerama.com/cyberguerre/2094685-cette-nouvelle-attaque-met-en-dange
 https://www.zataz.com/shinyhunters-revendique-salesforce-et-vise-air-france-klm
 https://www.theregister.com/2025/10/16/cisco_senate_scrutiny
 https://thehackernews.com/2025/10/f5-breach-exposes-big-ip-source-code.html
+https://www.numerama.com/cyberguerre/2096749-le-phishing-vous-fait-peur-attendez-de-lire-les-predictions-de-microsoft.html
+https://www.bleepingcomputer.com/news/security/hackers-exploit-cisco-snmp-flaw-to-deploy-rootkit-on-switches
