@@ -362,3 +362,4 @@ https://www.bleepingcomputer.com/news/security/hackers-exploit-cisco-snmp-flaw-t
 https://www.zataz.com/microsoft-warns-of-surge-in-identity-breaches
 https://www.zataz.com/elections-municipales-2026-la-cybersecurite-enjeu-silencieux-du-scrutin
 https://www.zataz.com/microsoft-alerte-sur-lexplosion-des-piratages-didentite
+https://www.zataz.com/oracle-vise-envoy-air-confirme-une-intrusion-dans-sa-suite-e-business
