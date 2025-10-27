@@ -14386,3 +14386,65 @@
 2025-10-26 06:33:05,326 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
 2025-10-26 06:33:07,066 [INFO] 1/3 articles envoyés.
 2025-10-26 06:33:07,066 [INFO] Traitement terminé.
+2025-10-27 06:36:14,872 [INFO] Démarrage du script de veille cybersécurité
+2025-10-27 06:36:14,873 [INFO] 366 articles déjà traités.
+2025-10-27 06:36:14,873 [INFO] Scraping darkreading
+2025-10-27 06:36:15,191 [WARNING] fromstring() returned an invalid string: ...
+2025-10-27 06:36:15,191 [WARNING] Source https://www.darkreading.com parse error.
+2025-10-27 06:36:15,191 [CRITICAL] Must extract urls from either html, text or doc!
+2025-10-27 06:36:15,255 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/
+2025-10-27 06:36:15,342 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feed
+2025-10-27 06:36:15,359 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/rss
+2025-10-27 06:36:15,368 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feeds
+2025-10-27 06:36:15,644 [INFO] Scraping lemondeinformatique
+2025-10-27 06:36:16,281 [WARNING] fromstring() returned an invalid string: ...
+2025-10-27 06:36:16,281 [WARNING] Source https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/ parse error.
+2025-10-27 06:36:16,281 [CRITICAL] Must extract urls from either html, text or doc!
+2025-10-27 06:36:16,808 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/
+2025-10-27 06:36:17,365 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/rss
+2025-10-27 06:36:17,368 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feeds
+2025-10-27 06:36:17,375 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feed
+2025-10-27 06:36:21,385 [INFO] Scraping numerama
+2025-10-27 06:36:24,718 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.numerama.com/feeds
+2025-10-27 06:36:37,471 [INFO] Scraping undernews
+2025-10-27 06:36:40,699 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.undernews.fr/feeds
+2025-10-27 06:36:54,960 [INFO] Scraping zdnet
+2025-10-27 06:36:56,587 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zdnet.fr/feeds
+2025-10-27 06:37:04,493 [INFO] Scraping zataz
+2025-10-27 06:37:07,618 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zataz.com/feeds
+2025-10-27 06:37:32,086 [INFO] Scraping thehackernews
+2025-10-27 06:37:33,166 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feed
+2025-10-27 06:37:33,199 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feeds
+2025-10-27 06:37:33,229 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/rss
+2025-10-27 06:37:36,209 [INFO] Scraping silicon
+2025-10-27 06:37:37,867 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.silicon.fr/feeds
+2025-10-27 06:37:43,728 [INFO] Scraping krebsonsecurity
+2025-10-27 06:37:44,613 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://krebsonsecurity.com/feeds
+2025-10-27 06:37:45,585 [WARNING] Erreur newspaper : Article `download()` failed with 403 Client Error: Forbidden for url: https://www.gartner.com/en/conferences/na/identity-access-management-us?utm_source=krebs&utm_medium=banner&utm_campaign=EVT_NA_2025_IAM20_PP_MP6_KREBSONSECURITY on URL https://www.gartner.com/en/conferences/na/identity-access-management-us?utm_source=krebs&utm_medium=banner&utm_campaign=EVT_NA_2025_IAM20_PP_MP6_KREBSONSECURITY
+2025-10-27 06:38:23,047 [INFO] Scraping usine_digitale
+2025-10-27 06:38:30,293 [INFO] Scraping bleepingcomputer
+2025-10-27 06:38:31,301 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feed
+2025-10-27 06:38:31,317 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feeds
+2025-10-27 06:38:31,318 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/rss
+2025-10-27 06:39:06,377 [INFO] Scraping cybernews
+2025-10-27 06:39:06,548 [WARNING] fromstring() returned an invalid string: ...
+2025-10-27 06:39:06,549 [WARNING] Source https://cybernews.com parse error.
+2025-10-27 06:39:06,549 [CRITICAL] Must extract urls from either html, text or doc!
+2025-10-27 06:39:06,620 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/
+2025-10-27 06:39:06,714 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/rss
+2025-10-27 06:39:06,729 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feeds
+2025-10-27 06:39:06,737 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feed
+2025-10-27 06:39:07,029 [INFO] Scraping theregister
+2025-10-27 06:39:07,823 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feed
+2025-10-27 06:39:07,840 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/rss
+2025-10-27 06:39:07,849 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feeds
+2025-10-27 06:39:11,930 [INFO] Envoi (score 20) : APT36 Targets Indian Government with Golang-Based DeskRAT Malware Campaign
+2025-10-27 06:39:22,437 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-27 06:39:22,587 [WARNING] Échec envoi ou résumé vide : https://thehackernews.com/2025/10/apt36-targets-indian-government-with.html
+2025-10-27 06:39:23,587 [INFO] Envoi (score 19) : Cartographie de la sécurité réseau : dix leçons à retenir
+2025-10-27 06:39:32,943 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-27 06:39:33,078 [WARNING] Échec envoi ou résumé vide : https://www.zataz.com/cartographie-de-la-securite-reseau-dix-lecons-a-retenir
+2025-10-27 06:39:34,078 [INFO] Envoi (score 18) : « Comment j’ai failli me faire pirater lors d’un entretien d’embauche ? » Un développeur raconte comment l’IA lui a sauvé la mise
+2025-10-27 06:39:38,843 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-27 06:39:40,096 [INFO] 1/3 articles envoyés.
+2025-10-27 06:39:40,096 [INFO] Traitement terminé.
