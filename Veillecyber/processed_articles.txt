@@ -370,3 +370,5 @@ https://www.undernews.fr/malwares-virus-antivirus/kaspersky-detecte-un-nouveau-l
 https://www.theregister.com/2025/10/27/microsoft_wsus_attacks_multiple_orgs
 https://www.numerama.com/cyberguerre/2103247-le-jour-ou-mon-aspirateur-intelligent-sest-retourne-contre-moi-un-developpeur-raconte-comment-un-produit-bon-marche-a-cartographie-son-domicile.html
 https://www.numerama.com/cyberguerre/2106151-comment-ces-10-paquets-malveillants-ont-silencieusement-infiltre-des-milliers-de-projets-informatiques.html
+https://www.numerama.com/cyberguerre/2106533-etes-vous-capables-de-manipuler-une-ia-voici-un-jeu-pour-tester-vos-capacites-de-hacker.html
+https://www.numerama.com/cyberguerre/2104109-comment-un-navigateur-respectueux-de-la-vie-privee-a-piege-des-millions-dutilisateurs.html
