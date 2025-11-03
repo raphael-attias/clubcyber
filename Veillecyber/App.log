@@ -14860,3 +14860,68 @@
 2025-11-02 06:34:08,969 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
 2025-11-02 06:34:10,242 [INFO] 2/3 articles envoyés.
 2025-11-02 06:34:10,242 [INFO] Traitement terminé.
+2025-11-03 06:35:08,915 [INFO] Démarrage du script de veille cybersécurité
+2025-11-03 06:35:08,915 [INFO] 374 articles déjà traités.
+2025-11-03 06:35:08,915 [INFO] Scraping numerama
+2025-11-03 06:35:13,185 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.numerama.com/feeds
+2025-11-03 06:35:33,441 [INFO] Scraping lemondeinformatique
+2025-11-03 06:35:34,201 [WARNING] fromstring() returned an invalid string: ...
+2025-11-03 06:35:34,201 [WARNING] Source https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/ parse error.
+2025-11-03 06:35:34,201 [CRITICAL] Must extract urls from either html, text or doc!
+2025-11-03 06:35:34,872 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/
+2025-11-03 06:35:35,566 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/rss
+2025-11-03 06:35:35,566 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feed
+2025-11-03 06:35:35,566 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feeds
+2025-11-03 06:35:40,435 [INFO] Scraping krebsonsecurity
+2025-11-03 06:35:42,001 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://krebsonsecurity.com/feeds
+2025-11-03 06:36:15,098 [INFO] Scraping thehackernews
+2025-11-03 06:36:16,422 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feed
+2025-11-03 06:36:16,437 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/rss
+2025-11-03 06:36:16,468 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feeds
+2025-11-03 06:36:20,750 [INFO] Scraping cybernews
+2025-11-03 06:36:21,016 [WARNING] fromstring() returned an invalid string: ...
+2025-11-03 06:36:21,016 [WARNING] Source https://cybernews.com parse error.
+2025-11-03 06:36:21,016 [CRITICAL] Must extract urls from either html, text or doc!
+2025-11-03 06:36:21,104 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/
+2025-11-03 06:36:21,218 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feeds
+2025-11-03 06:36:21,240 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feed
+2025-11-03 06:36:21,252 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/rss
+2025-11-03 06:36:21,643 [INFO] Scraping zataz
+2025-11-03 06:36:24,865 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zataz.com/feeds
+2025-11-03 06:36:51,114 [INFO] Scraping theregister
+2025-11-03 06:36:52,089 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/rss
+2025-11-03 06:36:52,112 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feed
+2025-11-03 06:36:52,162 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feeds
+2025-11-03 06:36:56,408 [INFO] Scraping silicon
+2025-11-03 06:36:58,940 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.silicon.fr/feeds
+2025-11-03 06:37:07,038 [INFO] Scraping zdnet
+2025-11-03 06:37:09,115 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zdnet.fr/feeds
+2025-11-03 06:37:18,714 [INFO] Scraping darkreading
+2025-11-03 06:37:18,996 [WARNING] fromstring() returned an invalid string: ...
+2025-11-03 06:37:18,996 [WARNING] Source https://www.darkreading.com parse error.
+2025-11-03 06:37:18,996 [CRITICAL] Must extract urls from either html, text or doc!
+2025-11-03 06:37:19,094 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/
+2025-11-03 06:37:19,223 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feeds
+2025-11-03 06:37:19,223 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feed
+2025-11-03 06:37:19,226 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/rss
+2025-11-03 06:37:19,595 [INFO] Scraping bleepingcomputer
+2025-11-03 06:37:21,737 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/rss
+2025-11-03 06:37:21,837 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feeds
+2025-11-03 06:37:21,867 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feed
+2025-11-03 06:37:29,560 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/tutorials/how-to-backup-and-restore-the-windows-registry/ on URL https://www.bleepingcomputer.com/tutorials/how-to-backup-and-restore-the-windows-registry/
+2025-11-03 06:37:29,654 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/tutorials/how-to-start-windows-in-safe-mode/ on URL https://www.bleepingcomputer.com/tutorials/how-to-start-windows-in-safe-mode/
+2025-11-03 06:37:29,867 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/tutorials/how-to-remove-a-trojan-virus-worm-or-malware/ on URL https://www.bleepingcomputer.com/tutorials/how-to-remove-a-trojan-virus-worm-or-malware/
+2025-11-03 06:37:30,462 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/tutorials/how-to-see-hidden-files-in-windows/ on URL https://www.bleepingcomputer.com/tutorials/how-to-see-hidden-files-in-windows/
+2025-11-03 06:37:30,477 [INFO] Scraping undernews
+2025-11-03 06:37:35,494 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.undernews.fr/feeds
+2025-11-03 06:37:54,704 [INFO] Scraping usine_digitale
+2025-11-03 06:38:00,730 [INFO] Envoi (score 32) : - Reprendre le contrôle du risque face aux cybermenaces
+2025-11-03 06:38:10,996 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-03 06:38:11,228 [WARNING] Échec envoi ou résumé vide : https://www.silicon.fr/cybersecurite-1371/tribune-expert-reprendre-le-controle-du-risque-face-aux-cybermenaces-224186
+2025-11-03 06:38:12,228 [INFO] Envoi (score 27) : ⚡ Weekly Recap: WSUS Exploited, LockBit 5.0 Returns, Telegram Backdoor, F5 Breach Widens
+2025-11-03 06:38:28,741 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-03 06:38:28,902 [WARNING] Échec envoi ou résumé vide : https://thehackernews.com/2025/10/weekly-recap-wsus-exploited-lockbit-50.html
+2025-11-03 06:38:29,902 [INFO] Envoi (score 20) : C’était une question de temps : la première vulnérabilité de ChatGPT Atlas a été trouvée
+2025-11-03 06:38:34,310 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-03 06:38:35,671 [INFO] 1/3 articles envoyés.
+2025-11-03 06:38:35,671 [INFO] Traitement terminé.
