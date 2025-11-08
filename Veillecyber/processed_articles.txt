@@ -375,3 +375,5 @@ https://www.numerama.com/cyberguerre/2104109-comment-un-navigateur-respectueux-d
 https://www.numerama.com/cyberguerre/2102721-cetait-une-question-de-temps-la-premiere-vulnerabilite-de-chatgpt-atlas-a-ete-trouvee.html
 https://www.zdnet.fr/actualites/pourquoi-les-autorites-americaines-veulent-bannir-les-routeurs-tp-link-et-comment-securiser-votre-acces-wi-fi-des-aujourdhui-484472.htm
 https://www.zataz.com/pourquoi-externaliser-la-cybersecurite-devient-crucial
+https://www.zdnet.fr/actualites/google-repere-les-malware-qui-se-transforment-en-cours-dattaque-grace-a-lia-484646.htm
+https://www.theregister.com/2025/11/05/attackers_experiment_with_gemini_ai
