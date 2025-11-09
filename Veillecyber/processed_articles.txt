@@ -377,3 +377,5 @@ https://www.zdnet.fr/actualites/pourquoi-les-autorites-americaines-veulent-banni
 https://www.zataz.com/pourquoi-externaliser-la-cybersecurite-devient-crucial
 https://www.zdnet.fr/actualites/google-repere-les-malware-qui-se-transforment-en-cours-dattaque-grace-a-lia-484646.htm
 https://www.theregister.com/2025/11/05/attackers_experiment_with_gemini_ai
+https://www.zataz.com/cyberattaque-americaine-contre-le-temps-chinois
+https://www.zataz.com/sk-telecom-frappe-par-une-chute-historique-apres-une-cyberattaque
