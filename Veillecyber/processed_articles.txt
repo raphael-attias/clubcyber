@@ -379,3 +379,5 @@ https://www.zdnet.fr/actualites/google-repere-les-malware-qui-se-transforment-en
 https://www.theregister.com/2025/11/05/attackers_experiment_with_gemini_ai
 https://www.zataz.com/cyberattaque-americaine-contre-le-temps-chinois
 https://www.zataz.com/sk-telecom-frappe-par-une-chute-historique-apres-une-cyberattaque
+https://www.undernews.fr/malwares-virus-antivirus/etude-google-threat-intelligence-lia-transforme-les-logiciels-malveillants.html
+https://www.undernews.fr/reseau-securite/black-friday-et-cyber-monday-vigilance-accrue-pour-les-commercants-face-aux-risques-cyber.html
