@@ -385,3 +385,4 @@ https://www.numerama.com/cyberguerre/2110437-des-hackers-pro-russes-creent-des-e
 https://thehackernews.com/2025/11/cisos-expert-guide-to-ai-supply-chain.html
 https://thehackernews.com/2025/11/google-uncovers-promptflux-malware-that.html
 https://www.undernews.fr/reseau-securite/pourquoi-la-cybersecurite-et-la-sobriete-numerique-sont-indissociables-dans-la-gestion-actuelle-des-parcs-informatiques.html
+https://www.undernews.fr/reseau-securite/la-fracture-de-la-cyber-resilience-coute-des-millions-aux-entreprises-francaises.html
