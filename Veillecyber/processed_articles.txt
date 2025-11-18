@@ -386,3 +386,5 @@ https://thehackernews.com/2025/11/cisos-expert-guide-to-ai-supply-chain.html
 https://thehackernews.com/2025/11/google-uncovers-promptflux-malware-that.html
 https://www.undernews.fr/reseau-securite/pourquoi-la-cybersecurite-et-la-sobriete-numerique-sont-indissociables-dans-la-gestion-actuelle-des-parcs-informatiques.html
 https://www.undernews.fr/reseau-securite/la-fracture-de-la-cyber-resilience-coute-des-millions-aux-entreprises-francaises.html
+https://www.undernews.fr/hacking-hacktivisme/ia-generative-et-cybersecurite-offensive-quand-les-llm-tombent-entre-de-mauvaises-mains.html
+https://www.zdnet.fr/actualites/lia-ne-se-contente-plus-dassister-les-cyberattaques-elle-peut-desormais-les-mener-a-bien-485047.htm
