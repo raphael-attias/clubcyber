@@ -390,3 +390,4 @@ https://www.undernews.fr/hacking-hacktivisme/ia-generative-et-cybersecurite-offe
 https://www.zdnet.fr/actualites/lia-ne-se-contente-plus-dassister-les-cyberattaques-elle-peut-desormais-les-mener-a-bien-485047.htm
 https://www.theregister.com/2025/11/19/thousands_more_asus_routers_pwned
 https://www.numerama.com/cyberguerre/2120175-comment-les-voitures-sont-devenues-des-ordinateurs-sur-roues-un-expert-du-piratage-automobile-decrypte-les-menaces-reelles.html
+https://www.theregister.com/2025/11/23/infosec_news_in_brief
