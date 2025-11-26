@@ -391,3 +391,5 @@ https://www.zdnet.fr/actualites/lia-ne-se-contente-plus-dassister-les-cyberattaq
 https://www.theregister.com/2025/11/19/thousands_more_asus_routers_pwned
 https://www.numerama.com/cyberguerre/2120175-comment-les-voitures-sont-devenues-des-ordinateurs-sur-roues-un-expert-du-piratage-automobile-decrypte-les-menaces-reelles.html
 https://www.theregister.com/2025/11/23/infosec_news_in_brief
+https://thehackernews.com/2025/11/3-soc-challenges-you-need-to-solve.html
+https://www.silicon.fr/cybersecurite-1371/comment-une-cyberattaque-a-paralyse-23-000-professionnels-de-sante-224548
