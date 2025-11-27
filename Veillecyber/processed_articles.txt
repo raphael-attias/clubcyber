@@ -393,3 +393,4 @@ https://www.numerama.com/cyberguerre/2120175-comment-les-voitures-sont-devenues-
 https://www.theregister.com/2025/11/23/infosec_news_in_brief
 https://thehackernews.com/2025/11/3-soc-challenges-you-need-to-solve.html
 https://www.silicon.fr/cybersecurite-1371/comment-une-cyberattaque-a-paralyse-23-000-professionnels-de-sante-224548
+https://krebsonsecurity.com/2025/11/meet-rey-the-admin-of-scattered-lapsus-hunters
