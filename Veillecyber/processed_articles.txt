@@ -406,3 +406,5 @@ https://www.bleepingcomputer.com/news/security/marquis-data-breach-impacts-over-
 https://thehackernews.com/2025/12/cisa-reports-prc-hackers-using.html
 https://www.zdnet.fr/pratique/vous-utilisez-un-navigateur-ia-5-facons-de-vous-proteger-des-injections-de-code-malveillant-486117.htm
 https://www.zataz.com/disruption-dans-lespionnage-numerique-alimente-par-lia
+https://www.zataz.com/federations-sportives-francaises-visees-par-des-cyberattaques
+https://www.zataz.com/fuite-de-donnees-chez-le-groupe-schmidt
