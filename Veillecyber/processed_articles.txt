@@ -408,3 +408,5 @@ https://www.zdnet.fr/pratique/vous-utilisez-un-navigateur-ia-5-facons-de-vous-pr
 https://www.zataz.com/disruption-dans-lespionnage-numerique-alimente-par-lia
 https://www.zataz.com/federations-sportives-francaises-visees-par-des-cyberattaques
 https://www.zataz.com/fuite-de-donnees-chez-le-groupe-schmidt
+https://www.numerama.com/cyberguerre/2136561-faille-de-gravite-maximale-comment-cloudflare-a-provoque-une-panne-mondiale-du-web-en-voulant-se-proteger.html
+https://www.zataz.com/un-assureur-un-outil-scolaire-et-de-nouvelles-federations-sportives-ciblees-par-un-pirate
