@@ -412,3 +412,6 @@ https://www.numerama.com/cyberguerre/2136561-faille-de-gravite-maximale-comment-
 https://www.zataz.com/un-assureur-un-outil-scolaire-et-de-nouvelles-federations-sportives-ciblees-par-un-pirate
 https://www.zdnet.fr/publicite/protegez-votre-entreprise-des-menaces-cyber-avec-kaspersky-leader-inconteste-du-secteur-486176.htm
 https://www.theregister.com/2025/12/09/humanoid_robot_security
+https://www.undernews.fr/reseau-securite/la-necessaire-vigilance-des-systemes-ot-iot-et-embarques.html
+https://www.numerama.com/cyberguerre/2135181-microsoft-a-discretement-bricole-une-solution-pour-une-faille-de-securite-exploitee-depuis-8-ans.html
+https://www.numerama.com/cyberguerre/2133447-120-000-cameras-ip-ont-ete-piratees-pour-alimenter-un-site-voyeuriste-comment-ce-hack-massif-relance-le-debat-sur-la-securite-des-objets-connectes.html
