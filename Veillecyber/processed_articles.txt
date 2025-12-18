@@ -419,3 +419,6 @@ https://www.undernews.fr/malwares-virus-antivirus/retail-plus-de-la-moitie-58-de
 https://www.numerama.com/cyberguerre/2140695-a-cote-de-la-plaque-ces-hackers-laissent-la-cle-de-dechiffrement-de-leur-ransomware-en-acces-libre.html
 https://www.zataz.com/akira-le-fbi-chiffre-250-millions-de-rancons
 https://www.numerama.com/cyberguerre/2140887-cible-suivante-starbucks-openai-binance-comment-cette-menace-cyber-de-niveau-maximal-poursuit-son-inexorable-expansion.html
+https://www.undernews.fr/reseau-securite/cybersecurite-2026-les-organisations-sous-la-pression-des-jeux-et-de-lia.html
+https://www.bleepingcomputer.com/news/security/critical-react2shell-flaw-exploited-in-ransomware-attacks
+https://www.undernews.fr/reseau-securite/comment-se-creent-les-failles-au-sein-dun-systeme-dinformations.html
