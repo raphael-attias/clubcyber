@@ -422,3 +422,5 @@ https://www.numerama.com/cyberguerre/2140887-cible-suivante-starbucks-openai-bin
 https://www.undernews.fr/reseau-securite/cybersecurite-2026-les-organisations-sous-la-pression-des-jeux-et-de-lia.html
 https://www.bleepingcomputer.com/news/security/critical-react2shell-flaw-exploited-in-ransomware-attacks
 https://www.undernews.fr/reseau-securite/comment-se-creent-les-failles-au-sein-dun-systeme-dinformations.html
+https://www.theregister.com/2025/12/18/react2shell_exploitation_spreads_as_microsoft
+https://www.zataz.com/poltronesofa-ransomware-et-donnees-clients-oubliees-et-voila
