@@ -424,3 +424,4 @@ https://www.bleepingcomputer.com/news/security/critical-react2shell-flaw-exploit
 https://www.undernews.fr/reseau-securite/comment-se-creent-les-failles-au-sein-dun-systeme-dinformations.html
 https://www.theregister.com/2025/12/18/react2shell_exploitation_spreads_as_microsoft
 https://www.zataz.com/poltronesofa-ransomware-et-donnees-clients-oubliees-et-voila
+https://www.silicon.fr/cybersecurite-1371/tribune-expert-fin-du-ransomware-essor-de-lia-autonome-2026-change-les-regles-du-jeu-224926
