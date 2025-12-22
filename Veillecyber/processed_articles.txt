@@ -426,3 +426,5 @@ https://www.theregister.com/2025/12/18/react2shell_exploitation_spreads_as_micro
 https://www.zataz.com/poltronesofa-ransomware-et-donnees-clients-oubliees-et-voila
 https://www.silicon.fr/cybersecurite-1371/tribune-expert-fin-du-ransomware-essor-de-lia-autonome-2026-change-les-regles-du-jeu-224926
 https://www.undernews.fr/alertes-securite/3-failles-zero-day-cvss-9-3-dans-picklescan-jfrog-alerte-lecosysteme-pytorch-et-la-chaine-logistique-ia.html
+https://www.zataz.com/shinyhunters-menace-pornhub-chantage-aux-clients-premium
+https://thehackernews.com/2025/12/react2shell-exploitation-escalates-into.html
