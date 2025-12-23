@@ -18732,3 +18732,68 @@
 2025-12-22 06:42:45,751 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
 2025-12-22 06:42:47,102 [INFO] 2/3 articles envoyés.
 2025-12-22 06:42:47,102 [INFO] Traitement terminé.
+2025-12-23 06:38:28,292 [INFO] Démarrage du script de veille cybersécurité
+2025-12-23 06:38:28,292 [INFO] 430 articles déjà traités.
+2025-12-23 06:38:28,292 [INFO] Scraping zataz
+2025-12-23 06:38:31,581 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zataz.com/feeds
+2025-12-23 06:38:55,001 [INFO] Scraping numerama
+2025-12-23 06:38:59,545 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.numerama.com/feeds
+2025-12-23 06:39:08,497 [INFO] Scraping zdnet
+2025-12-23 06:39:11,342 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zdnet.fr/feeds
+2025-12-23 06:39:23,553 [INFO] Scraping undernews
+2025-12-23 06:39:28,888 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.undernews.fr/feeds
+2025-12-23 06:39:48,886 [INFO] Scraping lemondeinformatique
+2025-12-23 06:39:49,787 [WARNING] fromstring() returned an invalid string: ...
+2025-12-23 06:39:49,788 [WARNING] Source https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/ parse error.
+2025-12-23 06:39:49,788 [CRITICAL] Must extract urls from either html, text or doc!
+2025-12-23 06:39:50,609 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/
+2025-12-23 06:39:51,434 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feed
+2025-12-23 06:39:51,434 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feeds
+2025-12-23 06:39:51,476 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/rss
+2025-12-23 06:39:57,850 [INFO] Scraping usine_digitale
+2025-12-23 06:40:09,908 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.usine-digitale.fr/feeds/
+2025-12-23 06:40:39,547 [INFO] Scraping thehackernews
+2025-12-23 06:40:40,417 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feed
+2025-12-23 06:40:40,426 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feeds
+2025-12-23 06:40:40,429 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/rss
+2025-12-23 06:40:42,819 [INFO] Scraping silicon
+2025-12-23 06:40:45,549 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.silicon.fr/feeds
+2025-12-23 06:40:54,357 [INFO] Scraping cybernews
+2025-12-23 06:40:54,497 [WARNING] fromstring() returned an invalid string: ...
+2025-12-23 06:40:54,497 [WARNING] Source https://cybernews.com parse error.
+2025-12-23 06:40:54,498 [CRITICAL] Must extract urls from either html, text or doc!
+2025-12-23 06:40:54,597 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/
+2025-12-23 06:40:54,669 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feeds
+2025-12-23 06:40:54,682 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/rss
+2025-12-23 06:40:54,695 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feed
+2025-12-23 06:40:54,935 [INFO] Scraping darkreading
+2025-12-23 06:40:55,133 [WARNING] fromstring() returned an invalid string: ...
+2025-12-23 06:40:55,133 [WARNING] Source https://www.darkreading.com parse error.
+2025-12-23 06:40:55,133 [CRITICAL] Must extract urls from either html, text or doc!
+2025-12-23 06:40:55,183 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/
+2025-12-23 06:40:55,251 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feeds
+2025-12-23 06:40:55,266 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feed
+2025-12-23 06:40:55,278 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/rss
+2025-12-23 06:40:55,480 [INFO] Scraping bleepingcomputer
+2025-12-23 06:40:57,615 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feed
+2025-12-23 06:40:57,788 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/rss
+2025-12-23 06:40:57,791 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feeds
+2025-12-23 06:41:47,021 [INFO] Scraping krebsonsecurity
+2025-12-23 06:41:49,612 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://krebsonsecurity.com/feeds
+2025-12-23 06:42:01,354 [WARNING] Erreur newspaper : Article `download()` failed with 403 Client Error: Forbidden for url: https://www.nytimes.com/2025/12/16/us/politics/trump-expanded-travel-ban.html on URL https://www.nytimes.com/2025/12/16/us/politics/trump-expanded-travel-ban.html
+2025-12-23 06:42:01,765 [WARNING] Erreur newspaper : Article `download()` failed with 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/world/us-suspends-some-efforts-counter-russian-sabotage-trump-moves-closer-putin-2025-03-19/ on URL https://www.reuters.com/world/us-suspends-some-efforts-counter-russian-sabotage-trump-moves-closer-putin-2025-03-19/
+2025-12-23 06:42:04,216 [WARNING] Erreur newspaper : Article `download()` failed with 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/world/us/us-threatens-new-icc-sanctions-unless-court-pledges-not-prosecute-trump-2025-12-10/ on URL https://www.reuters.com/world/us/us-threatens-new-icc-sanctions-unless-court-pledges-not-prosecute-trump-2025-12-10/
+2025-12-23 06:42:08,051 [INFO] Scraping theregister
+2025-12-23 06:42:08,961 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/rss
+2025-12-23 06:42:08,969 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feeds
+2025-12-23 06:42:09,032 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feed
+2025-12-23 06:42:12,499 [INFO] Envoi (score 34) : ⚡ Weekly Recap: Firewall Exploits, AI Data Theft, Android Hacks, APT Attacks, Insider Leaks & More
+2025-12-23 06:42:31,855 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 06:42:32,007 [WARNING] Échec envoi ou résumé vide : https://thehackernews.com/2025/12/weekly-recap-firewall-exploits-ai-data.html
+2025-12-23 06:42:33,007 [INFO] Envoi (score 22) : Piratage à Beauvau, arrestation près de Limoges
+2025-12-23 06:42:46,337 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 06:42:46,508 [WARNING] Échec envoi ou résumé vide : https://www.zataz.com/piratage-a-beauvau-arrestation-pres-de-limoges
+2025-12-23 06:42:47,509 [INFO] Envoi (score 22) : Spy turned startup CEO: 'The WannaCry of AI will happen'
+2025-12-23 06:42:55,654 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-23 06:42:57,071 [INFO] 1/3 articles envoyés.
+2025-12-23 06:42:57,072 [INFO] Traitement terminé.
