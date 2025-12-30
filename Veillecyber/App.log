@@ -19296,3 +19296,67 @@
 2025-12-29 06:43:10,706 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
 2025-12-29 06:43:12,015 [INFO] 2/3 articles envoyés.
 2025-12-29 06:43:12,015 [INFO] Traitement terminé.
+2025-12-30 06:37:27,295 [INFO] Démarrage du script de veille cybersécurité
+2025-12-30 06:37:27,296 [INFO] 435 articles déjà traités.
+2025-12-30 06:37:27,296 [INFO] Scraping numerama
+2025-12-30 06:37:31,892 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.numerama.com/feeds
+2025-12-30 06:37:40,940 [INFO] Scraping silicon
+2025-12-30 06:37:43,658 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.silicon.fr/feeds
+2025-12-30 06:37:47,670 [CRITICAL] [REQUEST FAILED] Exceeded 30 redirects.
+2025-12-30 06:37:47,691 [CRITICAL] [REQUEST FAILED] Exceeded 30 redirects.
+2025-12-30 06:37:56,929 [INFO] Scraping zataz
+2025-12-30 06:37:59,920 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zataz.com/feeds
+2025-12-30 06:38:22,902 [INFO] Scraping krebsonsecurity
+2025-12-30 06:38:24,559 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://krebsonsecurity.com/feeds
+2025-12-30 06:39:15,554 [INFO] Scraping thehackernews
+2025-12-30 06:39:16,438 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feed
+2025-12-30 06:39:16,478 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feeds
+2025-12-30 06:39:16,614 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/rss
+2025-12-30 06:39:19,458 [INFO] Scraping usine_digitale
+2025-12-30 06:39:27,298 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.usine-digitale.fr/feeds/
+2025-12-30 06:39:54,218 [INFO] Scraping darkreading
+2025-12-30 06:39:54,585 [WARNING] fromstring() returned an invalid string: ...
+2025-12-30 06:39:54,585 [WARNING] Source https://www.darkreading.com parse error.
+2025-12-30 06:39:54,585 [CRITICAL] Must extract urls from either html, text or doc!
+2025-12-30 06:39:54,640 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/
+2025-12-30 06:39:54,710 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/rss
+2025-12-30 06:39:54,727 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feeds
+2025-12-30 06:39:54,730 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feed
+2025-12-30 06:39:54,954 [INFO] Scraping lemondeinformatique
+2025-12-30 06:39:55,888 [WARNING] fromstring() returned an invalid string: ...
+2025-12-30 06:39:55,888 [WARNING] Source https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/ parse error.
+2025-12-30 06:39:55,888 [CRITICAL] Must extract urls from either html, text or doc!
+2025-12-30 06:39:56,687 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/
+2025-12-30 06:39:57,488 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/rss
+2025-12-30 06:39:57,501 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feeds
+2025-12-30 06:39:57,572 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feed
+2025-12-30 06:40:03,521 [INFO] Scraping theregister
+2025-12-30 06:40:04,570 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/rss
+2025-12-30 06:40:04,588 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feeds
+2025-12-30 06:40:04,623 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feed
+2025-12-30 06:40:08,135 [INFO] Scraping bleepingcomputer
+2025-12-30 06:40:10,295 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/rss
+2025-12-30 06:40:10,533 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feeds
+2025-12-30 06:40:10,539 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feed
+2025-12-30 06:41:05,555 [INFO] Scraping cybernews
+2025-12-30 06:41:05,635 [WARNING] fromstring() returned an invalid string: ...
+2025-12-30 06:41:05,635 [WARNING] Source https://cybernews.com parse error.
+2025-12-30 06:41:05,635 [CRITICAL] Must extract urls from either html, text or doc!
+2025-12-30 06:41:05,687 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/
+2025-12-30 06:41:05,760 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feeds
+2025-12-30 06:41:05,775 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/rss
+2025-12-30 06:41:05,780 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feed
+2025-12-30 06:41:06,025 [INFO] Scraping undernews
+2025-12-30 06:41:10,924 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.undernews.fr/feeds
+2025-12-30 06:41:33,711 [INFO] Scraping zdnet
+2025-12-30 06:41:36,269 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zdnet.fr/feeds
+2025-12-30 06:41:46,336 [INFO] Envoi (score 29) : ⚡ Weekly Recap: MongoDB Attacks, Wallet Breaches, Android Spyware, Insider Crime & More
+2025-12-30 06:42:04,507 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-30 06:42:04,678 [WARNING] Échec envoi ou résumé vide : https://thehackernews.com/2025/12/weekly-recap-mongodb-attacks-wallet.html
+2025-12-30 06:42:05,679 [INFO] Envoi (score 22) : Piratage à Beauvau, arrestation près de Limoges
+2025-12-30 06:42:15,887 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-30 06:42:17,200 [INFO] Envoi (score 19) : « Avec l’essor de l’IA, de nouvelles portes s’ouvrent », les chasseurs de failles vont adorer les nouvelles récompenses de Microsoft
+2025-12-30 06:42:27,223 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-30 06:42:27,399 [WARNING] Échec envoi ou résumé vide : https://www.numerama.com/cyberguerre/2139581-avec-lessor-de-lia-de-nouvelles-portes-souvrent-les-chasseurs-de-failles-vont-adorer-les-nouvelles-recompenses-de-microsoft.html
+2025-12-30 06:42:28,399 [INFO] 1/3 articles envoyés.
+2025-12-30 06:42:28,400 [INFO] Traitement terminé.
