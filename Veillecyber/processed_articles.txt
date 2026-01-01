@@ -435,3 +435,5 @@ https://www.undernews.fr/hacking-hacktivisme/votre-maison-connectee-est-elle-un-
 https://www.zataz.com/etats-unis-une-ukrainienne-jugee-pour-cyberattaques
 https://www.zataz.com/piratage-a-beauvau-arrestation-pres-de-limoges
 https://www.bleepingcomputer.com/news/security/exploited-mongobleed-flaw-leaks-mongodb-secrets-87k-servers-exposed
+https://www.zataz.com/des-pirates-wi-fi-condamnes-apres-des-attaques-dans-des-aeroports
+https://www.undernews.fr/authentification-biometrie/cyberattaque-contre-le-ministere-de-linterieur-yubico-rappelle-le-role-cle-de-lauthentification-multifacteur.html
