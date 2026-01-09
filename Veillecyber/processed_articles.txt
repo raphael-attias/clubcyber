@@ -443,3 +443,4 @@ https://www.numerama.com/cyberguerre/2141183-vos-objets-connectes-ont-ils-secret
 https://www.zataz.com/cyberinfo-de-la-semaine-du-03-janvier-2026
 https://www.numerama.com/cyberguerre/2122433-black-friday-ne-validez-surtout-pas-votre-panier-sans-avoir-verifie-ces-details.html
 https://www.zataz.com/un-genat-du-streamming-coupe-ses-lives-apres-une-cyber-attaque
+https://www.bleepingcomputer.com/news/security/kimwolf-android-botnet-abuses-residential-proxies-to-infect-internal-devices
