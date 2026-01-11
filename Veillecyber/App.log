@@ -20165,3 +20165,65 @@
 2026-01-10 06:40:07,874 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
 2026-01-10 06:40:09,375 [INFO] 2/3 articles envoyés.
 2026-01-10 06:40:09,375 [INFO] Traitement terminé.
+2026-01-11 06:36:41,560 [INFO] Démarrage du script de veille cybersécurité
+2026-01-11 06:36:41,560 [INFO] 448 articles déjà traités.
+2026-01-11 06:36:41,560 [INFO] Scraping zataz
+2026-01-11 06:36:44,821 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zataz.com/feeds
+2026-01-11 06:37:06,076 [INFO] Scraping cybernews
+2026-01-11 06:37:06,300 [WARNING] fromstring() returned an invalid string: ...
+2026-01-11 06:37:06,300 [WARNING] Source https://cybernews.com parse error.
+2026-01-11 06:37:06,300 [CRITICAL] Must extract urls from either html, text or doc!
+2026-01-11 06:37:06,391 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/
+2026-01-11 06:37:06,495 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/rss
+2026-01-11 06:37:06,501 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feed
+2026-01-11 06:37:06,506 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feeds
+2026-01-11 06:37:06,892 [INFO] Scraping usine_digitale
+2026-01-11 06:37:13,130 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.usine-digitale.fr/feeds/
+2026-01-11 06:37:43,591 [INFO] Scraping zdnet
+2026-01-11 06:37:46,432 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zdnet.fr/feeds
+2026-01-11 06:37:55,677 [INFO] Scraping darkreading
+2026-01-11 06:37:56,026 [WARNING] fromstring() returned an invalid string: ...
+2026-01-11 06:37:56,026 [WARNING] Source https://www.darkreading.com parse error.
+2026-01-11 06:37:56,026 [CRITICAL] Must extract urls from either html, text or doc!
+2026-01-11 06:37:56,112 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/
+2026-01-11 06:37:56,215 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/rss
+2026-01-11 06:37:56,220 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feeds
+2026-01-11 06:37:56,233 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feed
+2026-01-11 06:37:56,608 [INFO] Scraping theregister
+2026-01-11 06:37:57,658 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feed
+2026-01-11 06:37:57,660 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/rss
+2026-01-11 06:37:57,663 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feeds
+2026-01-11 06:38:01,675 [INFO] Scraping bleepingcomputer
+2026-01-11 06:38:03,255 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feeds
+2026-01-11 06:38:03,267 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/rss
+2026-01-11 06:38:03,393 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feed
+2026-01-11 06:38:39,000 [INFO] Scraping krebsonsecurity
+2026-01-11 06:38:40,517 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://krebsonsecurity.com/feeds
+2026-01-11 06:39:46,555 [INFO] Scraping lemondeinformatique
+2026-01-11 06:39:47,380 [WARNING] fromstring() returned an invalid string: ...
+2026-01-11 06:39:47,381 [WARNING] Source https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/ parse error.
+2026-01-11 06:39:47,381 [CRITICAL] Must extract urls from either html, text or doc!
+2026-01-11 06:39:48,051 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/
+2026-01-11 06:39:48,786 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/rss
+2026-01-11 06:39:48,798 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feed
+2026-01-11 06:39:48,823 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feeds
+2026-01-11 06:39:53,767 [INFO] Scraping thehackernews
+2026-01-11 06:39:54,657 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/rss
+2026-01-11 06:39:54,691 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feed
+2026-01-11 06:39:54,710 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feeds
+2026-01-11 06:39:57,773 [INFO] Scraping numerama
+2026-01-11 06:40:01,776 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.numerama.com/feeds
+2026-01-11 06:40:10,044 [INFO] Scraping silicon
+2026-01-11 06:40:12,398 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.silicon.fr/feeds
+2026-01-11 06:40:20,771 [INFO] Scraping undernews
+2026-01-11 06:40:26,767 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.undernews.fr/feeds
+2026-01-11 06:40:49,904 [INFO] Envoi (score 27) : ⚡ Weekly Recap: IoT Exploits, Wallet Breaches, Rogue Extensions, AI Abuse & More
+2026-01-11 06:41:03,054 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 06:41:03,445 [WARNING] Échec envoi ou résumé vide : https://thehackernews.com/2026/01/weekly-recap-iot-exploits-wallet.html
+2026-01-11 06:41:04,446 [INFO] Envoi (score 22) : Cybersécurité industrielle : le vol de données progresse face au recul des ransomwares
+2026-01-11 06:41:13,295 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 06:41:14,854 [INFO] Envoi (score 20) : Un chef présumé d’un gang de sextorsion plaide coupable : il a 19 ans
+2026-01-11 06:41:26,042 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-11 06:41:26,252 [WARNING] Échec envoi ou résumé vide : https://www.zataz.com/un-chef-presume-dun-gang-de-sextorsion-plaide-coupable-il-a-19-ans
+2026-01-11 06:41:27,252 [INFO] 1/3 articles envoyés.
+2026-01-11 06:41:27,252 [INFO] Traitement terminé.

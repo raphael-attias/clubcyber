@@ -446,3 +446,4 @@ https://www.zataz.com/un-genat-du-streamming-coupe-ses-lives-apres-une-cyber-att
 https://www.bleepingcomputer.com/news/security/kimwolf-android-botnet-abuses-residential-proxies-to-infect-internal-devices
 https://www.zataz.com/the-osint-doctrine-un-guide-2025-pour-enqueter-sans-pirater
 https://www.zataz.com/une-banque-pirate-de-la-cybercriminalite-fermee
+https://www.undernews.fr/malwares-virus-antivirus/cybersecurite-industrielle-le-vol-de-donnees-progresse-face-au-recul-des-ransomwares.html
