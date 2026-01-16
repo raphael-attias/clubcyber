@@ -20505,3 +20505,63 @@
 2026-01-15 06:43:55,428 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
 2026-01-15 06:43:56,690 [INFO] 2/3 articles envoyés.
 2026-01-15 06:43:56,691 [INFO] Traitement terminé.
+2026-01-16 06:38:41,869 [INFO] Démarrage du script de veille cybersécurité
+2026-01-16 06:38:41,870 [INFO] 456 articles déjà traités.
+2026-01-16 06:38:41,870 [INFO] Scraping numerama
+2026-01-16 06:38:45,620 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.numerama.com/feeds
+2026-01-16 06:38:54,178 [INFO] Scraping krebsonsecurity
+2026-01-16 06:38:55,433 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://krebsonsecurity.com/feeds
+2026-01-16 06:40:00,738 [INFO] Scraping lemondeinformatique
+2026-01-16 06:40:01,601 [WARNING] fromstring() returned an invalid string: ...
+2026-01-16 06:40:01,601 [WARNING] Source https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/ parse error.
+2026-01-16 06:40:01,602 [CRITICAL] Must extract urls from either html, text or doc!
+2026-01-16 06:40:02,341 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/
+2026-01-16 06:40:02,957 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feed
+2026-01-16 06:40:02,987 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/rss
+2026-01-16 06:40:03,044 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feeds
+2026-01-16 06:40:07,720 [INFO] Scraping zdnet
+2026-01-16 06:40:10,217 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zdnet.fr/feeds
+2026-01-16 06:40:18,163 [INFO] Scraping silicon
+2026-01-16 06:40:20,253 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.silicon.fr/feeds
+2026-01-16 06:40:26,493 [INFO] Scraping undernews
+2026-01-16 06:40:29,913 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.undernews.fr/feeds
+2026-01-16 06:40:46,263 [INFO] Scraping darkreading
+2026-01-16 06:40:46,407 [WARNING] fromstring() returned an invalid string: ...
+2026-01-16 06:40:46,407 [WARNING] Source https://www.darkreading.com parse error.
+2026-01-16 06:40:46,407 [CRITICAL] Must extract urls from either html, text or doc!
+2026-01-16 06:40:46,456 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/
+2026-01-16 06:40:46,531 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feeds
+2026-01-16 06:40:46,541 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feed
+2026-01-16 06:40:46,547 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/rss
+2026-01-16 06:40:46,838 [INFO] Scraping bleepingcomputer
+2026-01-16 06:40:48,302 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/rss
+2026-01-16 06:40:48,332 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feeds
+2026-01-16 06:41:29,683 [INFO] Scraping zataz
+2026-01-16 06:41:32,587 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zataz.com/feeds
+2026-01-16 06:41:52,539 [INFO] Scraping cybernews
+2026-01-16 06:41:52,635 [WARNING] fromstring() returned an invalid string: ...
+2026-01-16 06:41:52,635 [WARNING] Source https://cybernews.com parse error.
+2026-01-16 06:41:52,635 [CRITICAL] Must extract urls from either html, text or doc!
+2026-01-16 06:41:52,719 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/
+2026-01-16 06:41:52,811 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feed
+2026-01-16 06:41:52,815 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feeds
+2026-01-16 06:41:52,824 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/rss
+2026-01-16 06:41:53,139 [INFO] Scraping thehackernews
+2026-01-16 06:41:54,226 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/rss
+2026-01-16 06:41:54,267 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feed
+2026-01-16 06:41:54,288 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feeds
+2026-01-16 06:41:56,843 [INFO] Scraping usine_digitale
+2026-01-16 06:42:02,547 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.usine-digitale.fr/feeds/
+2026-01-16 06:42:19,538 [INFO] Scraping theregister
+2026-01-16 06:42:20,504 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/rss
+2026-01-16 06:42:20,512 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feed
+2026-01-16 06:42:20,521 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feeds
+2026-01-16 06:42:24,153 [INFO] Envoi (score 27) : ⚡ Weekly Recap: IoT Exploits, Wallet Breaches, Rogue Extensions, AI Abuse & More
+2026-01-16 06:42:48,493 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-16 06:42:48,705 [WARNING] Échec envoi ou résumé vide : https://thehackernews.com/2026/01/weekly-recap-iot-exploits-wallet.html
+2026-01-16 06:42:49,705 [INFO] Envoi (score 23) : Vos données Copilot pouvaient être piratées en un seul clic
+2026-01-16 06:42:57,797 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-16 06:42:59,065 [INFO] Envoi (score 21) : China spies used Maduro capture as lure to phish US agencies
+2026-01-16 06:43:10,650 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-16 06:43:12,006 [INFO] 2/3 articles envoyés.
+2026-01-16 06:43:12,006 [INFO] Traitement terminé.
