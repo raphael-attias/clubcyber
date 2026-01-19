@@ -20717,3 +20717,64 @@
 2026-01-18 06:38:46,894 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
 2026-01-18 06:38:48,276 [INFO] 1/3 articles envoyés.
 2026-01-18 06:38:48,276 [INFO] Traitement terminé.
+2026-01-19 06:43:44,226 [INFO] Démarrage du script de veille cybersécurité
+2026-01-19 06:43:44,226 [INFO] 460 articles déjà traités.
+2026-01-19 06:43:44,226 [INFO] Scraping thehackernews
+2026-01-19 06:43:45,302 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feed
+2026-01-19 06:43:45,323 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/rss
+2026-01-19 06:43:45,343 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feeds
+2026-01-19 06:43:48,722 [INFO] Scraping silicon
+2026-01-19 06:43:50,854 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.silicon.fr/feeds
+2026-01-19 06:44:01,395 [INFO] Scraping usine_digitale
+2026-01-19 06:44:07,158 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.usine-digitale.fr/feeds/
+2026-01-19 06:44:25,743 [INFO] Scraping numerama
+2026-01-19 06:44:29,654 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.numerama.com/feeds
+2026-01-19 06:44:39,009 [INFO] Scraping darkreading
+2026-01-19 06:44:39,304 [WARNING] fromstring() returned an invalid string: ...
+2026-01-19 06:44:39,304 [WARNING] Source https://www.darkreading.com parse error.
+2026-01-19 06:44:39,304 [CRITICAL] Must extract urls from either html, text or doc!
+2026-01-19 06:44:39,397 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/
+2026-01-19 06:44:39,501 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feed
+2026-01-19 06:44:39,510 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feeds
+2026-01-19 06:44:39,512 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/rss
+2026-01-19 06:44:39,870 [INFO] Scraping zataz
+2026-01-19 06:44:42,982 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zataz.com/feeds
+2026-01-19 06:45:03,632 [INFO] Scraping undernews
+2026-01-19 06:45:07,646 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.undernews.fr/feeds
+2026-01-19 06:45:25,622 [INFO] Scraping cybernews
+2026-01-19 06:45:25,779 [WARNING] fromstring() returned an invalid string: ...
+2026-01-19 06:45:25,779 [WARNING] Source https://cybernews.com parse error.
+2026-01-19 06:45:25,779 [CRITICAL] Must extract urls from either html, text or doc!
+2026-01-19 06:45:25,871 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/
+2026-01-19 06:45:25,984 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feeds
+2026-01-19 06:45:25,988 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/rss
+2026-01-19 06:45:25,994 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feed
+2026-01-19 06:45:26,489 [INFO] Scraping bleepingcomputer
+2026-01-19 06:45:28,099 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/rss
+2026-01-19 06:45:28,131 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feeds
+2026-01-19 06:45:36,592 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/tutorials/how-to-see-hidden-files-in-windows/ on URL https://www.bleepingcomputer.com/tutorials/how-to-see-hidden-files-in-windows/
+2026-01-19 06:45:36,611 [INFO] Scraping theregister
+2026-01-19 06:45:37,628 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feeds
+2026-01-19 06:45:37,646 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feed
+2026-01-19 06:45:37,668 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/rss
+2026-01-19 06:45:41,942 [INFO] Scraping krebsonsecurity
+2026-01-19 06:45:44,048 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://krebsonsecurity.com/feeds
+2026-01-19 06:46:43,426 [INFO] Scraping lemondeinformatique
+2026-01-19 06:46:44,307 [WARNING] fromstring() returned an invalid string: ...
+2026-01-19 06:46:44,307 [WARNING] Source https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/ parse error.
+2026-01-19 06:46:44,307 [CRITICAL] Must extract urls from either html, text or doc!
+2026-01-19 06:46:44,955 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/
+2026-01-19 06:46:45,590 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/rss
+2026-01-19 06:46:45,610 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feeds
+2026-01-19 06:46:45,650 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feed
+2026-01-19 06:46:50,647 [INFO] Scraping zdnet
+2026-01-19 06:46:53,057 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zdnet.fr/feeds
+2026-01-19 06:47:02,673 [INFO] Envoi (score 27) : ⚡ Weekly Recap: IoT Exploits, Wallet Breaches, Rogue Extensions, AI Abuse & More
+2026-01-19 06:47:16,862 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-19 06:47:17,074 [WARNING] Échec envoi ou résumé vide : https://thehackernews.com/2026/01/weekly-recap-iot-exploits-wallet.html
+2026-01-19 06:47:18,074 [INFO] Envoi (score 25) : Cyberinfo de la semaine du 16 janvier 2026
+2026-01-19 06:47:27,518 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-19 06:47:28,889 [INFO] Envoi (score 17) : Va-t-on laisser les robots tuer des humains de manière autonome ?
+2026-01-19 06:47:38,464 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-19 06:47:39,808 [INFO] 2/3 articles envoyés.
+2026-01-19 06:47:39,808 [INFO] Traitement terminé.

@@ -458,3 +458,5 @@ https://www.zdnet.fr/actualites/vos-donnees-copilot-pouvaient-etre-piratees-en-u
 https://www.theregister.com/2026/01/15/chinese_spies_used_maduros_capture
 https://thehackernews.com/2026/01/china-linked-apt-exploits-sitecore-zero.html
 https://www.zataz.com/un-tueur-dedr-propose-sur-un-forum-russophone
+https://www.zataz.com/cyberinfo-de-la-semaine-du-16-janvier-2026
+https://www.numerama.com/cyberguerre/1203546-va-t-on-laisser-les-robots-tuer-des-humains-de-maniere-autonome.html
