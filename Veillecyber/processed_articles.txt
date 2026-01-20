@@ -460,3 +460,5 @@ https://thehackernews.com/2026/01/china-linked-apt-exploits-sitecore-zero.html
 https://www.zataz.com/un-tueur-dedr-propose-sur-un-forum-russophone
 https://www.zataz.com/cyberinfo-de-la-semaine-du-16-janvier-2026
 https://www.numerama.com/cyberguerre/1203546-va-t-on-laisser-les-robots-tuer-des-humains-de-maniere-autonome.html
+https://www.silicon.fr/brandvoice/protegez-votre-active-directory-contre-les-attaques-par-pulverisation-de-mots-de-passe
+https://www.zataz.com/payoutsking-une-machine-dextorsion-methodique-a-lassaut-de-peugeot
