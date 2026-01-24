@@ -466,3 +466,5 @@ https://www.silicon.fr/cybersecurite-1371/piratage-urssaf-12-millions-de-salarie
 https://www.zataz.com/internet-la-violence-sous-traitee-par-recrutement-2-0
 https://www.zataz.com/fuite-massive-de-donnees-instagram-exposees-dans-le-darkweb
 https://www.undernews.fr/malwares-virus-antivirus/le-chiffre-de-lannee-kaspersky-a-detecte-quotidiennement-un-demi-million-de-malwares-en-2025.html
+https://thehackernews.com/2026/01/new-osiris-ransomware-emerges-as-new.html
+https://www.theregister.com/2026/01/23/ai_cyberattack_google_security
