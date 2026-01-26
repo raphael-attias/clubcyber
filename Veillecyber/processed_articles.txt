@@ -469,3 +469,5 @@ https://www.undernews.fr/malwares-virus-antivirus/le-chiffre-de-lannee-kaspersky
 https://thehackernews.com/2026/01/new-osiris-ransomware-emerges-as-new.html
 https://www.theregister.com/2026/01/23/ai_cyberattack_google_security
 https://www.silicon.fr/cybersecurite-1371/tribune-expert-gestion-des-vulnerabilites-les-4-etapes-qui-distinguent-les-organisations-matures-225328
+https://www.theregister.com/2026/01/25/pwn2own_automotive_2026_identifies_76_0days
+https://www.numerama.com/cyberguerre/2165229-les-lunettes-de-macron-cachent-une-incroyable-lecon-de-cybersecurite.html
