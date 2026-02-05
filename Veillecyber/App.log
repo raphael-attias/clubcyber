@@ -21947,3 +21947,81 @@
 2026-02-04 07:00:25,813 [WARNING] Échec envoi ou résumé vide : https://www.theregister.com/2026/02/01/opensource_ai_is_a_global
 2026-02-04 07:00:26,813 [INFO] 2/3 articles envoyés.
 2026-02-04 07:00:26,813 [INFO] Traitement terminé.
+2026-02-05 07:03:19,280 [INFO] Démarrage du script de veille cybersécurité
+2026-02-05 07:03:19,280 [INFO] 486 articles déjà traités.
+2026-02-05 07:03:19,280 [INFO] Scraping cybernews
+2026-02-05 07:03:19,517 [WARNING] fromstring() returned an invalid string: ...
+2026-02-05 07:03:19,517 [WARNING] Source https://cybernews.com parse error.
+2026-02-05 07:03:19,517 [CRITICAL] Must extract urls from either html, text or doc!
+2026-02-05 07:03:19,584 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/
+2026-02-05 07:03:19,679 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feeds
+2026-02-05 07:03:19,694 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/rss
+2026-02-05 07:03:19,699 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feed
+2026-02-05 07:03:20,065 [INFO] Scraping silicon
+2026-02-05 07:03:23,101 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.silicon.fr/feeds
+2026-02-05 07:03:33,310 [INFO] Scraping lemondeinformatique
+2026-02-05 07:03:34,249 [WARNING] fromstring() returned an invalid string: ...
+2026-02-05 07:03:34,250 [WARNING] Source https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/ parse error.
+2026-02-05 07:03:34,250 [CRITICAL] Must extract urls from either html, text or doc!
+2026-02-05 07:03:35,031 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/
+2026-02-05 07:03:35,823 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feed
+2026-02-05 07:03:35,841 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/rss
+2026-02-05 07:03:35,878 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feeds
+2026-02-05 07:03:41,524 [INFO] Scraping zdnet
+2026-02-05 07:03:44,499 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zdnet.fr/feeds
+2026-02-05 07:03:55,367 [INFO] Scraping theregister
+2026-02-05 07:03:56,364 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feeds
+2026-02-05 07:03:56,387 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/rss
+2026-02-05 07:03:56,393 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feed
+2026-02-05 07:04:00,343 [INFO] Scraping numerama
+2026-02-05 07:04:05,527 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.numerama.com/feeds
+2026-02-05 07:04:18,300 [INFO] Scraping bleepingcomputer
+2026-02-05 07:04:20,245 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/rss
+2026-02-05 07:04:20,287 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feeds
+2026-02-05 07:04:55,985 [INFO] Scraping usine_digitale
+2026-02-05 07:04:56,296 [WARNING] fromstring() returned an invalid string: ...
+2026-02-05 07:04:56,296 [WARNING] Source https://www.usine-digitale.fr/ parse error.
+2026-02-05 07:04:56,297 [CRITICAL] Must extract urls from either html, text or doc!
+2026-02-05 07:04:56,428 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.usine-digitale.fr/
+2026-02-05 07:04:56,573 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.usine-digitale.fr/feeds
+2026-02-05 07:04:56,578 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.usine-digitale.fr/feed
+2026-02-05 07:04:56,628 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.usine-digitale.fr/rss
+2026-02-05 07:04:57,274 [INFO] Scraping darkreading
+2026-02-05 07:04:57,508 [WARNING] fromstring() returned an invalid string: ...
+2026-02-05 07:04:57,508 [WARNING] Source https://www.darkreading.com parse error.
+2026-02-05 07:04:57,508 [CRITICAL] Must extract urls from either html, text or doc!
+2026-02-05 07:04:57,591 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/
+2026-02-05 07:04:57,693 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feed
+2026-02-05 07:04:57,718 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feeds
+2026-02-05 07:04:57,718 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/rss
+2026-02-05 07:04:58,135 [INFO] Scraping thehackernews
+2026-02-05 07:04:59,039 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feed
+2026-02-05 07:04:59,045 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/rss
+2026-02-05 07:04:59,122 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feeds
+2026-02-05 07:05:04,594 [INFO] Scraping undernews
+2026-02-05 07:05:06,608 [WARNING] fromstring() returned an invalid string: ...
+2026-02-05 07:05:06,609 [WARNING] Source https://www.undernews.fr parse error.
+2026-02-05 07:05:06,609 [CRITICAL] Must extract urls from either html, text or doc!
+2026-02-05 07:05:07,424 [CRITICAL] [REQUEST FAILED] 503 Server Error: Service Temporarily Unavailable for url: https://www.undernews.fr/
+2026-02-05 07:05:08,389 [CRITICAL] [REQUEST FAILED] 503 Server Error: Service Temporarily Unavailable for url: https://www.undernews.fr/feeds
+2026-02-05 07:05:08,401 [CRITICAL] [REQUEST FAILED] 503 Server Error: Service Temporarily Unavailable for url: https://www.undernews.fr/rss
+2026-02-05 07:05:08,416 [CRITICAL] [REQUEST FAILED] 503 Server Error: Service Temporarily Unavailable for url: https://www.undernews.fr/feed
+2026-02-05 07:05:10,600 [INFO] Scraping krebsonsecurity
+2026-02-05 07:05:10,843 [WARNING] fromstring() returned an invalid string: ...
+2026-02-05 07:05:10,843 [WARNING] Source https://krebsonsecurity.com parse error.
+2026-02-05 07:05:10,843 [CRITICAL] Must extract urls from either html, text or doc!
+2026-02-05 07:05:11,056 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://krebsonsecurity.com/
+2026-02-05 07:05:11,288 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://krebsonsecurity.com/feeds
+2026-02-05 07:05:11,305 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://krebsonsecurity.com/rss
+2026-02-05 07:05:11,667 [INFO] Articles RSS récupérés via https://krebsonsecurity.com/feed
+2026-02-05 07:05:11,673 [INFO] Scraping zataz
+2026-02-05 07:05:14,887 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zataz.com/feeds
+2026-02-05 07:05:37,597 [INFO] Envoi (score 20) : Malicious NGINX Configurations Enable Large-Scale Web Traffic Hijacking Campaign
+2026-02-05 07:05:45,987 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-05 07:05:47,334 [INFO] Envoi (score 20) : China-Linked Amaranth-Dragon Exploits WinRAR Flaw in Espionage Campaigns
+2026-02-05 07:05:56,673 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-05 07:05:56,831 [WARNING] Échec envoi ou résumé vide : https://thehackernews.com/2026/02/china-linked-amaranth-dragon-exploits.html
+2026-02-05 07:05:57,831 [INFO] Envoi (score 15) : CISA quietly updated ransomware flags on 59 flaws last year
+2026-02-05 07:06:04,600 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-05 07:06:06,032 [INFO] 2/3 articles envoyés.
+2026-02-05 07:06:06,033 [INFO] Traitement terminé.

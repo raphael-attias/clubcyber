@@ -484,3 +484,5 @@ https://www.numerama.com/pop-culture/2127053-ghost-in-the-shell-avait-tout-prevu
 https://blog.unit221b.com/dont-read-this-blog/harassment-scare-tactics-why-victims-should-never-pay-shinyhunters
 https://www.zdnet.fr/actualites/attaque-ddos-record-de-314-tbps-comment-des-botnets-transforment-vos-appareils-connectes-en-armes-numeriques-489346.htm
 https://thehackernews.com/2026/02/apt28-uses-microsoft-office-cve-2026.html
+https://thehackernews.com/2026/02/hackers-exploit-react2shell-to-hijack.html
+https://www.theregister.com/2026/02/03/greynoise_cisa_ransomware_gripe
