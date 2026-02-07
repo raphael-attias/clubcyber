@@ -487,3 +487,6 @@ https://thehackernews.com/2026/02/apt28-uses-microsoft-office-cve-2026.html
 https://thehackernews.com/2026/02/hackers-exploit-react2shell-to-hijack.html
 https://www.theregister.com/2026/02/03/greynoise_cisa_ransomware_gripe
 https://www.zataz.com/0apt-le-faux-ransomware-qui-noie-le-dark-web
+https://thehackernews.com/2026/02/how-samsung-knox-helps-stop-your-network-security-breach.html
+https://www.humansecurity.com/learn/blog/satori-threat-intelligence-disruption-badbox-2-0
+https://krebsonsecurity.com/2026/02/please-dont-feed-the-scattered-lapsus-shiny-hunters
