@@ -490,3 +490,6 @@ https://www.zataz.com/0apt-le-faux-ransomware-qui-noie-le-dark-web
 https://thehackernews.com/2026/02/how-samsung-knox-helps-stop-your-network-security-breach.html
 https://www.humansecurity.com/learn/blog/satori-threat-intelligence-disruption-badbox-2-0
 https://krebsonsecurity.com/2026/02/please-dont-feed-the-scattered-lapsus-shiny-hunters
+https://www.undernews.fr/reseau-securite/sauvegardes-stockage-donnees/protection-des-donnees-cohesity-et-google-sassocient-contre-les-malwares-en-sauvegarde.html
+https://www.numerama.com/cyberguerre/2174901-le-premier-coup-declat-de-claude-opus-4-6-vient-du-cyber.html
+https://thehackernews.com/2026/02/german-agencies-warn-of-signal-phishing.html
