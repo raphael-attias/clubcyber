@@ -493,3 +493,6 @@ https://krebsonsecurity.com/2026/02/please-dont-feed-the-scattered-lapsus-shiny-
 https://www.undernews.fr/reseau-securite/sauvegardes-stockage-donnees/protection-des-donnees-cohesity-et-google-sassocient-contre-les-malwares-en-sauvegarde.html
 https://www.numerama.com/cyberguerre/2174901-le-premier-coup-declat-de-claude-opus-4-6-vient-du-cyber.html
 https://thehackernews.com/2026/02/german-agencies-warn-of-signal-phishing.html
+https://thehackernews.com/2026/02/openclaw-integrates-virustotal-scanning.html
+https://www.theregister.com/2026/02/08/infosec_news_in_brief
+https://www.undernews.fr/reseau-securite/safer-internet-day-knowbe4-recommande-la-pleine-conscience-numerique-et-a-la-prudence-face-a-lia.html

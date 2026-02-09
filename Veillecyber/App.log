@@ -22247,3 +22247,62 @@
 2026-02-08 06:58:04,166 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
 2026-02-08 06:58:05,572 [INFO] 3/3 articles envoyés.
 2026-02-08 06:58:05,573 [INFO] Traitement terminé.
+2026-02-09 07:08:33,565 [INFO] Démarrage du script de veille cybersécurité
+2026-02-09 07:08:33,566 [INFO] 495 articles déjà traités.
+2026-02-09 07:08:33,566 [INFO] Scraping thehackernews
+2026-02-09 07:08:34,986 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/rss
+2026-02-09 07:08:35,002 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feed
+2026-02-09 07:08:35,014 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feeds
+2026-02-09 07:08:38,615 [INFO] Scraping krebsonsecurity
+2026-02-09 07:08:40,165 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://krebsonsecurity.com/feeds
+2026-02-09 07:08:52,887 [INFO] Scraping cybernews
+2026-02-09 07:08:52,951 [WARNING] fromstring() returned an invalid string: ...
+2026-02-09 07:08:52,951 [WARNING] Source https://cybernews.com parse error.
+2026-02-09 07:08:52,951 [CRITICAL] Must extract urls from either html, text or doc!
+2026-02-09 07:08:52,993 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/
+2026-02-09 07:08:53,052 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feed
+2026-02-09 07:08:53,075 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feeds
+2026-02-09 07:08:53,077 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/rss
+2026-02-09 07:08:53,331 [INFO] Scraping bleepingcomputer
+2026-02-09 07:08:54,577 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/rss
+2026-02-09 07:08:54,579 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feeds
+2026-02-09 07:09:30,717 [INFO] Scraping numerama
+2026-02-09 07:09:34,479 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.numerama.com/feeds
+2026-02-09 07:09:45,567 [INFO] Scraping zdnet
+2026-02-09 07:09:47,945 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zdnet.fr/feeds
+2026-02-09 07:09:55,189 [INFO] Scraping undernews
+2026-02-09 07:09:59,003 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.undernews.fr/feeds
+2026-02-09 07:10:13,947 [INFO] Scraping usine_digitale
+2026-02-09 07:10:19,296 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.usine-digitale.fr/feeds/
+2026-02-09 07:10:42,029 [INFO] Scraping theregister
+2026-02-09 07:10:42,803 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feed
+2026-02-09 07:10:42,819 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feeds
+2026-02-09 07:10:42,822 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/rss
+2026-02-09 07:10:45,789 [INFO] Scraping silicon
+2026-02-09 07:10:47,496 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.silicon.fr/feeds
+2026-02-09 07:10:54,591 [INFO] Scraping lemondeinformatique
+2026-02-09 07:10:55,210 [WARNING] fromstring() returned an invalid string: ...
+2026-02-09 07:10:55,210 [WARNING] Source https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/ parse error.
+2026-02-09 07:10:55,210 [CRITICAL] Must extract urls from either html, text or doc!
+2026-02-09 07:10:55,824 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/
+2026-02-09 07:10:56,408 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feeds
+2026-02-09 07:10:56,467 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/rss
+2026-02-09 07:10:56,481 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feed
+2026-02-09 07:11:01,089 [INFO] Scraping zataz
+2026-02-09 07:11:03,890 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zataz.com/feeds
+2026-02-09 07:11:23,822 [INFO] Scraping darkreading
+2026-02-09 07:11:23,913 [WARNING] fromstring() returned an invalid string: ...
+2026-02-09 07:11:23,913 [WARNING] Source https://www.darkreading.com parse error.
+2026-02-09 07:11:23,913 [CRITICAL] Must extract urls from either html, text or doc!
+2026-02-09 07:11:23,954 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/
+2026-02-09 07:11:24,030 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feeds
+2026-02-09 07:11:24,033 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feed
+2026-02-09 07:11:24,033 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/rss
+2026-02-09 07:11:24,266 [INFO] Envoi (score 19) : OpenClaw Integrates VirusTotal Scanning to Detect Malicious ClawHub Skills
+2026-02-09 07:11:32,150 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 07:11:33,492 [INFO] Envoi (score 19) : Senator doesn't trust telcos on Salt Typhoon mitigations
+2026-02-09 07:11:41,464 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 07:11:42,792 [INFO] Envoi (score 18) : Safer Internet Day : KnowBe4 recommande la « pleine conscience numérique » et à la prudence face à l’IA
+2026-02-09 07:11:49,737 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-09 07:11:51,035 [INFO] 3/3 articles envoyés.
+2026-02-09 07:11:51,035 [INFO] Traitement terminé.
