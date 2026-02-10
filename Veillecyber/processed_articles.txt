@@ -496,3 +496,5 @@ https://thehackernews.com/2026/02/german-agencies-warn-of-signal-phishing.html
 https://thehackernews.com/2026/02/openclaw-integrates-virustotal-scanning.html
 https://www.theregister.com/2026/02/08/infosec_news_in_brief
 https://www.undernews.fr/reseau-securite/safer-internet-day-knowbe4-recommande-la-pleine-conscience-numerique-et-a-la-prudence-face-a-lia.html
+https://www.bleepingcomputer.com/news/security/hackers-breach-smartertools-network-using-flaw-in-its-own-software
+https://thehackernews.com/2026/02/solarwinds-web-help-desk-exploited-for.html
