@@ -499,3 +499,4 @@ https://www.undernews.fr/reseau-securite/safer-internet-day-knowbe4-recommande-l
 https://www.bleepingcomputer.com/news/security/hackers-breach-smartertools-network-using-flaw-in-its-own-software
 https://thehackernews.com/2026/02/solarwinds-web-help-desk-exploited-for.html
 https://thehackernews.com/2026/02/reynolds-ransomware-embeds-byovd-driver.html
+https://www.zataz.com/lue-et-les-pays-bas-touches-via-des-failles-ivanti
