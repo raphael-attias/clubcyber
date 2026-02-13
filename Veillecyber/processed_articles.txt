@@ -500,3 +500,5 @@ https://www.bleepingcomputer.com/news/security/hackers-breach-smartertools-netwo
 https://thehackernews.com/2026/02/solarwinds-web-help-desk-exploited-for.html
 https://thehackernews.com/2026/02/reynolds-ransomware-embeds-byovd-driver.html
 https://www.zataz.com/lue-et-les-pays-bas-touches-via-des-failles-ivanti
+https://thehackernews.com/2026/02/google-reports-state-backed-hackers.html
+https://www.bleepingcomputer.com/news/microsoft/microsoft-new-windows-lnk-spoofing-issues-arent-vulnerabilities

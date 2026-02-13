@@ -22567,3 +22567,109 @@
 2026-02-12 07:07:24,861 [WARNING] Échec envoi ou résumé vide : https://thehackernews.com/2026/02/notepad-hosting-breach-attributed-to.html
 2026-02-12 07:07:25,861 [INFO] 1/3 articles envoyés.
 2026-02-12 07:07:25,861 [INFO] Traitement terminé.
+2026-02-13 07:03:47,092 [INFO] Démarrage du script de veille cybersécurité
+2026-02-13 07:03:47,092 [INFO] 502 articles déjà traités.
+2026-02-13 07:03:47,092 [INFO] Scraping thehackernews
+2026-02-13 07:03:48,392 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feed
+2026-02-13 07:03:48,431 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feeds
+2026-02-13 07:03:48,734 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/rss
+2026-02-13 07:03:52,427 [INFO] Scraping bleepingcomputer
+2026-02-13 07:03:53,526 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/rss
+2026-02-13 07:03:53,536 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feeds
+2026-02-13 07:03:55,290 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/news/security/apple-fixes-zero-day-flaw-used-in-extremely-sophisticated-attacks/ on URL https://www.bleepingcomputer.com/news/security/apple-fixes-zero-day-flaw-used-in-extremely-sophisticated-attacks/
+2026-02-13 07:03:55,347 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/news/microsoft/microsoft-february-2026-patch-tuesday-fixes-6-zero-days-58-flaws/ on URL https://www.bleepingcomputer.com/news/microsoft/microsoft-february-2026-patch-tuesday-fixes-6-zero-days-58-flaws/
+2026-02-13 07:03:55,408 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/news/security/russia-tries-to-block-whatsapp-telegram-in-communication-blockade/ on URL https://www.bleepingcomputer.com/news/security/russia-tries-to-block-whatsapp-telegram-in-communication-blockade/
+2026-02-13 07:03:55,470 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/news/security/bitwarden-introduces-cupid-vault-for-secure-password-sharing/ on URL https://www.bleepingcomputer.com/news/security/bitwarden-introduces-cupid-vault-for-secure-password-sharing/
+2026-02-13 07:03:55,525 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/news/security/critical-beyondtrust-rce-flaw-now-exploited-in-attacks-patch-now/ on URL https://www.bleepingcomputer.com/news/security/critical-beyondtrust-rce-flaw-now-exploited-in-attacks-patch-now/
+2026-02-13 07:03:55,661 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/news/security/#tlatest on URL https://www.bleepingcomputer.com/news/security/#tlatest
+2026-02-13 07:03:55,744 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/news/security/#popular on URL https://www.bleepingcomputer.com/news/security/#popular
+2026-02-13 07:03:55,842 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/tutorials/how-to-access-the-dark-web-using-the-tor-browser/ on URL https://www.bleepingcomputer.com/tutorials/how-to-access-the-dark-web-using-the-tor-browser/
+2026-02-13 07:03:55,895 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/tutorials/how-to-enable-kernel-mode-hardware-enforced-stack-protection-in-windows-11/ on URL https://www.bleepingcomputer.com/tutorials/how-to-enable-kernel-mode-hardware-enforced-stack-protection-in-windows-11/
+2026-02-13 07:03:55,956 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/tutorials/how-to-use-the-windows-registry-editor/ on URL https://www.bleepingcomputer.com/tutorials/how-to-use-the-windows-registry-editor/
+2026-02-13 07:03:56,029 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/tutorials/how-to-backup-and-restore-the-windows-registry/ on URL https://www.bleepingcomputer.com/tutorials/how-to-backup-and-restore-the-windows-registry/
+2026-02-13 07:03:56,093 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/tutorials/how-to-start-windows-in-safe-mode/ on URL https://www.bleepingcomputer.com/tutorials/how-to-start-windows-in-safe-mode/
+2026-02-13 07:03:56,147 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/tutorials/how-to-remove-a-trojan-virus-worm-or-malware/ on URL https://www.bleepingcomputer.com/tutorials/how-to-remove-a-trojan-virus-worm-or-malware/
+2026-02-13 07:03:56,210 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/tutorials/show-hidden-files-in-windows-7/ on URL https://www.bleepingcomputer.com/tutorials/show-hidden-files-in-windows-7/
+2026-02-13 07:03:56,344 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/tutorials/how-to-see-hidden-files-in-windows/ on URL https://www.bleepingcomputer.com/tutorials/how-to-see-hidden-files-in-windows/
+2026-02-13 07:03:56,400 [WARNING] Erreur newspaper : Article `download()` failed with 429 Client Error: Too Many Requests for url: https://www.bleepingcomputer.com/news/security/#dlatest on URL https://www.bleepingcomputer.com/news/security/#dlatest
+2026-02-13 07:03:56,405 [INFO] Scraping undernews
+2026-02-13 07:04:05,675 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.undernews.fr/feed
+2026-02-13 07:04:05,696 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.undernews.fr/feeds
+2026-02-13 07:04:05,713 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.undernews.fr/rss
+2026-02-13 07:04:06,356 [WARNING] Erreur newspaper : Article `download()` failed with 404 Client Error: Not Found for url: https://www.undernews.fr/reseau-securite/rapport-de-securite-de-google-gtig-les-abus-de-lia-par-des-acteurs-malveillants.html on URL https://www.undernews.fr/reseau-securite/rapport-de-securite-de-google-gtig-les-abus-de-lia-par-des-acteurs-malveillants.html
+2026-02-13 07:04:06,863 [WARNING] Erreur newspaper : Article `download()` failed with 404 Client Error: Not Found for url: https://www.undernews.fr/alertes-securite/saint-valentin-kaspersky-tire-la-sonnette-dalarme-face-aux-arnaques-sur-les-cartes-cadeaux.html on URL https://www.undernews.fr/alertes-securite/saint-valentin-kaspersky-tire-la-sonnette-dalarme-face-aux-arnaques-sur-les-cartes-cadeaux.html
+2026-02-13 07:04:07,179 [WARNING] Erreur newspaper : Article `download()` failed with 404 Client Error: Not Found for url: https://www.undernews.fr/undernews/sshstalker-flare-revele-un-botnet-linux-melant-tactiques-de-piratage-a-lancienne-et-automatisation-de-masse-moderne.html on URL https://www.undernews.fr/undernews/sshstalker-flare-revele-un-botnet-linux-melant-tactiques-de-piratage-a-lancienne-et-automatisation-de-masse-moderne.html
+2026-02-13 07:04:07,687 [WARNING] Erreur newspaper : Article `download()` failed with 404 Client Error: Not Found for url: https://www.undernews.fr/reseau-securite/quand-le-g7-tire-la-sonnette-dalarme-sur-le-risque-quantique-keyfactor-aide-les-entreprises-a-passer-a-laction.html on URL https://www.undernews.fr/reseau-securite/quand-le-g7-tire-la-sonnette-dalarme-sur-le-risque-quantique-keyfactor-aide-les-entreprises-a-passer-a-laction.html
+2026-02-13 07:04:08,001 [WARNING] Erreur newspaper : Article `download()` failed with 404 Client Error: Not Found for url: https://www.undernews.fr/reseau-securite/la-face-sombre-de-lamour-ia-9-compagnons-ia-sur-10-collectent-vos-donnees-pour-vous-pister.html on URL https://www.undernews.fr/reseau-securite/la-face-sombre-de-lamour-ia-9-compagnons-ia-sur-10-collectent-vos-donnees-pour-vous-pister.html
+2026-02-13 07:04:08,513 [WARNING] Erreur newspaper : Article `download()` failed with 404 Client Error: Not Found for url: https://www.undernews.fr/reseau-securite/la-face-sombre-de-lamour-ia-9-compagnons-ia-sur-10-collectent-vos-donnees-pour-vous-pister.html#respond on URL https://www.undernews.fr/reseau-securite/la-face-sombre-de-lamour-ia-9-compagnons-ia-sur-10-collectent-vos-donnees-pour-vous-pister.html#respond
+2026-02-13 07:04:08,944 [WARNING] Erreur newspaper : Article `download()` failed with 404 Client Error: Not Found for url: https://www.undernews.fr/reseau-securite/winter-has-come-securiser-les-jeux-dhiver-2026.html on URL https://www.undernews.fr/reseau-securite/winter-has-come-securiser-les-jeux-dhiver-2026.html
+2026-02-13 07:04:09,392 [WARNING] Erreur newspaper : Article `download()` failed with 404 Client Error: Not Found for url: https://www.undernews.fr/reseau-securite/barometre-de-la-cybersecurite-2025-un-sentiment-de-maitrise-du-risque-en-decalage-avec-une-exposition-qui-reste-elevee.html on URL https://www.undernews.fr/reseau-securite/barometre-de-la-cybersecurite-2025-un-sentiment-de-maitrise-du-risque-en-decalage-avec-une-exposition-qui-reste-elevee.html
+2026-02-13 07:04:09,809 [WARNING] Erreur newspaper : Article `download()` failed with 404 Client Error: Not Found for url: https://www.undernews.fr/hacking-hacktivisme/rapport-gtig-les-cybermenaces-sintensifient-contre-les-industriels-de-la-defense.html on URL https://www.undernews.fr/hacking-hacktivisme/rapport-gtig-les-cybermenaces-sintensifient-contre-les-industriels-de-la-defense.html
+2026-02-13 07:04:10,338 [WARNING] Erreur newspaper : Article `download()` failed with 404 Client Error: Not Found for url: https://www.undernews.fr/reseau-securite/sport-et-fuites-de-donnees-les-risques-caches-lies-aux-trackers-dactivite-connectes.html on URL https://www.undernews.fr/reseau-securite/sport-et-fuites-de-donnees-les-risques-caches-lies-aux-trackers-dactivite-connectes.html
+2026-02-13 07:04:10,647 [WARNING] Erreur newspaper : Article `download()` failed with 404 Client Error: Not Found for url: https://www.undernews.fr/reseau-securite/rapport-de-securite-de-google-gtig-les-abus-de-lia-par-des-acteurs-malveillants.html#respond on URL https://www.undernews.fr/reseau-securite/rapport-de-securite-de-google-gtig-les-abus-de-lia-par-des-acteurs-malveillants.html#respond
+2026-02-13 07:04:11,183 [WARNING] Erreur newspaper : Article `download()` failed with 404 Client Error: Not Found for url: https://www.undernews.fr/reseau-securite/quand-le-g7-tire-la-sonnette-dalarme-sur-le-risque-quantique-keyfactor-aide-les-entreprises-a-passer-a-laction.html#respond on URL https://www.undernews.fr/reseau-securite/quand-le-g7-tire-la-sonnette-dalarme-sur-le-risque-quantique-keyfactor-aide-les-entreprises-a-passer-a-laction.html#respond
+2026-02-13 07:04:11,779 [WARNING] Erreur newspaper : Article `download()` failed with 404 Client Error: Not Found for url: https://www.undernews.fr/hacking-hacktivisme/etude-sentinellabs-et-censys-un-vaste-reseau-mondial-de-serveurs-dia-exposes-opere-en-dehors-des-controles-des-grandes-plateformes.html on URL https://www.undernews.fr/hacking-hacktivisme/etude-sentinellabs-et-censys-un-vaste-reseau-mondial-de-serveurs-dia-exposes-opere-en-dehors-des-controles-des-grandes-plateformes.html
+2026-02-13 07:04:12,090 [WARNING] Erreur newspaper : Article `download()` failed with 404 Client Error: Not Found for url: https://www.undernews.fr/hacking-hacktivisme/plus-dun-milliard-de-dollars-perdus-a-cause-des-fraudes-au-deepfake-en-2025-les-reseaux-sociaux-pointes-du-doigt.html on URL https://www.undernews.fr/hacking-hacktivisme/plus-dun-milliard-de-dollars-perdus-a-cause-des-fraudes-au-deepfake-en-2025-les-reseaux-sociaux-pointes-du-doigt.html
+2026-02-13 07:04:12,402 [WARNING] Erreur newspaper : Article `download()` failed with 404 Client Error: Not Found for url: https://www.undernews.fr/malwares-virus-antivirus/flare-research-une-infection-sur-cinq-par-infostealer-menacerait-les-identites-dentreprise-en-2026.html on URL https://www.undernews.fr/malwares-virus-antivirus/flare-research-une-infection-sur-cinq-par-infostealer-menacerait-les-identites-dentreprise-en-2026.html
+2026-02-13 07:04:12,938 [WARNING] Erreur newspaper : Article `download()` failed with 404 Client Error: Not Found for url: https://www.undernews.fr/malwares-virus-antivirus/flare-research-une-infection-sur-cinq-par-infostealer-menacerait-les-identites-dentreprise-en-2026.html#respond on URL https://www.undernews.fr/malwares-virus-antivirus/flare-research-une-infection-sur-cinq-par-infostealer-menacerait-les-identites-dentreprise-en-2026.html#respond
+2026-02-13 07:04:13,645 [WARNING] Erreur newspaper : Article `download()` failed with 404 Client Error: Not Found for url: https://www.undernews.fr/malwares-virus-antivirus/cybersecurite-industrielle-le-vol-de-donnees-progresse-face-au-recul-des-ransomwares.html on URL https://www.undernews.fr/malwares-virus-antivirus/cybersecurite-industrielle-le-vol-de-donnees-progresse-face-au-recul-des-ransomwares.html
+2026-02-13 07:04:14,051 [WARNING] Erreur newspaper : Article `download()` failed with 404 Client Error: Not Found for url: https://www.undernews.fr/malwares-virus-antivirus/industrie-kaspersky-et-vdc-research-estiment-a-plus-de-18-milliards-de-dollars-les-pertes-potentielles-dues-aux-ransomwares-en-2025.html on URL https://www.undernews.fr/malwares-virus-antivirus/industrie-kaspersky-et-vdc-research-estiment-a-plus-de-18-milliards-de-dollars-les-pertes-potentielles-dues-aux-ransomwares-en-2025.html
+2026-02-13 07:04:14,370 [WARNING] Erreur newspaper : Article `download()` failed with 404 Client Error: Not Found for url: https://www.undernews.fr/malwares-virus-antivirus/kaspersky-revele-une-campagne-de-vol-de-donnees-ciblant-macos-et-exploitant-la-fonction-de-partage-de-conversations-de-chatgpt.html on URL https://www.undernews.fr/malwares-virus-antivirus/kaspersky-revele-une-campagne-de-vol-de-donnees-ciblant-macos-et-exploitant-la-fonction-de-partage-de-conversations-de-chatgpt.html
+2026-02-13 07:04:14,686 [WARNING] Erreur newspaper : Article `download()` failed with 404 Client Error: Not Found for url: https://www.undernews.fr/alertes-securite/fuite-des-donnees-en-france-lhemorragie-continue-avec-403-millions-de-comptes-compromis-en-2025.html on URL https://www.undernews.fr/alertes-securite/fuite-des-donnees-en-france-lhemorragie-continue-avec-403-millions-de-comptes-compromis-en-2025.html
+2026-02-13 07:04:16,176 [INFO] Scraping theregister
+2026-02-13 07:04:17,146 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/rss
+2026-02-13 07:04:17,153 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feeds
+2026-02-13 07:04:17,159 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feed
+2026-02-13 07:04:21,046 [INFO] Scraping silicon
+2026-02-13 07:04:22,626 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.silicon.fr/feeds
+2026-02-13 07:04:28,582 [INFO] Scraping cybernews
+2026-02-13 07:04:28,651 [WARNING] fromstring() returned an invalid string: ...
+2026-02-13 07:04:28,651 [WARNING] Source https://cybernews.com parse error.
+2026-02-13 07:04:28,651 [CRITICAL] Must extract urls from either html, text or doc!
+2026-02-13 07:04:28,696 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/
+2026-02-13 07:04:28,758 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feeds
+2026-02-13 07:04:28,767 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feed
+2026-02-13 07:04:28,767 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/rss
+2026-02-13 07:04:29,039 [INFO] Scraping zdnet
+2026-02-13 07:04:31,345 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zdnet.fr/feeds
+2026-02-13 07:04:39,905 [INFO] Scraping lemondeinformatique
+2026-02-13 07:04:40,482 [WARNING] fromstring() returned an invalid string: ...
+2026-02-13 07:04:40,482 [WARNING] Source https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/ parse error.
+2026-02-13 07:04:40,482 [CRITICAL] Must extract urls from either html, text or doc!
+2026-02-13 07:04:41,002 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/
+2026-02-13 07:04:41,608 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/rss
+2026-02-13 07:04:41,614 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feeds
+2026-02-13 07:04:41,646 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feed
+2026-02-13 07:04:45,729 [INFO] Scraping usine_digitale
+2026-02-13 07:04:45,953 [WARNING] fromstring() returned an invalid string: ...
+2026-02-13 07:04:45,954 [WARNING] Source https://www.usine-digitale.fr/ parse error.
+2026-02-13 07:04:45,954 [CRITICAL] Must extract urls from either html, text or doc!
+2026-02-13 07:04:46,070 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.usine-digitale.fr/
+2026-02-13 07:04:46,189 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.usine-digitale.fr/feed
+2026-02-13 07:04:46,191 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.usine-digitale.fr/feeds
+2026-02-13 07:04:46,196 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.usine-digitale.fr/rss
+2026-02-13 07:04:46,573 [INFO] Scraping darkreading
+2026-02-13 07:04:46,687 [WARNING] fromstring() returned an invalid string: ...
+2026-02-13 07:04:46,687 [WARNING] Source https://www.darkreading.com parse error.
+2026-02-13 07:04:46,688 [CRITICAL] Must extract urls from either html, text or doc!
+2026-02-13 07:04:46,727 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/
+2026-02-13 07:04:46,782 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/rss
+2026-02-13 07:04:46,791 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feeds
+2026-02-13 07:04:46,792 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feed
+2026-02-13 07:04:47,012 [INFO] Scraping numerama
+2026-02-13 07:04:49,780 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.numerama.com/feeds
+2026-02-13 07:04:59,493 [INFO] Scraping krebsonsecurity
+2026-02-13 07:05:00,081 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://krebsonsecurity.com/feeds
+2026-02-13 07:05:16,366 [WARNING] Erreur newspaper : Article `download()` failed with 403 Client Error: Forbidden for url: https://www.humansecurity.com/learn/blog/trojans-all-the-way-down-badbox-and-peachpit/ on URL https://www.humansecurity.com/learn/blog/trojans-all-the-way-down-badbox-and-peachpit/
+2026-02-13 07:05:16,577 [WARNING] Erreur newspaper : Article `download()` failed with 403 Client Error: Forbidden for url: https://www.humansecurity.com/learn/blog/satori-threat-intelligence-disruption-badbox-2-0/ on URL https://www.humansecurity.com/learn/blog/satori-threat-intelligence-disruption-badbox-2-0/
+2026-02-13 07:05:17,149 [INFO] Scraping zataz
+2026-02-13 07:05:19,763 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zataz.com/feeds
+2026-02-13 07:05:38,820 [INFO] Envoi (score 25) : Google Reports State-Backed Hackers Using Gemini AI for Recon and Attack Support
+2026-02-13 07:05:45,922 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-13 07:05:47,143 [INFO] Envoi (score 20) : China-Linked Amaranth-Dragon Exploits WinRAR Flaw in Espionage Campaigns
+2026-02-13 07:05:57,966 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-13 07:05:58,051 [WARNING] Échec envoi ou résumé vide : https://thehackernews.com/2026/02/china-linked-amaranth-dragon-exploits.html
+2026-02-13 07:05:59,051 [INFO] Envoi (score 20) : Microsoft: New Windows LNK spoofing issues aren't vulnerabilities
+2026-02-13 07:06:06,262 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-02-13 07:06:07,468 [INFO] 2/3 articles envoyés.
+2026-02-13 07:06:07,468 [INFO] Traitement terminé.
