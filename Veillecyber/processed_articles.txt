@@ -503,3 +503,4 @@ https://www.zataz.com/lue-et-les-pays-bas-touches-via-des-failles-ivanti
 https://thehackernews.com/2026/02/google-reports-state-backed-hackers.html
 https://www.bleepingcomputer.com/news/microsoft/microsoft-new-windows-lnk-spoofing-issues-arent-vulnerabilities
 https://thehackernews.com/2026/02/83-of-ivanti-epmm-exploits-linked-to.html
+https://thehackernews.com/2026/02/china-linked-amaranth-dragon-exploits.html
