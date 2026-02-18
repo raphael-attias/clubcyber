@@ -505,3 +505,4 @@ https://www.bleepingcomputer.com/news/microsoft/microsoft-new-windows-lnk-spoofi
 https://thehackernews.com/2026/02/83-of-ivanti-epmm-exploits-linked-to.html
 https://thehackernews.com/2026/02/china-linked-amaranth-dragon-exploits.html
 https://thehackernews.com/2026/02/safe-and-inclusive-esociety-how.html
+https://thehackernews.com/2026/02/my-day-getting-my-hands-dirty-with-ndr.html
