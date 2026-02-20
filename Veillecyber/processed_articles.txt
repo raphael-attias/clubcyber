@@ -507,3 +507,4 @@ https://thehackernews.com/2026/02/china-linked-amaranth-dragon-exploits.html
 https://thehackernews.com/2026/02/safe-and-inclusive-esociety-how.html
 https://thehackernews.com/2026/02/my-day-getting-my-hands-dirty-with-ndr.html
 https://thehackernews.com/2026/02/dell-recoverpoint-for-vms-zero-day-cve.html
+https://thehackernews.com/2026/02/microsoft-patches-59-vulnerabilities.html
