@@ -508,3 +508,5 @@ https://thehackernews.com/2026/02/safe-and-inclusive-esociety-how.html
 https://thehackernews.com/2026/02/my-day-getting-my-hands-dirty-with-ndr.html
 https://thehackernews.com/2026/02/dell-recoverpoint-for-vms-zero-day-cve.html
 https://thehackernews.com/2026/02/microsoft-patches-59-vulnerabilities.html
+https://www.numerama.com/cyberguerre/2177763-en-voulant-sameliorer-le-bloc-notes-de-microsoft-sest-fragilise.html
+https://www.zataz.com/attaque-revendiquee-contre-la-cfdt-par-cl0p
