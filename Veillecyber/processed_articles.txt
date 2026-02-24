@@ -513,3 +513,4 @@ https://www.zataz.com/attaque-revendiquee-contre-la-cfdt-par-cl0p
 https://www.numerama.com/cyberguerre/2184985-simple-farce-ou-vrai-signal-dalarme-openclaw-sest-invite-de-force-chez-4-000-developpeurs.html
 https://www.undernews.fr/reseau-securite/quelle-ia-dans-la-cybersecurite-harfanglab-dessine-les-grandes-tendances-cyber-en-matiere-dia.html
 https://www.undernews.fr/malwares-virus-antivirus/rapport-sur-les-cybermenaces-de-watchguard-de-1500-de-nouveaux-malwares-uniques-detectes-au-dernier-trimestre-2025.html
+https://www.undernews.fr/reseau-securite/les-cybermenaces-evoluent-notre-defense-aussi-pourquoi-le-zero-trust-na-jamais-ete-aussi-vital.html
