@@ -514,3 +514,5 @@ https://www.numerama.com/cyberguerre/2184985-simple-farce-ou-vrai-signal-dalarme
 https://www.undernews.fr/reseau-securite/quelle-ia-dans-la-cybersecurite-harfanglab-dessine-les-grandes-tendances-cyber-en-matiere-dia.html
 https://www.undernews.fr/malwares-virus-antivirus/rapport-sur-les-cybermenaces-de-watchguard-de-1500-de-nouveaux-malwares-uniques-detectes-au-dernier-trimestre-2025.html
 https://www.undernews.fr/reseau-securite/les-cybermenaces-evoluent-notre-defense-aussi-pourquoi-le-zero-trust-na-jamais-ete-aussi-vital.html
+https://www.zdnet.fr/pratique/securite-pratique-10-conseils-essentiels-pour-vous-proteger-sur-le-web-490704.htm
+https://www.theregister.com/2026/02/22/french_bank_hack
