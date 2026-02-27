@@ -519,3 +519,5 @@ https://www.theregister.com/2026/02/22/french_bank_hack
 https://www.zataz.com/deux-petaoctets-voles-israel-change-dechelle-cyber
 https://thehackernews.com/2026/02/slh-offers-5001000-per-call-to-recruit.html
 https://www.zataz.com/texas-attaque-tp-link-sur-fond-daccusations-prochinoises
+https://www.numerama.com/cyberguerre/2188741-failles-claude-code-3-vulnerabilites-critiques-corrigees-par-anthropic.html
+https://thehackernews.com/2026/02/google-disrupts-unc2814-gridtide.html
