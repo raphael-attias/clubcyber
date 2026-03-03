@@ -523,3 +523,4 @@ https://www.numerama.com/cyberguerre/2188741-failles-claude-code-3-vulnerabilite
 https://thehackernews.com/2026/02/google-disrupts-unc2814-gridtide.html
 https://www.zataz.com/le-pirate-batista-raconte-ses-methodes-dattaque
 https://krebsonsecurity.com/2026/02/who-is-the-kimwolf-botmaster-dort
+https://thehackernews.com/2026/03/apt28-tied-to-cve-2026-21513-mshtml-0.html
