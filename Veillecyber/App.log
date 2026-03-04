@@ -24283,3 +24283,71 @@
 2026-03-03 06:59:22,481 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
 2026-03-03 06:59:23,961 [INFO] 1/3 articles envoyés.
 2026-03-03 06:59:23,961 [INFO] Traitement terminé.
+2026-03-04 06:53:37,781 [INFO] Démarrage du script de veille cybersécurité
+2026-03-04 06:53:37,781 [INFO] 526 articles déjà traités.
+2026-03-04 06:53:37,781 [INFO] Scraping darkreading
+2026-03-04 06:53:37,961 [WARNING] fromstring() returned an invalid string: ...
+2026-03-04 06:53:37,961 [WARNING] Source https://www.darkreading.com parse error.
+2026-03-04 06:53:37,961 [CRITICAL] Must extract urls from either html, text or doc!
+2026-03-04 06:53:38,004 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/
+2026-03-04 06:53:38,060 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feeds
+2026-03-04 06:53:38,073 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/rss
+2026-03-04 06:53:38,076 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feed
+2026-03-04 06:53:38,343 [INFO] Scraping zdnet
+2026-03-04 06:53:39,896 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zdnet.fr/feeds
+2026-03-04 06:53:48,180 [INFO] Scraping zataz
+2026-03-04 06:53:48,768 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zataz.com/feeds
+2026-03-04 06:53:51,215 [INFO] Scraping numerama
+2026-03-04 06:53:54,390 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.numerama.com/feeds
+2026-03-04 06:54:03,818 [INFO] Scraping lemondeinformatique
+2026-03-04 06:54:04,513 [WARNING] fromstring() returned an invalid string: ...
+2026-03-04 06:54:04,514 [WARNING] Source https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/ parse error.
+2026-03-04 06:54:04,514 [CRITICAL] Must extract urls from either html, text or doc!
+2026-03-04 06:54:05,025 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/
+2026-03-04 06:54:05,604 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feeds
+2026-03-04 06:54:05,606 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feed
+2026-03-04 06:54:05,659 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/rss
+2026-03-04 06:54:09,729 [INFO] Scraping silicon
+2026-03-04 06:54:11,480 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.silicon.fr/feeds
+2026-03-04 06:54:18,079 [INFO] Scraping usine_digitale
+2026-03-04 06:54:18,355 [WARNING] fromstring() returned an invalid string: ...
+2026-03-04 06:54:18,356 [WARNING] Source https://www.usine-digitale.fr/ parse error.
+2026-03-04 06:54:18,356 [CRITICAL] Must extract urls from either html, text or doc!
+2026-03-04 06:54:18,521 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.usine-digitale.fr/
+2026-03-04 06:54:18,619 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.usine-digitale.fr/rss
+2026-03-04 06:54:18,726 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.usine-digitale.fr/feed
+2026-03-04 06:54:18,816 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.usine-digitale.fr/feeds
+2026-03-04 06:54:19,298 [INFO] Scraping theregister
+2026-03-04 06:54:20,250 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feeds
+2026-03-04 06:54:20,270 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/rss
+2026-03-04 06:54:20,310 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feed
+2026-03-04 06:54:23,773 [INFO] Scraping cybernews
+2026-03-04 06:54:23,898 [WARNING] fromstring() returned an invalid string: ...
+2026-03-04 06:54:23,898 [WARNING] Source https://cybernews.com parse error.
+2026-03-04 06:54:23,898 [CRITICAL] Must extract urls from either html, text or doc!
+2026-03-04 06:54:23,944 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/
+2026-03-04 06:54:24,005 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feeds
+2026-03-04 06:54:24,015 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feed
+2026-03-04 06:54:24,017 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/rss
+2026-03-04 06:54:24,298 [INFO] Scraping undernews
+2026-03-04 06:54:27,828 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.undernews.fr/feeds
+2026-03-04 06:54:41,797 [INFO] Scraping bleepingcomputer
+2026-03-04 06:54:42,836 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feeds
+2026-03-04 06:54:42,857 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/rss
+2026-03-04 06:55:16,915 [INFO] Scraping krebsonsecurity
+2026-03-04 06:55:17,738 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://krebsonsecurity.com/feeds
+2026-03-04 06:55:28,981 [INFO] Scraping thehackernews
+2026-03-04 06:55:30,010 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feed
+2026-03-04 06:55:30,011 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feeds
+2026-03-04 06:55:30,052 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/rss
+2026-03-04 06:55:33,230 [INFO] Envoi (score 30) : Cyber actualités de la semaine du 27 février 2026
+2026-03-04 06:55:44,400 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-04 06:55:44,489 [WARNING] Échec envoi ou résumé vide : https://www.zataz.com/cyber-actualites-de-la-semaine-du-27-fevrier-2026
+2026-03-04 06:55:45,490 [INFO] Envoi (score 25) : Découverte d’un espace qui flirte avec l’ombre : quand la veille vulnérabilités devient un manuel d’attaque
+2026-03-04 06:55:55,880 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-04 06:55:55,975 [WARNING] Échec envoi ou résumé vide : https://www.zataz.com/decouverte-dun-espace-qui-qui-flirte-avec-lombre-quand-la-veille-vulnerabilites-devient-un-manuel-dattaque
+2026-03-04 06:55:56,975 [INFO] Envoi (score 24) : ⚡ Weekly Recap: SD-WAN 0-Day, Critical CVEs, Telegram Probe, Smart TV Proxy SDK and More
+2026-03-04 06:56:18,657 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-04 06:56:18,759 [WARNING] Échec envoi ou résumé vide : https://thehackernews.com/2026/03/weekly-recap-sd-wan-0-day-critical-cves.html
+2026-03-04 06:56:19,759 [INFO] 0/3 articles envoyés.
+2026-03-04 06:56:19,759 [INFO] Traitement terminé.
