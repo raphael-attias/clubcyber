@@ -24515,3 +24515,86 @@
 2026-03-06 06:57:29,166 [WARNING] Échec envoi ou résumé vide : https://thehackernews.com/2026/02/ai-assisted-threat-actor-compromises.html
 2026-03-06 06:57:30,166 [INFO] 0/3 articles envoyés.
 2026-03-06 06:57:30,166 [INFO] Traitement terminé.
+2026-03-07 06:47:16,099 [INFO] Démarrage du script de veille cybersécurité
+2026-03-07 06:47:16,100 [INFO] 526 articles déjà traités.
+2026-03-07 06:47:16,100 [INFO] Scraping usine_digitale
+2026-03-07 06:47:16,732 [WARNING] fromstring() returned an invalid string: ...
+2026-03-07 06:47:16,732 [WARNING] Source https://www.usine-digitale.fr/ parse error.
+2026-03-07 06:47:16,733 [CRITICAL] Must extract urls from either html, text or doc!
+2026-03-07 06:47:16,912 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.usine-digitale.fr/
+2026-03-07 06:47:17,033 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.usine-digitale.fr/rss
+2026-03-07 06:47:17,046 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.usine-digitale.fr/feeds
+2026-03-07 06:47:17,078 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.usine-digitale.fr/feed
+2026-03-07 06:47:17,525 [INFO] Scraping bleepingcomputer
+2026-03-07 06:47:19,128 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/feeds
+2026-03-07 06:47:19,263 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.bleepingcomputer.com/rss
+2026-03-07 06:47:21,915 [WARNING] Erreur newspaper : Article `download()` failed with 403 Client Error: Forbidden for url: https://www.bleepingcomputer.com/news/security/europol-coordinated-action-disrupts-tycoon2fa-phishing-platform/ on URL https://www.bleepingcomputer.com/news/security/europol-coordinated-action-disrupts-tycoon2fa-phishing-platform/
+2026-03-07 06:47:22,001 [WARNING] Erreur newspaper : Article `download()` failed with 403 Client Error: Forbidden for url: https://www.bleepingcomputer.com/news/security/cognizant-trizetto-breach-exposes-health-data-of-34-million-patients/ on URL https://www.bleepingcomputer.com/news/security/cognizant-trizetto-breach-exposes-health-data-of-34-million-patients/
+2026-03-07 06:47:22,107 [WARNING] Erreur newspaper : Article `download()` failed with 403 Client Error: Forbidden for url: https://www.bleepingcomputer.com/news/security/cisa-warns-of-apple-flaws-exploited-in-spyware-crypto-theft-attacks/ on URL https://www.bleepingcomputer.com/news/security/cisa-warns-of-apple-flaws-exploited-in-spyware-crypto-theft-attacks/
+2026-03-07 06:47:22,195 [WARNING] Erreur newspaper : Article `download()` failed with 403 Client Error: Forbidden for url: https://www.bleepingcomputer.com/news/security/ec-council-expands-ai-certification-portfolio-to-strengthen-us-ai-workforce-readiness-and-security/ on URL https://www.bleepingcomputer.com/news/security/ec-council-expands-ai-certification-portfolio-to-strengthen-us-ai-workforce-readiness-and-security/
+2026-03-07 06:47:22,280 [WARNING] Erreur newspaper : Article `download()` failed with 403 Client Error: Forbidden for url: https://www.bleepingcomputer.com/news/security/fake-claude-code-install-guides-push-infostealers-in-installfix-attacks/ on URL https://www.bleepingcomputer.com/news/security/fake-claude-code-install-guides-push-infostealers-in-installfix-attacks/
+2026-03-07 06:47:22,368 [WARNING] Erreur newspaper : Article `download()` failed with 403 Client Error: Forbidden for url: https://www.bleepingcomputer.com/news/security/#tlatest on URL https://www.bleepingcomputer.com/news/security/#tlatest
+2026-03-07 06:47:22,459 [WARNING] Erreur newspaper : Article `download()` failed with 403 Client Error: Forbidden for url: https://www.bleepingcomputer.com/news/security/#popular on URL https://www.bleepingcomputer.com/news/security/#popular
+2026-03-07 06:47:22,547 [WARNING] Erreur newspaper : Article `download()` failed with 403 Client Error: Forbidden for url: https://www.bleepingcomputer.com/tutorials/how-to-access-the-dark-web-using-the-tor-browser/ on URL https://www.bleepingcomputer.com/tutorials/how-to-access-the-dark-web-using-the-tor-browser/
+2026-03-07 06:47:22,640 [WARNING] Erreur newspaper : Article `download()` failed with 403 Client Error: Forbidden for url: https://www.bleepingcomputer.com/tutorials/how-to-enable-kernel-mode-hardware-enforced-stack-protection-in-windows-11/ on URL https://www.bleepingcomputer.com/tutorials/how-to-enable-kernel-mode-hardware-enforced-stack-protection-in-windows-11/
+2026-03-07 06:47:22,734 [WARNING] Erreur newspaper : Article `download()` failed with 403 Client Error: Forbidden for url: https://www.bleepingcomputer.com/tutorials/how-to-use-the-windows-registry-editor/ on URL https://www.bleepingcomputer.com/tutorials/how-to-use-the-windows-registry-editor/
+2026-03-07 06:47:22,827 [WARNING] Erreur newspaper : Article `download()` failed with 403 Client Error: Forbidden for url: https://www.bleepingcomputer.com/tutorials/how-to-backup-and-restore-the-windows-registry/ on URL https://www.bleepingcomputer.com/tutorials/how-to-backup-and-restore-the-windows-registry/
+2026-03-07 06:47:22,915 [WARNING] Erreur newspaper : Article `download()` failed with 403 Client Error: Forbidden for url: https://www.bleepingcomputer.com/tutorials/how-to-start-windows-in-safe-mode/ on URL https://www.bleepingcomputer.com/tutorials/how-to-start-windows-in-safe-mode/
+2026-03-07 06:47:23,006 [WARNING] Erreur newspaper : Article `download()` failed with 403 Client Error: Forbidden for url: https://www.bleepingcomputer.com/tutorials/how-to-remove-a-trojan-virus-worm-or-malware/ on URL https://www.bleepingcomputer.com/tutorials/how-to-remove-a-trojan-virus-worm-or-malware/
+2026-03-07 06:47:23,093 [WARNING] Erreur newspaper : Article `download()` failed with 403 Client Error: Forbidden for url: https://www.bleepingcomputer.com/tutorials/show-hidden-files-in-windows-7/ on URL https://www.bleepingcomputer.com/tutorials/show-hidden-files-in-windows-7/
+2026-03-07 06:47:23,183 [WARNING] Erreur newspaper : Article `download()` failed with 403 Client Error: Forbidden for url: https://www.bleepingcomputer.com/tutorials/how-to-see-hidden-files-in-windows/ on URL https://www.bleepingcomputer.com/tutorials/how-to-see-hidden-files-in-windows/
+2026-03-07 06:47:23,188 [INFO] Scraping krebsonsecurity
+2026-03-07 06:47:25,614 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://krebsonsecurity.com/feeds
+2026-03-07 06:47:57,417 [INFO] Scraping zdnet
+2026-03-07 06:47:59,536 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zdnet.fr/feeds
+2026-03-07 06:48:10,272 [INFO] Scraping thehackernews
+2026-03-07 06:48:11,437 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feed
+2026-03-07 06:48:11,462 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/feeds
+2026-03-07 06:48:11,519 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://thehackernews.com/rss
+2026-03-07 06:48:16,057 [INFO] Scraping cybernews
+2026-03-07 06:48:16,228 [WARNING] fromstring() returned an invalid string: ...
+2026-03-07 06:48:16,228 [WARNING] Source https://cybernews.com parse error.
+2026-03-07 06:48:16,228 [CRITICAL] Must extract urls from either html, text or doc!
+2026-03-07 06:48:16,321 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/
+2026-03-07 06:48:16,431 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feeds
+2026-03-07 06:48:16,439 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/rss
+2026-03-07 06:48:16,440 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://cybernews.com/feed
+2026-03-07 06:48:16,793 [INFO] Scraping theregister
+2026-03-07 06:48:18,295 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feeds
+2026-03-07 06:48:18,300 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/feed
+2026-03-07 06:48:18,302 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.theregister.com/rss
+2026-03-07 06:48:22,408 [INFO] Scraping zataz
+2026-03-07 06:48:24,917 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.zataz.com/feeds
+2026-03-07 06:48:42,414 [INFO] Scraping darkreading
+2026-03-07 06:48:42,665 [WARNING] fromstring() returned an invalid string: ...
+2026-03-07 06:48:42,665 [WARNING] Source https://www.darkreading.com parse error.
+2026-03-07 06:48:42,665 [CRITICAL] Must extract urls from either html, text or doc!
+2026-03-07 06:48:42,748 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/
+2026-03-07 06:48:42,852 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feeds
+2026-03-07 06:48:42,864 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/feed
+2026-03-07 06:48:42,867 [CRITICAL] [REQUEST FAILED] 403 Client Error: Forbidden for url: https://www.darkreading.com/rss
+2026-03-07 06:48:43,218 [INFO] Scraping numerama
+2026-03-07 06:48:47,238 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.numerama.com/feeds
+2026-03-07 06:49:00,478 [INFO] Scraping lemondeinformatique
+2026-03-07 06:49:01,445 [WARNING] fromstring() returned an invalid string: ...
+2026-03-07 06:49:01,445 [WARNING] Source https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/ parse error.
+2026-03-07 06:49:01,445 [CRITICAL] Must extract urls from either html, text or doc!
+2026-03-07 06:49:02,113 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/actualites/lire-cybersecurite-c47/
+2026-03-07 06:49:02,849 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feed
+2026-03-07 06:49:02,867 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/feeds
+2026-03-07 06:49:02,867 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.lemondeinformatique.fr/rss
+2026-03-07 06:49:08,206 [INFO] Scraping silicon
+2026-03-07 06:49:11,075 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.silicon.fr/feeds
+2026-03-07 06:49:19,434 [INFO] Scraping undernews
+2026-03-07 06:49:23,451 [CRITICAL] [REQUEST FAILED] 404 Client Error: Not Found for url: https://www.undernews.fr/feeds
+2026-03-07 06:49:41,417 [INFO] Envoi (score 32) : ⚡ Weekly Recap: Double-Tap Skimmers, PromptSpy AI, 30Tbps DDoS, Docker Malware & More
+2026-03-07 06:49:55,191 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-07 06:49:55,357 [WARNING] Échec envoi ou résumé vide : https://thehackernews.com/2026/02/weekly-recap-double-tap-skimmers.html
+2026-03-07 06:49:56,357 [INFO] Envoi (score 30) : Cyber actualités de la semaine du 27 février 2026
+2026-03-07 06:50:09,386 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-07 06:50:09,547 [WARNING] Échec envoi ou résumé vide : https://www.zataz.com/cyber-actualites-de-la-semaine-du-27-fevrier-2026
+2026-03-07 06:50:10,547 [INFO] Envoi (score 26) : AI-Assisted Threat Actor Compromises 600+ FortiGate Devices in 55 Countries
+2026-03-07 06:50:20,004 [INFO] HTTP Request: POST https://api.mistral.ai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-07 06:50:20,186 [WARNING] Échec envoi ou résumé vide : https://thehackernews.com/2026/02/ai-assisted-threat-actor-compromises.html
+2026-03-07 06:50:21,187 [INFO] 0/3 articles envoyés.
+2026-03-07 06:50:21,187 [INFO] Traitement terminé.
