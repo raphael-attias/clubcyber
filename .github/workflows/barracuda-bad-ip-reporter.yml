@@ -17,12 +17,14 @@ jobs:
 
     steps:
       - name: Checkout code (toutes branches)
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          persist-credentials: true
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
@@ -50,7 +52,7 @@ jobs:
           git fetch origin logs || true
           git checkout logs || git checkout -b logs
 
-          # S’assurer que le dossier cible existe
+          # S'assurer que le dossier cible existe
           mkdir -p Bad-Ip/logs
 
           # Remettre à jour le fichier dans la branche logs
@@ -60,6 +62,3 @@ jobs:
           git add Bad-Ip/logs/seen_ips.log
           git commit -m "Mise à jour des IPs $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "Rien à committer"
           git push origin logs
-
-          # Retour sur main pour la propreté
-          git checkout main
