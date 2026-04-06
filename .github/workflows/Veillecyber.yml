@@ -18,13 +18,14 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
           persist-credentials: true
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
@@ -34,9 +35,6 @@ jobs:
 
       - name: Install dependencies
         run: |
-          # installe first les modules natifs de newspaper
-          pip install newspaper3k lxml_html_clean
-          # puis toutes les dépendances listées
           pip install -r requirements.txt
 
       - name: Run monitoring
