@@ -1,0 +1,90 @@
+name: 🛡️ Threat Intelligence Pipeline
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  PYTHONUNBUFFERED: "1"
+
+concurrency:
+  group: threat-intelligence
+  cancel-in-progress: false
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🐍 Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: 📦 Install all dependencies
+        run: |
+          pip install requests pandas python-dotenv
+          pip install -r Map-bad-ip/requirements.txt
+          pip install mistralai lxml_html_clean
+
+      # ── ÉTAPE 1 : Barracuda (Alerte Discord nouvelles IPs) ──────────────
+      - name: 🦈 Run Barracuda — Discord IP Alert
+        env:
+          BLOCKLIST_URL: "https://raw.githubusercontent.com/duggytuxy/Data-Shield_IPv4_Blocklist/refs/heads/main/prod_data-shield_ipv4_blocklist.txt"
+          WEBHOOK_URL_IP: ${{ secrets.WEBHOOK_URL_IP }}
+        run: |
+          mkdir -p Bad-Ip/logs
+          python Bad-Ip/barracuda.py
+
+      # ── ÉTAPE 2 : Map Bad-IP (Pipeline de données) ──────────────────────
+      - name: 🔍 Fetch IPs from blocklist
+        env:
+          RSS_FEED_URL: "https://raw.githubusercontent.com/duggytuxy/Data-Shield_IPv4_Blocklist/refs/heads/main/prod_data-shield_ipv4_blocklist.txt"
+        run: python Map-bad-ip/src/fetch_ips.py
+
+      - name: 🌍 Geolocate IPs
+        env:
+          IPINFO_TOKEN: ${{ secrets.IPINFO_TOKEN }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+        run: python Map-bad-ip/src/geolocate.py
+
+      - name: 📊 Aggregate data
+        run: python Map-bad-ip/src/aggregate.py
+
+      - name: 🗺️ Generate dashboard (index.html)
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python Map-bad-ip/src/visualizev2.py
+
+      # ── ÉTAPE 3 : Commit unique de tous les artefacts ───────────────────
+      - name: 💾 Commit all changes (single push)
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "data: auto-update threat intelligence [skip ci]"
+          file_pattern: |
+            Bad-Ip/logs/seen_ips.log
+            Map-bad-ip/data/*.csv
+            Map-bad-ip/data/*.json
+            index.html
+
+      # ── ÉTAPE 4 : Déploiement GitHub Pages ──────────────────────────────
+      - name: 🚀 Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          publish_branch: gh-pages
+          exclude_assets: '.github,Bad-Ip,Map-bad-ip,Veillecyber,*.py,*.yml,*.txt,*.log'
