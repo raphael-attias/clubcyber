@@ -16,12 +16,10 @@ jobs:
         working-directory: Bad-Ip
 
     steps:
-      - name: Checkout code (toutes branches)
+      - name: Checkout code
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          persist-credentials: true
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -39,26 +37,21 @@ jobs:
 
       - name: Push seen_ips.log to logs branch
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@users.noreply.github.com"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
 
-          # Remonter à la racine du repo
-          cd $GITHUB_WORKSPACE
+          # Sauvegarde du log g�n�r�
+          cp logs/seen_ips.log /tmp/seen_ips.log
 
-          # Copier temporairement le log généré par le script
-          cp Bad-Ip/logs/seen_ips.log /tmp/seen_ips.log
-
-          # Récupérer ou créer la branche logs
-          git fetch origin logs || true
+          # Bascule sur la branche logs
+          git fetch origin logs || git checkout -b logs
           git checkout logs || git checkout -b logs
+          
+          # Mise � jour du fichier
+          mkdir -p logs
+          cp /tmp/seen_ips.log logs/seen_ips.log
 
-          # S'assurer que le dossier cible existe
-          mkdir -p Bad-Ip/logs
-
-          # Remettre à jour le fichier dans la branche logs
-          cp /tmp/seen_ips.log Bad-Ip/logs/seen_ips.log
-
-          # Commit et push du seul fichier seen_ips.log
-          git add Bad-Ip/logs/seen_ips.log
-          git commit -m "Mise à jour des IPs $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "Rien à committer"
+          # Commit et push
+          git add logs/seen_ips.log
+          git commit -m "update: malicious IPs $(date -u +'%Y-%m-%dT%H:%M:%SZ') [skip ci]" || echo "Nothing to commit"
           git push origin logs

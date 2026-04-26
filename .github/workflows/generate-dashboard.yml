@@ -1,12 +1,14 @@
-﻿name: Update Threat Dashboard
+name: Update Threat Dashboard
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Tous les jours à minuit
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   build-and-deploy:
@@ -25,7 +27,6 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r Map-bad-ip/requirements.txt
-          pip install mistralai
 
       - name: Fetch and Process Data
         env:
@@ -38,15 +39,16 @@ jobs:
           python Map-bad-ip/src/aggregate.py
           python Map-bad-ip/src/visualizev2.py
 
-      - name: Commit and Push changes
+      - name: Commit data updates
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add data/ geo_enriched.csv index.html Map-bad-ip/data/ || true
-          git diff --quiet --staged || (git commit -m "Auto-update threat dashboard" && git push)
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add Map-bad-ip/data/ index.html || true
+          git commit -m "data: refresh threat intelligence [skip ci]" || echo "No changes to commit"
+          git push origin main || echo "Push failed, but continuing deployment"
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .

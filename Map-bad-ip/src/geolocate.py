@@ -133,7 +133,8 @@ def enrich_ip(ip):
         return None
 
 
-def git_commit_and_push():
+def if not os.getenv('GITHUB_ACTIONS'):
+        git_commit_and_push():
     try:
         subprocess.run(["git", "add", "."], check=True)
         subprocess.run(["git", "commit", "-m", "Update geo_enriched.csv after geolocate run"], check=True)
@@ -174,7 +175,8 @@ def main():
         print(f"[+] {ip} traité avec source={rec['source']}")
         time.sleep(1)
     print(f"[✔] Terminé, {len(to_do)} IPs tentées.")
-    git_commit_and_push()
+    if not os.getenv('GITHUB_ACTIONS'):
+        git_commit_and_push()
     notify_discord()
 
 if __name__ == "__main__":
