@@ -1,3 +1,25 @@
-/Bad-Ip/logs/
-/Map-bad-ip/src/.env
+# Python
+__pycache__/
 *.pyc
+*.pyo
+.env
+.venv/
+venv/
+
+# Logs volumineux — ne jamais commiter
+Veillecyber/App.log
+*.log
+
+# Donnees temporaires / artefacts intermediaires
+geo_enriched.csv
+Map-bad-ip/data/geo_enriched.csv
+
+# Anciens logs Barracuda (desormais geres par git-auto-commit)
+/Bad-Ip/logs/
+
+# Env secrets locaux
+/Map-bad-ip/src/.env
+
+# OS
+.DS_Store
+Thumbs.db
