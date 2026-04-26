@@ -8,21 +8,12 @@ on:
 permissions:
   contents: write
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 jobs:
   report-malicious-ips:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: Bad-Ip
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -33,6 +24,7 @@ jobs:
         run: pip install requests
 
       - name: Run barracuda script
+        working-directory: Bad-Ip
         env:
           BLOCKLIST_URL: https://raw.githubusercontent.com/duggytuxy/Data-Shield_IPv4_Blocklist/refs/heads/main/prod_data-shield_ipv4_blocklist.txt
           WEBHOOK_URL_IP: ${{ secrets.WEBHOOK_URL_IP }}
@@ -40,22 +32,8 @@ jobs:
           mkdir -p logs
           python barracuda.py
 
-      - name: Push logs to dedicated branch
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          
-          # On sauve le log
-          cp logs/seen_ips.log /tmp/seen_ips.log
-          
-          # Switch vers la branche logs
-          git fetch origin logs || git checkout -b logs
-          git checkout logs
-          
-          # Mise à jour
-          mkdir -p logs
-          cp /tmp/seen_ips.log logs/seen_ips.log
-          
-          git add logs/seen_ips.log
-          git commit -m "update: seen IPs $(date -u +'%Y-%m-%dT%H:%M:%SZ') [skip ci]" || echo "No changes"
-          git push origin logs
+      - name: Commit logs
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "logs: update malicious IPs [skip ci]"
+          file_pattern: 'Bad-Ip/logs/seen_ips.log'
