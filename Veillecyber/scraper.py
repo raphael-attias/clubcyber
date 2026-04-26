@@ -1,6 +1,7 @@
 from newspaper import build, Article
 import feedparser
 import requests
+import config
 import logging
 
 
@@ -9,7 +10,8 @@ def get_articles_from_site(site_url):
 
     # 1. Essai avec newspaper
     try:
-        paper = build(site_url, language='fr', memoize_articles=False)
+        user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36'
+paper = build(site_url, language='fr', memoize_articles=False, browser_user_agent=user_agent)
         for article in paper.articles[:20]:
             try:
                 article.download()

@@ -17,7 +17,7 @@ load_dotenv()
 
 FEED_URL = os.getenv(
     "RSS_FEED_URL",
-    "https://raw.githubusercontent.com/duggytuxy/Intelligence_IPv4_Blocklists/refs/heads/main/agressive_ips_dst_fr_be_blocklist.txt"
+    "https://raw.githubusercontent.com/duggytuxy/Data-Shield_IPv4_Blocklist/refs/heads/main/prod_data-shield_ipv4_blocklist.txt"
 )
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
 CSV_PATH = os.path.join(DATA_DIR, "ips.csv")

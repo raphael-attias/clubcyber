@@ -12,7 +12,7 @@ Ce projet est conçu pour les équipes de cybersécurité, les administrateurs s
 
 Le projet s’appuie sur une liste publique maintenue par **Duggy Tuxy**, contenant des adresses IPv4 détectées comme malveillantes selon différents TTPs :
 
-> **Blocklist** : [agressive_ips_dst_fr_be_blocklist.txt](https://raw.githubusercontent.com/duggytuxy/Intelligence_IPv4_Blocklists/refs/heads/main/agressive_ips_dst_fr_be_blocklist.txt)
+> **Blocklist** : [prod_data-shield_ipv4_blocklist.txt](https://raw.githubusercontent.com/duggytuxy/Data-Shield_IPv4_Blocklist/refs/heads/main/prod_data-shield_ipv4_blocklist.txt)
 
 ### 🧠 Types de menaces couvertes :
 - Botnets

@@ -33,7 +33,7 @@ jobs:
 
       - name: Run barracuda script
         env:
-          BLOCKLIST_URL: ${{ secrets.BLOCKLIST_URL }}
+          BLOCKLIST_URL: https://raw.githubusercontent.com/duggytuxy/Data-Shield_IPv4_Blocklist/refs/heads/main/prod_data-shield_ipv4_blocklist.txt
           WEBHOOK_URL_IP: ${{ secrets.WEBHOOK_URL_IP }}
         run: python barracuda.py
 

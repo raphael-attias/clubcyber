@@ -1,0 +1,53 @@
+﻿name: Update Threat Dashboard
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Tous les jours à minuit
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install -r Map-bad-ip/requirements.txt
+          pip install mistralai
+
+      - name: Fetch and Process Data
+        env:
+          IPINFO_TOKEN: ${{ secrets.IPINFO_TOKEN }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          python Map-bad-ip/src/fetch_ips.py
+          python Map-bad-ip/src/geolocate.py
+          python Map-bad-ip/src/aggregate.py
+          python Map-bad-ip/src/visualizev2.py
+
+      - name: Commit and Push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/ geo_enriched.csv index.html Map-bad-ip/data/ || true
+          git diff --quiet --staged || (git commit -m "Auto-update threat dashboard" && git push)
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          publish_branch: gh-pages
