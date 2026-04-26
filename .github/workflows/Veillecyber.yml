@@ -1,8 +1,8 @@
-name: VeilleCyber
+name: 📰 VeilleCyber — Daily News
 
 on:
   schedule:
-    - cron: '0 6 * * *'
+    - cron: '0 7 * * *'
   workflow_dispatch:
 
 permissions:
@@ -12,40 +12,36 @@ env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
-  run-script:
+  run-veille:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: Veillecyber
 
     steps:
-      - name: Checkout repo
+      - name: 📥 Checkout repo
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Setup Python
+      - name: 🐍 Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+          cache: 'pip'
 
-      - name: Install dependencies
+      - name: 📦 Install dependencies
+        working-directory: Veillecyber
         run: |
           pip install -r requirements.txt
           pip install lxml_html_clean
 
-      - name: Run monitoring
+      - name: 🔎 Run VeilleCyber scraper
+        working-directory: Veillecyber
         env:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
         run: python main.py
 
-      - name: Commit results
-        if: always()
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add App.log processed_articles.txt || true
-          git commit -m "chore: auto-update veille logs [skip ci]" || echo "No changes"
-          git pull --rebase origin main
-          git push origin main
+      - name: 💾 Commit results
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "veille: auto-update articles [skip ci]"
+          file_pattern: 'Veillecyber/processed_articles.txt'
