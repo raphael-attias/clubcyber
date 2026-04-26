@@ -6,6 +6,9 @@ import re
 from scraper import get_articles_from_site
 from summarizer import summarize_text
 from notifier import send_to_discord
+# Import pour dé-duplication sémantique
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
 
 # Sources configurables
 SITES_SOURCES = [
@@ -113,6 +116,27 @@ def collectcandidates(processed_articles, seen_titles):
     # Tri par score décroissant
     return sorted(candidates, key=lambda x: x[0], reverse=True)
 
+def dedupe_semantic(candidates, threshold=0.8):
+    """Élimine les articles sémantiquement trop proches."""
+    texts = [f"{title} {content}" for _, _, title, _, content in candidates]
+    if not texts:
+        return []
+    vectorizer = TfidfVectorizer(stop_words="french")
+    X = vectorizer.fit_transform(texts)
+
+    kept = []
+    for i, cand in enumerate(candidates):
+        vi = X[i]
+        is_duplicate = False
+        for j, (score_j, src_j, title_j, url_j, content_j) in enumerate(kept):
+            vj = X[candidates.index((score_j, src_j, title_j, url_j, content_j))]
+            if cosine_similarity(vi, vj)[0, 0] > threshold:
+                is_duplicate = True
+                break
+        if not is_duplicate:
+            kept.append(cand)
+    return kept
+
 def main():
     logging.info("Démarrage du script de veille cybersécurité")
     processed_articles = load_processed_articles()
@@ -123,6 +147,9 @@ def main():
     if not candidates:
         logging.info("Aucun article pertinent trouvé.")
         return
+
+    # Déduplication sémantique
+    candidates = dedupe_semantic(candidates, threshold=0.8)
 
     # Sélection des meilleurs articles
     to_send = candidates[:MAX_ARTICLES_PER_RUN]
