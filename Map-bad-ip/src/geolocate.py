@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
 geolocate_ipinfo.py
-Combine gÃ©oloc via IPInfo + fallback IA (Mistral) si coords manquantes.
-Traite les IP une par une, passe Ã  la suivante mÃªme si l'IA Ã©choue, et Ã©vite les IP dÃ©jÃ  traitÃ©es.
-Utilise l'API de ipinfo.io pour la gÃ©olocalisation principale.
-Ã€ la finÂ : git add/commit/push et notification Discord.
+Combine géoloc via IPInfo + fallback IA (Mistral) si coords manquantes.
+Traite les IP une par une, passe à la suivante même si l'IA échoue, et évite les IP déjà traitées.
+Utilise l'API de ipinfo.io pour la géolocalisation principale.
+À la fin : git add/commit/push et notification Discord.
 """
 
 import os
@@ -19,7 +19,7 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 from mistralai import Mistral
 
-# Charger le .env situÃ© dans src
+# Charger le .env situé dans src
 load_dotenv(os.path.join(os.path.dirname(__file__), ".env"))
 
 # --- Config IPInfo API ---
@@ -38,12 +38,12 @@ DATA_DIR        = os.path.join(os.path.dirname(__file__), "..", "data")
 INPUT_CSV       = os.path.join(DATA_DIR, "ips.csv")
 OUTPUT_CSV      = os.path.join(DATA_DIR, "geo_enriched.csv")
 
-# Prompt systÃ¨me pour Mistral
+# Prompt système pour Mistral
 SYSTEM_PROMPT = (
-    "Tu es un service de gÃ©olocalisation dâ€™adresses IP.\n"
-    "Quand je te fournis une adresse IP, tu dois dâ€™abord tenter dâ€™obtenir ses coordonnÃ©es GPS exactes (latitude, longitude).\n"
-    "Si les coordonnÃ©es GPS exactes ne sont pas disponibles, tu rÃ©cupÃ¨res alors les coordonnÃ©es (latitude, longitude) du centre de la ville dâ€™origine de cette IP.\n"
-    "Tu rÃ©pondras uniquement par un objet JSON formatÃ© exactement comme :\n"
+    "Tu es un service de géolocalisation d’adresses IP.\n"
+    "Quand je te fournis une adresse IP, tu dois d’abord tenter d’obtenir ses coordonnées GPS exactes (latitude, longitude).\n"
+    "Si les coordonnées GPS exactes ne sont pas disponibles, tu récupères alors les coordonnées (latitude, longitude) du centre de la ville d’origine de cette IP.\n"
+    "Tu répondras uniquement par un objet JSON formaté exactement comme :\n"
     "{\n"
     "  \"ip\": \"1.2.3.4\",\n"
     "  \"source\": \"gps\" | \"city\",\n"
@@ -63,7 +63,7 @@ session.mount("https://", HTTPAdapter(max_retries=retries))
 
 # Client Mistral
 if not MISTRAL_API_KEY:
-    raise RuntimeError("MISTRAL_API_KEY non dÃ©fini dans src/.env")
+    raise RuntimeError("MISTRAL_API_KEY non défini dans src/.env")
 mistral_client = Mistral(api_key=MISTRAL_API_KEY)
 
 
@@ -81,7 +81,7 @@ def load_done_ips():
 
 def call_ipinfo(ip):
     if not IPINFO_TOKEN:
-        raise RuntimeError("IPINFO_TOKEN non dÃ©fini dans src/.env")
+        raise RuntimeError("IPINFO_TOKEN non défini dans src/.env")
     url = f"{IPINFO_API_URL}{ip}/json"
     resp = session.get(url, params={"token": IPINFO_TOKEN}, timeout=10)
     resp.raise_for_status()
@@ -121,7 +121,7 @@ def enrich_ip(ip):
             raise ValueError("coords manquantes IPInfo")
         return rec
     except Exception as e:
-        print(f"[*] IPInfo Ã©chouÃ©e ({e}), fallback IA pour {ip}")
+        print(f"[*] IPInfo échouée ({e}), fallback IA pour {ip}")
     try:
         rec = call_mistral(ip)
         if rec.get("latitude") is None or rec.get("longitude") is None:
@@ -129,32 +129,31 @@ def enrich_ip(ip):
         rec["source"] = rec.get("source","ai")
         return rec
     except Exception as e:
-        print(f"[!] IA fallback Ã©chouÃ©e pour {ip}: {e}")
+        print(f"[!] IA fallback échouée pour {ip}: {e}")
         return None
 
 
-def if not os.getenv('GITHUB_ACTIONS'):
-        git_commit_and_push():
+def git_commit_and_push():
     try:
         subprocess.run(["git", "add", "."], check=True)
         subprocess.run(["git", "commit", "-m", "Update geo_enriched.csv after geolocate run"], check=True)
         subprocess.run(["git", "push"], check=True)
-        print("[âœ”] Changes pushed to remote.")
+        print("[?] Changes pushed to remote.")
     except subprocess.CalledProcessError as e:
         print(f"[!] Git operation failed: {e}")
 
 
 def notify_discord():
     if not DISCORD_WEBHOOK_URL:
-        print("[!] DISCORD_WEBHOOK_URL non dÃ©fini, pas de notification Discord.")
+        print("[!] DISCORD_WEBHOOK_URL non défini, pas de notification Discord.")
         return
-    payload = {"content": ":white_check_mark: geolocate_ipinfo.py run terminÃ© avec succÃ¨s!"}
+    payload = {"content": ":white_check_mark: geolocate_ipinfo.py run terminé avec succès!"}
     try:
         resp = requests.post(DISCORD_WEBHOOK_URL, json=payload, timeout=5)
         resp.raise_for_status()
-        print("[âœ”] Notification Discord envoyÃ©e.")
+        print("[?] Notification Discord envoyée.")
     except Exception as e:
-        print(f"[!] Ã‰chec notification Discord: {e}")
+        print(f"[!] Échec notification Discord: {e}")
 
 
 def main():
@@ -163,20 +162,24 @@ def main():
     ips = pd.read_csv(INPUT_CSV, header=None)[0].astype(str).tolist()
     to_do = [ip for ip in ips if ip not in done]
     if not to_do:
-        print("[âœ“] Aucune IP Ã  enrichir.")
+        print("[?] Aucune IP à enrichir.")
         return
     for idx, ip in enumerate(to_do, start=1):
         print(f"[*] ({idx}/{len(to_do)}) Enrichissement de {ip}")
         rec = enrich_ip(ip)
         if rec is None:
-            print(f"[!] Ã‰chec total pour {ip}, passage Ã  la suivante.")
+            print(f"[!] Échec total pour {ip}, passage à la suivante.")
             continue
         pd.DataFrame([rec]).to_csv(OUTPUT_CSV, mode="a", index=False, header=False)
-        print(f"[+] {ip} traitÃ© avec source={rec['source']}")
+        print(f"[+] {ip} traité avec source={rec['source']}")
         time.sleep(1)
-    print(f"[âœ”] TerminÃ©, {len(to_do)} IPs tentÃ©es.")
+    
+    print(f"[?] Terminé, {len(to_do)} IPs tentées.")
+    
+    # Ne pas pousser en CI (GitHub Actions), le workflow s'en charge
     if not os.getenv('GITHUB_ACTIONS'):
         git_commit_and_push()
+    
     notify_discord()
 
 if __name__ == "__main__":
