@@ -8,6 +8,9 @@ on:
 permissions:
   contents: write
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   report-malicious-ips:
     runs-on: ubuntu-latest
@@ -33,25 +36,26 @@ jobs:
         env:
           BLOCKLIST_URL: https://raw.githubusercontent.com/duggytuxy/Data-Shield_IPv4_Blocklist/refs/heads/main/prod_data-shield_ipv4_blocklist.txt
           WEBHOOK_URL_IP: ${{ secrets.WEBHOOK_URL_IP }}
-        run: python barracuda.py
+        run: |
+          mkdir -p logs
+          python barracuda.py
 
-      - name: Push seen_ips.log to logs branch
+      - name: Push logs to dedicated branch
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-
-          # Sauvegarde du log généré
-          cp logs/seen_ips.log /tmp/seen_ips.log
-
-          # Bascule sur la branche logs
-          git fetch origin logs || git checkout -b logs
-          git checkout logs || git checkout -b logs
           
-          # Mise à jour du fichier
+          # On sauve le log
+          cp logs/seen_ips.log /tmp/seen_ips.log
+          
+          # Switch vers la branche logs
+          git fetch origin logs || git checkout -b logs
+          git checkout logs
+          
+          # Mise à jour
           mkdir -p logs
           cp /tmp/seen_ips.log logs/seen_ips.log
-
-          # Commit et push
+          
           git add logs/seen_ips.log
-          git commit -m "update: malicious IPs $(date -u +'%Y-%m-%dT%H:%M:%SZ') [skip ci]" || echo "Nothing to commit"
+          git commit -m "update: seen IPs $(date -u +'%Y-%m-%dT%H:%M:%SZ') [skip ci]" || echo "No changes"
           git push origin logs
