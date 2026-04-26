@@ -40,7 +40,15 @@ jobs:
           pip install -r Map-bad-ip/requirements.txt
           pip install mistralai lxml_html_clean
 
-      # ── ÉTAPE 1 : Barracuda (Alerte Discord nouvelles IPs) ──────────────
+      # ── DEBUG : affiche les secrets dispos (sans valeurs) ─────────────────────
+      - name: 🔍 Debug — Check env secrets are set
+        run: |
+          echo "IPINFO_TOKEN set: ${{ secrets.IPINFO_TOKEN != '' }}"
+          echo "MISTRAL_API_KEY set: ${{ secrets.MISTRAL_API_KEY != '' }}"
+          echo "DISCORD_WEBHOOK_URL set: ${{ secrets.DISCORD_WEBHOOK_URL != '' }}"
+          echo "WEBHOOK_URL_IP set: ${{ secrets.WEBHOOK_URL_IP != '' }}"
+
+      # ── ÉTAPE 1 : Barracuda ───────────────────────────────────────────
       - name: 🦈 Run Barracuda — Discord IP Alert
         env:
           BLOCKLIST_URL: "https://raw.githubusercontent.com/duggytuxy/Data-Shield_IPv4_Blocklist/refs/heads/main/prod_data-shield_ipv4_blocklist.txt"
@@ -49,19 +57,23 @@ jobs:
           mkdir -p Bad-Ip/logs
           python Bad-Ip/barracuda.py
 
-      # ── ÉTAPE 2 : Map Bad-IP (Pipeline de données) ──────────────────────
+      # ── ÉTAPE 2 : Pipeline Map ────────────────────────────────────────
       - name: 🔍 Fetch IPs from blocklist
         env:
           RSS_FEED_URL: "https://raw.githubusercontent.com/duggytuxy/Data-Shield_IPv4_Blocklist/refs/heads/main/prod_data-shield_ipv4_blocklist.txt"
         run: python Map-bad-ip/src/fetch_ips.py
 
       - name: 🌍 Geolocate IPs
+        continue-on-error: true
         env:
           IPINFO_TOKEN: ${{ secrets.IPINFO_TOKEN }}
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
-        run: python Map-bad-ip/src/geolocate.py
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          python Map-bad-ip/src/geolocate.py || true
 
       - name: 📊 Aggregate data
+        continue-on-error: true
         run: python Map-bad-ip/src/aggregate.py
 
       - name: 🗺️ Generate dashboard (index.html)
@@ -69,7 +81,7 @@ jobs:
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: python Map-bad-ip/src/visualizev2.py
 
-      # ── ÉTAPE 3 : Commit unique de tous les artefacts ───────────────────
+      # ── ÉTAPE 3 : Commit unique ────────────────────────────────────────────
       - name: 💾 Commit all changes (single push)
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
@@ -80,7 +92,7 @@ jobs:
             Map-bad-ip/data/*.json
             index.html
 
-      # ── ÉTAPE 4 : Déploiement GitHub Pages ──────────────────────────────
+      # ── ÉTAPE 4 : Déploiement GitHub Pages ────────────────────────────
       - name: 🚀 Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
