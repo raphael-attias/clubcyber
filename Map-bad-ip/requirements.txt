@@ -2,6 +2,6 @@ feedparser
 requests
 python-dotenv
 pandas
-plotly
+plotly>=6.0.0
 urllib3
-mistralai
+mistralai>=1.0.0,<2.0.0

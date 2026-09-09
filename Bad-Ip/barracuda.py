@@ -41,9 +41,13 @@ def fetch_blocklist():
     """
     Récupération et nettoyage de la blocklist distante.
     """
-    response = requests.get(BLOCKLIST_URL)
+    response = requests.get(BLOCKLIST_URL, timeout=30)
     response.raise_for_status()
-    return set(line.strip() for line in response.text.splitlines() if line.strip())
+    return set(
+        line.strip()
+        for line in response.text.splitlines()
+        if line.strip() and not line.startswith("#")
+    )
 
 
 def wrap_ip(ip: str) -> str:
@@ -73,18 +77,33 @@ def send_discord(new_ips):
     parts.append(message)
 
     for part in parts:
-        requests.post(WEBHOOK_URL_IP, json={'content': part})
+        resp = requests.post(WEBHOOK_URL_IP, json={'content': part}, timeout=15)
+        resp.raise_for_status()
 
 
 def main():
+    if not BLOCKLIST_URL:
+        print("[!] BLOCKLIST_URL non défini — rien à faire.")
+        return
+
     ensure_log()
     seen = load_seen_ips()
     current = fetch_blocklist()
 
     new_ips = current - seen
-    if new_ips:
+    if not new_ips:
+        print("[*] Aucune nouvelle IP.")
+        return
+
+    if WEBHOOK_URL_IP:
         send_discord(new_ips)
-        save_new_ips(new_ips)
+    else:
+        print("[!] WEBHOOK_URL_IP non défini — notification Discord ignorée.")
+
+    # On enregistre les IP vues même sans webhook, pour éviter de tout renvoyer
+    # au prochain passage une fois le webhook configuré.
+    save_new_ips(new_ips)
+    print(f"[+] {len(new_ips)} nouvelles IP traitées.")
 
 
 if __name__ == '__main__':

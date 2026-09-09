@@ -30,6 +30,18 @@ SITES_SOURCES = [
 PROCESSED_FILE = "processed_articles.txt"
 MAX_ARTICLES_PER_RUN = 9
 
+# scikit-learn ne fournit pas de liste de stop words française : on en définit
+# une minimale, suffisante pour la déduplication TF-IDF.
+FRENCH_STOP_WORDS = {
+    "au", "aux", "avec", "ce", "ces", "dans", "de", "des", "du", "elle", "en",
+    "et", "eux", "il", "ils", "je", "la", "le", "les", "leur", "lui", "ma",
+    "mais", "me", "meme", "mes", "moi", "mon", "ne", "nos", "notre", "nous",
+    "on", "ou", "par", "pas", "plus", "pour", "qu", "que", "qui", "sa", "se",
+    "ses", "son", "sur", "ta", "te", "tes", "toi", "ton", "tu", "un", "une",
+    "vos", "votre", "vous", "c", "d", "j", "l", "n", "s", "t", "y", "ete",
+    "etre", "avoir", "cette", "est", "sont", "a", "ete", "comme", "sans",
+}
+
 # Mots-clés génériques et critiques
 KEYWORDS = [
     "cyber", "sécurité", "faille", "vulnérabilité", "attaque",
@@ -117,25 +129,26 @@ def collectcandidates(processed_articles, seen_titles):
     return sorted(candidates, key=lambda x: x[0], reverse=True)
 
 def dedupe_semantic(candidates, threshold=0.8):
-    """Élimine les articles sémantiquement trop proches."""
-    texts = [f"{title} {content}" for _, _, title, _, content in candidates]
-    if not texts:
+    """Élimine les articles sémantiquement trop proches (TF-IDF + cosinus)."""
+    if not candidates:
         return []
-    vectorizer = TfidfVectorizer(stop_words="french")
-    X = vectorizer.fit_transform(texts)
+    texts = [f"{title} {content}" for _, _, title, _, content in candidates]
+    try:
+        vectorizer = TfidfVectorizer(stop_words=list(FRENCH_STOP_WORDS))
+        matrix = vectorizer.fit_transform(texts)
+    except ValueError:
+        # Vocabulaire vide après filtrage des stop words : rien à dédupliquer.
+        return candidates
 
-    kept = []
-    for i, cand in enumerate(candidates):
-        vi = X[i]
-        is_duplicate = False
-        for j, (score_j, src_j, title_j, url_j, content_j) in enumerate(kept):
-            vj = X[candidates.index((score_j, src_j, title_j, url_j, content_j))]
-            if cosine_similarity(vi, vj)[0, 0] > threshold:
-                is_duplicate = True
-                break
+    kept_indices = []
+    for i in range(len(candidates)):
+        is_duplicate = any(
+            cosine_similarity(matrix[i], matrix[j])[0, 0] > threshold
+            for j in kept_indices
+        )
         if not is_duplicate:
-            kept.append(cand)
-    return kept
+            kept_indices.append(i)
+    return [candidates[i] for i in kept_indices]
 
 def main():
     logging.info("Démarrage du script de veille cybersécurité")
@@ -171,4 +184,7 @@ def main():
     logging.info("Traitement terminé.")
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception:
+        logging.exception("Erreur inattendue — arrêt propre pour ne pas faire échouer la CI.")

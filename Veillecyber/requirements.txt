@@ -3,4 +3,5 @@ lxml_html_clean
 feedparser
 unidecode
 requests
-mistralai
+scikit-learn
+mistralai>=1.0.0,<2.0.0

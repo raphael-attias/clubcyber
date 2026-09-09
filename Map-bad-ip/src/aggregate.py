@@ -1,3 +1,10 @@
+#!/usr/bin/env python3
+"""
+aggregate.py
+Agrège geo_enriched.csv par pays et produit agg_by_country.csv + top_countries.csv.
+Tolérant : si la source est absente ou vide, écrit des fichiers vides valides.
+"""
+
 import os
 import pandas as pd
 
@@ -6,33 +13,51 @@ INPUT_CSV = os.path.join(DATA_DIR, "geo_enriched.csv")
 OUTPUT_CSV = os.path.join(DATA_DIR, "agg_by_country.csv")
 TOP_COUNTRIES_CSV = os.path.join(DATA_DIR, "top_countries.csv")
 
-def main():
-    # Lecture du fichier CSV
-    df = pd.read_csv(INPUT_CSV)
-    
-    # Vérifie si 'country_code' existe, sinon on utilise 'country' comme fallback
-    if 'country_code' not in df.columns:
-        print("[!] 'country_code' non trouvé, utilisation de 'country' comme alternative.")
-        df['country_code'] = df['country']  # Assigner la colonne 'country' à 'country_code'
+OUT_COLUMNS = ["country", "country_code", "count"]
 
-    # Agrégation par pays et code pays
-    agg = df.groupby(["country", "country_code"]).size().reset_index(name="count")
-    
-    # Trie les pays par nombre d'IP, du plus élevé au plus bas
-    top_countries = agg.sort_values(by="count", ascending=False)
-    
-    # Enregistrer les résultats agrégés dans un fichier CSV
+
+def _load():
+    if not os.path.exists(INPUT_CSV) or os.path.getsize(INPUT_CSV) == 0:
+        return pd.DataFrame(columns=["country"])
+    try:
+        return pd.read_csv(INPUT_CSV)
+    except Exception as exc:
+        print(f"[!] Lecture impossible de {INPUT_CSV}: {exc}")
+        return pd.DataFrame(columns=["country"])
+
+
+def main():
     os.makedirs(DATA_DIR, exist_ok=True)
+    df = _load()
+
+    if df.empty or "country" not in df.columns or df["country"].dropna().empty:
+        print("[!] Aucune donnée à agréger — écriture de fichiers vides.")
+        empty = pd.DataFrame(columns=OUT_COLUMNS)
+        empty.to_csv(OUTPUT_CSV, index=False)
+        empty.to_csv(TOP_COUNTRIES_CSV, index=False)
+        return
+
+    df = df.copy()
+    df["country"] = df["country"].fillna("?")
+    if "country_code" not in df.columns:
+        df["country_code"] = df["country"]
+    df["country_code"] = df["country_code"].fillna(df["country"])
+
+    agg = (
+        df.groupby(["country", "country_code"])
+        .size()
+        .reset_index(name="count")
+        .sort_values(by="count", ascending=False)
+        .reset_index(drop=True)
+    )
+
     agg.to_csv(OUTPUT_CSV, index=False)
-    top_countries.to_csv(TOP_COUNTRIES_CSV, index=False)
-    
+    agg.to_csv(TOP_COUNTRIES_CSV, index=False)
+
     print(f"[+] Agrégation terminée : {len(agg)} pays.")
-    print(f"[+] Résultats agrégés enregistrés dans {OUTPUT_CSV}")
-    print(f"[+] Liste des pays les plus touchés enregistrée dans {TOP_COUNTRIES_CSV}")
-    
-    # Affichage des 10 pays les plus touchés
-    print("\n[+] Top 10 des pays les plus touchés :")
-    print(top_countries.head(10))
+    print("\n[+] Top 10 :")
+    print(agg.head(10).to_string(index=False))
+
 
 if __name__ == "__main__":
     main()

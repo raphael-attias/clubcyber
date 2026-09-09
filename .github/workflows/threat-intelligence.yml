@@ -2,7 +2,9 @@ name: 🛡️ Threat Intelligence Pipeline
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    # 1x par jour à 06:00 UTC (auparavant toutes les 30 min — trop fréquent,
+    # source du flot de mails d'échec).
+    - cron: '0 6 * * *'
   workflow_dispatch:
 
 permissions:
@@ -21,6 +23,7 @@ concurrency:
 jobs:
   run-pipeline:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
 
     steps:
       - name: 📥 Checkout repository
@@ -34,22 +37,13 @@ jobs:
           python-version: '3.11'
           cache: 'pip'
 
-      - name: 📦 Install all dependencies
+      - name: 📦 Install dependencies
         run: |
-          pip install requests pandas python-dotenv
+          python -m pip install --upgrade pip
           pip install -r Map-bad-ip/requirements.txt
-          pip install mistralai lxml_html_clean
 
-      # ── DEBUG : affiche les secrets dispos (sans valeurs) ─────────────────────
-      - name: 🔍 Debug — Check env secrets are set
-        run: |
-          echo "IPINFO_TOKEN set: ${{ secrets.IPINFO_TOKEN != '' }}"
-          echo "MISTRAL_API_KEY set: ${{ secrets.MISTRAL_API_KEY != '' }}"
-          echo "DISCORD_WEBHOOK_URL set: ${{ secrets.DISCORD_WEBHOOK_URL != '' }}"
-          echo "WEBHOOK_URL_IP set: ${{ secrets.WEBHOOK_URL_IP != '' }}"
-
-      # ── ÉTAPE 1 : Barracuda ───────────────────────────────────────────
-      - name: 🦈 Run Barracuda — Discord IP Alert
+      - name: 🦈 Barracuda — Discord IP Alert
+        continue-on-error: true
         env:
           BLOCKLIST_URL: "https://raw.githubusercontent.com/duggytuxy/Data-Shield_IPv4_Blocklist/refs/heads/main/prod_data-shield_ipv4_blocklist.txt"
           WEBHOOK_URL_IP: ${{ secrets.WEBHOOK_URL_IP }}
@@ -57,8 +51,8 @@ jobs:
           mkdir -p Bad-Ip/logs
           python Bad-Ip/barracuda.py
 
-      # ── ÉTAPE 2 : Pipeline Map ────────────────────────────────────────
       - name: 🔍 Fetch IPs from blocklist
+        continue-on-error: true
         env:
           RSS_FEED_URL: "https://raw.githubusercontent.com/duggytuxy/Data-Shield_IPv4_Blocklist/refs/heads/main/prod_data-shield_ipv4_blocklist.txt"
         run: python Map-bad-ip/src/fetch_ips.py
@@ -69,30 +63,28 @@ jobs:
           IPINFO_TOKEN: ${{ secrets.IPINFO_TOKEN }}
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-        run: |
-          python Map-bad-ip/src/geolocate.py || true
+          MAX_IPS_PER_RUN: "2000"
+        run: python Map-bad-ip/src/geolocate.py
 
       - name: 📊 Aggregate data
-        continue-on-error: true
         run: python Map-bad-ip/src/aggregate.py
 
       - name: 🗺️ Generate dashboard (index.html)
-        env:
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: python Map-bad-ip/src/visualizev2.py
 
-      # ── ÉTAPE 3 : Commit unique ────────────────────────────────────────────
       - name: 💾 Commit all changes (single push)
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "data: auto-update threat intelligence [skip ci]"
-          file_pattern: |
+          file_pattern: >-
             Bad-Ip/logs/seen_ips.log
-            Map-bad-ip/data/*.csv
-            Map-bad-ip/data/*.json
+            Map-bad-ip/data/ips.csv
+            Map-bad-ip/data/ips.json
+            Map-bad-ip/data/geo_enriched.csv
+            Map-bad-ip/data/agg_by_country.csv
+            Map-bad-ip/data/top_countries.csv
             index.html
 
-      # ── ÉTAPE 4 : Déploiement GitHub Pages ────────────────────────────
       - name: 🚀 Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:

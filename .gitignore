@@ -10,12 +10,12 @@ venv/
 Veillecyber/App.log
 *.log
 
-# Donnees temporaires / artefacts intermediaires
-geo_enriched.csv
-Map-bad-ip/data/geo_enriched.csv
+# Exception : le log des IP déjà signalées DOIT être versionné
+# (sinon barracuda.py renvoie toute la blocklist à chaque exécution)
+!Bad-Ip/logs/seen_ips.log
 
-# Anciens logs Barracuda (desormais geres par git-auto-commit)
-/Bad-Ip/logs/
+# Donnees temporaires / artefacts intermediaires
+geo_ips.csv
 
 # Env secrets locaux
 /Map-bad-ip/src/.env
