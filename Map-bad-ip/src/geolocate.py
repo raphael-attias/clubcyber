@@ -164,6 +164,13 @@ def main():
         print("[+] Aucune nouvelle IP a enrichir.")
         return
 
+    # Plafond par exécution : évite les runs interminables quand le backlog
+    # est énorme. Le reste sera traité aux exécutions suivantes.
+    max_per_run = int(os.getenv("MAX_IPS_PER_RUN", "3000"))
+    if max_per_run > 0 and len(to_do) > max_per_run:
+        print(f"[*] Backlog de {len(to_do)} IPs — limité à {max_per_run} pour cette exécution.")
+        to_do = to_do[:max_per_run]
+
     print(f"[*] {len(to_do)} IPs a traiter...")
     success = 0
     for idx, ip in enumerate(to_do, start=1):
